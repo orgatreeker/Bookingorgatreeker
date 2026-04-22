@@ -196,7 +196,8 @@ nav{
 
 /* === REVIEWS === */
 .rv-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:48px;}
-@media(max-width:720px){.rv-cards{grid-template-columns:1fr;}}
+@media(max-width:900px){.rv-cards{grid-template-columns:repeat(2,1fr) !important;}}
+@media(max-width:640px){.rv-cards{grid-template-columns:1fr !important;gap:10px;}}
 .rv-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:24px;transition:all 0.22s;}
 .rv-card:hover{border-color:var(--borderv);transform:translateY(-3px);}
 .rv-stars{color:#F59E0B;font-size:12px;letter-spacing:2px;margin-bottom:12px;}
@@ -314,13 +315,19 @@ footer p{font-size:11px;color:var(--muted);letter-spacing:0.04em;}
   .pc-price{font-size:44px;}
 
   /* Reviews */
-  .rv-cards{margin-top:36px;gap:12px;}
-  .rv-card{padding:22px 20px;}
-  .rv-q{font-size:13.5px;line-height:1.7;}
+  .rv-cards{margin-top:28px;gap:10px;}
+  .rv-card{padding:20px 18px;}
+  .rv-stars{font-size:11px;margin-bottom:10px;}
+  .rv-q{font-size:13px;line-height:1.65;margin-bottom:14px;}
+  .rv-av{width:30px;height:30px;font-size:13px;}
+  .rv-name{font-size:12px;}
+  .rv-meta{font-size:10px;}
+  .rv-tag{font-size:8px;padding:1px 6px;}
 
   /* Gallery */
-  .gal-label{margin-top:44px;margin-bottom:22px;}
-  .gal-stream{max-width:100%;gap:10px;}
+  .gal-label{margin-top:36px;margin-bottom:18px;font-size:10px;}
+  .gal-stream{max-width:100%;gap:8px;padding:0 4px;}
+  .gal-item{border-radius:8px;}
 
   /* FAQ */
   .faq-list{margin-top:36px;}
@@ -1025,7 +1032,7 @@ Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
       <h2 class="sh" style="text-align:center">What people <em>actually saved</em></h2>
       <p style="text-align:center;font-size:14px;color:var(--muted2);margin-top:8px;">Average: ₹8,000/month extra saved. Top results: ₹80,000–₹2L/year.</p>
     </div>
-    <div class="rv-cards" style="grid-template-columns:repeat(3,1fr);">
+    <div class="rv-cards">
       <div class="rv-card reveal d1">
         <div class="rv-stars">★★★★★</div>
         <p class="rv-q" id="geoRv1Q">"Was blowing ₹14,000/month on food delivery and had <strong>absolutely no idea.</strong> Cut it to ₹4,000. That's ₹1.2L back in my pocket every year."</p>
