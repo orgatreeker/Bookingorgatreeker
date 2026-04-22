@@ -245,15 +245,132 @@ footer p{font-size:11px;color:var(--muted);letter-spacing:0.04em;}
 .reveal.visible{opacity:1;transform:translateY(0);}
 .d1{transition-delay:.08s;}.d2{transition-delay:.16s;}.d3{transition-delay:.24s;}.d4{transition-delay:.32s;}
 
-@media(max-width:640px){
-  nav{padding:0 16px;}
-  .nav-links .nav-a{display:none;}
-  .hero{padding:80px 16px 60px;}
-  .section{padding:64px 16px;}
-  .vsec{padding:0 16px 64px;}
-  .cta-box{padding:40px 24px;}
-  .qtrig{flex-direction:column;align-items:flex-start;}
+/* === TABLET === */
+@media(max-width:1024px){
+  nav{padding:0 28px;}
+  .section{padding:64px 24px;}
+  .vsec{padding:0 24px 64px;}
+  .call-section{padding:72px 24px;}
+  .about-grid{gap:48px;}
+  .pain-grid,.feat-grid{gap:10px;}
+  .rv-cards{gap:10px;}
+  .cal-embed-wrap,.cal-glow-wrap-inner{min-height:640px;}
 }
+
+/* === MOBILE — 640px === */
+@media(max-width:640px){
+  nav{padding:0 16px;height:58px;}
+  .nav-links .nav-a{display:none;}
+  .nav-btn{padding:9px 16px;font-size:11px;margin-left:0;}
+  .logo{font-size:18px;}
+
+  .hero{padding:86px 18px 56px;min-height:auto;}
+  .hero::after{width:100%;height:420px;top:-10%;}
+  .hh{font-size:clamp(38px,10vw,54px);line-height:1.05;margin-bottom:16px;}
+  .hsub{font-size:15px;line-height:1.7;margin-bottom:32px;padding:0 4px;}
+  .hcta{padding:15px 30px;font-size:13px;width:100%;max-width:320px;justify-content:center;}
+  .hbadge{font-size:11px;padding:5px 14px;margin-bottom:22px;}
+
+  .hstats{gap:18px;margin-top:40px;}
+  .hs-n{font-size:24px;}
+  .hs-l{font-size:10px;}
+  .hs-sep{height:28px;}
+
+  .section{padding:56px 18px;}
+  .vsec{padding:0 18px 56px;}
+  .call-section{padding:64px 18px;}
+  .sh{font-size:clamp(26px,7.5vw,38px);line-height:1.2;}
+  .ssub{font-size:14px;line-height:1.7;}
+
+  /* Video + quiz trigger */
+  .qtrig{flex-direction:column;align-items:stretch;padding:18px 20px;gap:14px;text-align:center;}
+  .qtrig-btn{width:100%;padding:13px;}
+  .qtrig-title{font-size:17px;}
+
+  /* About */
+  .about-grid{gap:56px;}
+  .about-photo{max-width:260px;margin:0 auto;}
+  .about-txt p{font-size:14px;line-height:1.8;}
+  .ptag{padding:9px 16px;}
+
+  /* Pain cards */
+  .pain-grid{margin-top:36px;gap:10px;}
+  .pain-card{padding:22px 20px;}
+  .pain-card h3{font-size:14px;}
+  .pain-card p{font-size:12.5px;}
+  .pain-n{font-size:32px;margin-bottom:10px;}
+
+  /* Features */
+  .feat-grid{margin-top:36px;gap:10px;}
+  .fc{padding:20px 18px;}
+  .feat-imgs{grid-template-columns:1fr;gap:10px;margin-top:28px;}
+
+  /* Pricing */
+  .price-grid{margin-top:36px;gap:14px;}
+  .pc{padding:28px 22px;}
+  .pc-price{font-size:44px;}
+
+  /* Reviews */
+  .rv-cards{margin-top:36px;gap:12px;}
+  .rv-card{padding:22px 20px;}
+  .rv-q{font-size:13.5px;line-height:1.7;}
+
+  /* Gallery */
+  .gal-label{margin-top:44px;margin-bottom:22px;}
+  .gal-stream{max-width:100%;gap:10px;}
+
+  /* FAQ */
+  .faq-list{margin-top:36px;}
+  .faq-q{padding:14px 16px;font-size:13.5px;}
+  .faq-body{padding:12px 16px 14px;font-size:12.5px;}
+
+  /* CTA box */
+  .cta-box{padding:40px 24px;}
+  .cta-btns{flex-direction:column;gap:8px;}
+  .cta-btns .hcta,.cta-btns .btn-out{width:100%;}
+
+  /* Hero call card */
+  .hero-call-card{padding:20px 18px;margin-top:22px;}
+  .hero-call-inner{flex-direction:column;text-align:center;gap:14px;}
+  .hero-call-left{text-align:center;}
+  .hero-call-btn{width:100%;padding:14px 20px;}
+
+  /* Book a call section */
+  .call-header{margin-bottom:36px;}
+  .call-why{grid-template-columns:1fr;gap:10px;margin-bottom:36px;}
+  .why-card{padding:20px 18px;}
+  .cal-embed-wrap,.cal-glow-wrap-inner{min-height:560px;border-radius:14px;}
+
+  /* Quiz modal */
+  .qhead{padding:20px 20px 0;}
+  .qbody{padding:4px 20px 16px;}
+  .qfoot{padding:12px 20px 18px;}
+  .qopt{padding:12px 13px;}
+}
+
+/* === SMALL MOBILE — 420px === */
+@media(max-width:420px){
+  .hh{font-size:clamp(32px,9vw,44px);}
+  .hstats{gap:12px;}
+  .hs-n{font-size:22px;}
+  .hs-sep{display:none;}
+  .section{padding:48px 16px;}
+  .sh{font-size:clamp(24px,7vw,32px);}
+  .pc{padding:24px 18px;}
+  .pc-price{font-size:38px;}
+  .cta-box{padding:34px 20px;}
+  .cal-embed-wrap,.cal-glow-wrap-inner{min-height:520px;}
+}
+
+/* === TOUCH / SMOOTH === */
+@media(hover:none){
+  .pain-card:hover,.fc:hover,.rv-card:hover,.pc-free:hover,.pc-pro:hover,.why-card:hover{transform:none;}
+  .hcta:hover,.hero-call-btn:hover{transform:none;}
+}
+
+/* Prevent horizontal scroll & iOS zoom on input focus */
+html,body{max-width:100vw;}
+input,textarea,select{font-size:16px;}
 
 /* =====================================================
    QUIZ MODAL
