@@ -265,17 +265,19 @@ footer p{font-size:11px;color:var(--muted);letter-spacing:0.04em;}
   .nav-btn{padding:10px 18px;font-size:11px;margin-left:0;white-space:nowrap;}
   .logo{font-size:17px;}
 
-  .hero{padding:86px 18px 56px;min-height:auto;}
+  .hero{padding:86px 16px 56px;min-height:auto;}
   .hero::after{width:100%;height:420px;top:-10%;}
-  .hh{font-size:clamp(38px,10vw,54px);line-height:1.05;margin-bottom:16px;}
-  .hsub{font-size:15px;line-height:1.7;margin-bottom:32px;padding:0 4px;}
-  .hcta{padding:15px 30px;font-size:13px;width:100%;max-width:320px;justify-content:center;}
-  .hbadge{font-size:11px;padding:5px 14px;margin-bottom:22px;}
+  .hcontent{width:100%;max-width:100%;padding:0;}
+  .hh{font-size:clamp(32px,8vw,48px);line-height:1.1;margin-bottom:16px;word-wrap:break-word;}
+  .hsub{font-size:14px;line-height:1.7;margin-bottom:28px;padding:0;max-width:100%;}
+  .hcta{padding:14px 28px;font-size:13px;width:auto;max-width:100%;justify-content:center;}
+  .hbadge{font-size:10px;padding:5px 12px;margin-bottom:20px;}
 
-  .hstats{gap:18px;margin-top:40px;}
-  .hs-n{font-size:24px;}
-  .hs-l{font-size:10px;}
-  .hs-sep{height:28px;}
+  .hstats{gap:16px;margin-top:32px;justify-content:center;width:100%;}
+  .hs{min-width:0;}
+  .hs-n{font-size:22px;}
+  .hs-l{font-size:9px;white-space:nowrap;}
+  .hs-sep{height:24px;}
 
   .section{padding:56px 18px;}
   .vsec{padding:0 18px 56px;}
@@ -331,10 +333,14 @@ footer p{font-size:11px;color:var(--muted);letter-spacing:0.04em;}
   .cta-btns .hcta,.cta-btns .btn-out{width:100%;}
 
   /* Hero call card */
-  .hero-call-card{padding:20px 18px;margin-top:22px;}
-  .hero-call-inner{flex-direction:column;text-align:center;gap:14px;}
+  .hero-call-card{padding:18px 16px;margin-top:20px;max-width:100%;width:100%;}
+  .hero-call-inner{flex-direction:column;text-align:center;gap:12px;}
   .hero-call-left{text-align:center;}
-  .hero-call-btn{width:100%;padding:14px 20px;}
+  .hero-call-eyebrow{font-size:10px;}
+  .hero-call-title{font-size:14px;line-height:1.4;}
+  .hero-call-sub{font-size:11px;line-height:1.5;}
+  .hero-call-btn{width:100%;padding:12px 18px;font-size:12px;}
+  .hero-call-pulse{width:100px;height:100px;top:-40px;right:-40px;}
 
   /* Book a call section */
   .call-header{margin-bottom:36px;}
@@ -352,17 +358,25 @@ footer p{font-size:11px;color:var(--muted);letter-spacing:0.04em;}
 /* === SMALL MOBILE — 420px === */
 @media(max-width:420px){
   nav{padding:0 12px;height:54px;}
-  .logo{font-size:16px;}
-  .nav-btn{padding:9px 14px;font-size:10px;}
-  .hh{font-size:clamp(32px,9vw,44px);}
-  .hstats{gap:12px;}
-  .hs-n{font-size:22px;}
+  .logo{font-size:15px;}
+  .nav-btn{padding:8px 12px;font-size:10px;}
+  .hero{padding:80px 14px 48px;}
+  .hh{font-size:clamp(26px,8vw,36px);}
+  .hsub{font-size:13px;}
+  .hcta{padding:12px 24px;font-size:12px;}
+  .hstats{gap:10px;flex-wrap:wrap;}
+  .hs-n{font-size:20px;}
+  .hs-l{font-size:8px;}
   .hs-sep{display:none;}
-  .section{padding:48px 16px;}
-  .sh{font-size:clamp(24px,7vw,32px);}
+  .hero-call-card{padding:16px 14px;}
+  .hero-call-title{font-size:13px;}
+  .hero-call-sub{font-size:10px;}
+  .hero-call-btn{padding:11px 16px;font-size:11px;}
+  .section{padding:48px 14px;}
+  .sh{font-size:clamp(22px,6.5vw,28px);}
   .pc{padding:24px 18px;}
   .pc-price{font-size:38px;}
-  .cta-box{padding:34px 20px;}
+  .cta-box{padding:34px 18px;}
   .cal-embed-wrap,.cal-glow-wrap-inner{min-height:520px;}
 }
 
@@ -373,7 +387,8 @@ footer p{font-size:11px;color:var(--muted);letter-spacing:0.04em;}
 }
 
 /* Prevent horizontal scroll & iOS zoom on input focus */
-html,body{max-width:100vw;}
+html,body{max-width:100vw;overflow-x:hidden;}
+*{box-sizing:border-box;}
 input,textarea,select{font-size:16px;}
 
 /* =====================================================
