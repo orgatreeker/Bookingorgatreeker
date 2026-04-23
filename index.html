@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Best Budget Template — Orgatreeker</title>
+<title>Free Budget Template + Strategy Session — Orgatreeker</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -85,7 +85,7 @@ nav{
   font-weight:300;line-height:1.02;letter-spacing:-0.01em;color:#fff;margin-bottom:20px;
 }
 .hh em{font-style:italic;font-weight:400;color:var(--violet);}
-.hsub{font-size:17px;font-weight:300;color:var(--muted2);line-height:1.75;max-width:480px;margin:0 auto 44px;}
+.hsub{font-size:17px;font-weight:300;color:var(--muted2);line-height:1.75;max-width:520px;margin:0 auto 44px;}
 .hcta{
   display:inline-flex;align-items:center;gap:10px;
   background:var(--blue);color:#fff;font-size:14px;font-weight:600;
@@ -163,36 +163,33 @@ nav{
 .feat-imgs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:40px;}
 .feat-imgs img{border-radius:10px;border:1px solid var(--border);}
 
-/* === PRICING === */
-.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:820px;margin:48px auto 0;}
-@media(max-width:580px){.price-grid{grid-template-columns:1fr;}}
-.pc{border-radius:12px;padding:36px;position:relative;transition:transform 0.22s;}
-.pc-free{background:var(--card);border:1px solid var(--border);}
-.pc-free:hover{transform:translateY(-2px);}
-.pc-pro{background:linear-gradient(145deg,rgba(151,125,255,0.08),var(--card));border:1px solid var(--borderv);box-shadow:0 0 60px rgba(151,125,255,0.07);}
-.pc-pro:hover{transform:translateY(-4px);}
-.pc-pro::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--blue),var(--violet));}
-.pc-badge{position:absolute;top:14px;right:14px;font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:var(--violet);color:#fff;padding:3px 10px;border-radius:100px;}
-.pc-name{font-size:12px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;}
-.pc-free .pc-name{color:var(--muted);}
-.pc-pro .pc-name{color:var(--violet);}
-.pc-price{font-family:var(--serif);font-size:54px;font-weight:400;line-height:1;letter-spacing:-0.02em;margin-bottom:4px;}
-.pc-free .pc-price{color:#fff;}
-.pc-pro .pc-price{color:var(--violet);}
-.pc-period{font-size:12px;color:var(--muted);margin-bottom:24px;}
-.pc-list{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:28px;}
-.pc-list li{display:flex;align-items:flex-start;gap:8px;font-size:13px;}
-.pc-free .pc-list li{color:var(--muted);}
-.pc-pro .pc-list li{color:var(--text);font-weight:400;}
+/* === DECOY COMPARISON === */
+.decoy-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:820px;margin:48px auto 0;}
+@media(max-width:580px){.decoy-grid{grid-template-columns:1fr;}}
+.dc{border-radius:12px;padding:36px;position:relative;transition:transform 0.22s;}
+.dc-diy{background:var(--card);border:1px solid var(--border);opacity:0.85;}
+.dc-diy:hover{transform:translateY(-2px);}
+.dc-call{background:linear-gradient(145deg,rgba(151,125,255,0.08),var(--card));border:1px solid var(--borderv);box-shadow:0 0 60px rgba(151,125,255,0.07);}
+.dc-call:hover{transform:translateY(-4px);}
+.dc-call::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--blue),var(--violet));}
+.dc-badge{position:absolute;top:14px;right:14px;font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;background:var(--violet);color:#fff;padding:3px 10px;border-radius:100px;}
+.dc-name{font-size:12px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;}
+.dc-diy .dc-name{color:var(--muted);}
+.dc-call .dc-name{color:var(--violet);}
+.dc-title{font-family:var(--serif);font-size:28px;font-weight:400;line-height:1.2;letter-spacing:-0.02em;margin-bottom:8px;color:#fff;}
+.dc-sub{font-size:13px;color:var(--muted2);margin-bottom:24px;line-height:1.6;}
+.dc-list{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:28px;}
+.dc-list li{display:flex;align-items:flex-start;gap:8px;font-size:13px;}
+.dc-diy .dc-list li{color:var(--muted);}
+.dc-call .dc-list li{color:var(--text);font-weight:400;}
 .ld{width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:8px;flex-shrink:0;margin-top:1px;}
 .ly{background:rgba(151,125,255,0.15);color:var(--violet);}
 .ln{background:rgba(255,255,255,0.04);color:var(--muted);}
-.pc-btn{display:block;text-align:center;font-size:13px;font-weight:600;padding:13px;border-radius:8px;transition:all 0.2s;cursor:pointer;letter-spacing:0.02em;}
-.pc-free .pc-btn{background:rgba(255,255,255,0.05);color:var(--muted2);border:1px solid var(--border);}
-.pc-free .pc-btn:hover{color:#fff;background:rgba(255,255,255,0.08);}
-.pc-pro .pc-btn{background:var(--blue);color:#fff;box-shadow:0 0 28px rgba(0,51,255,0.22);border:none;display:block;width:100%;text-align:center;}
-.pc-pro .pc-btn:hover{background:var(--blue2);}
-.price-note{text-align:center;margin-top:14px;font-size:11px;color:var(--muted);letter-spacing:0.04em;}
+.dc-btn{display:block;text-align:center;font-size:13px;font-weight:600;padding:13px;border-radius:8px;transition:all 0.2s;cursor:pointer;letter-spacing:0.02em;}
+.dc-diy .dc-btn{background:rgba(255,255,255,0.05);color:var(--muted2);border:1px solid var(--border);}
+.dc-diy .dc-btn:hover{color:#fff;background:rgba(255,255,255,0.08);}
+.dc-call .dc-btn{background:var(--blue);color:#fff;box-shadow:0 0 28px rgba(0,51,255,0.22);border:none;display:block;width:100%;text-align:center;}
+.dc-call .dc-btn:hover{background:var(--blue2);}
 
 /* === REVIEWS === */
 .rv-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:48px;}
@@ -209,7 +206,7 @@ nav{
 .rv-meta{font-size:11px;color:var(--muted);}
 .rv-tag{display:inline-block;margin-top:3px;font-size:9px;font-weight:600;letter-spacing:0.08em;color:var(--violet);background:rgba(151,125,255,0.1);border:1px solid rgba(151,125,255,0.2);padding:1px 7px;border-radius:100px;}
 
-/* Gallery — scroll reveal stacked */
+/* Gallery */
 .gal-label{text-align:center;margin-top:56px;margin-bottom:28px;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);}
 .gal-stream{max-width:480px;margin:0 auto;display:flex;flex-direction:column;gap:12px;}
 .gal-item{border-radius:10px;overflow:hidden;border:1px solid var(--border);background:var(--card);opacity:0;transform:translateY(24px);transition:opacity 0.55s ease,transform 0.55s ease,border-color 0.2s;}
@@ -245,377 +242,6 @@ footer p{font-size:11px;color:var(--muted);letter-spacing:0.04em;}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity 0.6s ease,transform 0.6s ease;}
 .reveal.visible{opacity:1;transform:translateY(0);}
 .d1{transition-delay:.08s;}.d2{transition-delay:.16s;}.d3{transition-delay:.24s;}.d4{transition-delay:.32s;}
-
-/* === TABLET === */
-@media(max-width:1024px){
-  nav{padding:0 28px;}
-  .section{padding:64px 24px;}
-  .vsec{padding:0 24px 64px;}
-  .call-section{padding:72px 24px;}
-  .about-grid{gap:48px;}
-  .pain-grid,.feat-grid{gap:10px;}
-  .rv-cards{gap:10px;}
-  .cal-embed-wrap,.cal-glow-wrap-inner{min-height:640px;}
-}
-
-/* === MOBILE — 640px === */
-@media(max-width:640px){
-  nav{padding:0 14px;height:56px;}
-  .nav-links{gap:0;}
-  .nav-links .nav-a{display:none;}
-  .nav-btn{padding:10px 18px;font-size:11px;margin-left:0;white-space:nowrap;}
-  .logo{font-size:17px;}
-
-  .hero{padding:86px 16px 56px;min-height:auto;}
-  .hero::after{width:100%;height:420px;top:-10%;}
-  .hcontent{width:100%;max-width:100%;padding:0;}
-  .hh{font-size:clamp(32px,8vw,48px);line-height:1.1;margin-bottom:16px;word-wrap:break-word;}
-  .hsub{font-size:14px;line-height:1.7;margin-bottom:28px;padding:0;max-width:100%;}
-  .hcta{padding:14px 28px;font-size:13px;width:auto;max-width:100%;justify-content:center;}
-  .hbadge{font-size:10px;padding:5px 12px;margin-bottom:20px;}
-
-  .hstats{gap:16px;margin-top:32px;justify-content:center;width:100%;}
-  .hs{min-width:0;}
-  .hs-n{font-size:22px;}
-  .hs-l{font-size:9px;white-space:nowrap;}
-  .hs-sep{height:24px;}
-
-  .section{padding:56px 18px;}
-  .vsec{padding:0 18px 56px;}
-  .call-section{padding:64px 18px;}
-  .sh{font-size:clamp(26px,7.5vw,38px);line-height:1.2;}
-  .ssub{font-size:14px;line-height:1.7;}
-
-  /* Video + quiz trigger */
-  .qtrig{flex-direction:column;align-items:stretch;padding:18px 20px;gap:14px;text-align:center;}
-  .qtrig-btn{width:100%;padding:13px;}
-  .qtrig-title{font-size:17px;}
-
-  /* About */
-  .about-grid{gap:56px;}
-  .about-photo{max-width:260px;margin:0 auto;}
-  .about-txt p{font-size:14px;line-height:1.8;}
-  .ptag{padding:9px 16px;}
-
-  /* Pain cards */
-  .pain-grid{margin-top:36px;gap:10px;}
-  .pain-card{padding:22px 20px;}
-  .pain-card h3{font-size:14px;}
-  .pain-card p{font-size:12.5px;}
-  .pain-n{font-size:32px;margin-bottom:10px;}
-
-  /* Features */
-  .feat-grid{margin-top:36px;gap:10px;}
-  .fc{padding:20px 18px;}
-  .feat-imgs{grid-template-columns:1fr;gap:10px;margin-top:28px;}
-
-  /* Pricing */
-  .price-grid{margin-top:36px;gap:14px;}
-  .pc{padding:28px 22px;}
-  .pc-price{font-size:44px;}
-
-  /* Reviews */
-  .rv-cards{margin-top:28px;gap:10px;}
-  .rv-card{padding:20px 18px;}
-  .rv-stars{font-size:11px;margin-bottom:10px;}
-  .rv-q{font-size:13px;line-height:1.65;margin-bottom:14px;}
-  .rv-av{width:30px;height:30px;font-size:13px;}
-  .rv-name{font-size:12px;}
-  .rv-meta{font-size:10px;}
-  .rv-tag{font-size:8px;padding:1px 6px;}
-
-  /* Gallery */
-  .gal-label{margin-top:36px;margin-bottom:18px;font-size:10px;}
-  .gal-stream{max-width:100%;gap:8px;padding:0 4px;}
-  .gal-item{border-radius:8px;}
-
-  /* FAQ */
-  .faq-list{margin-top:36px;}
-  .faq-q{padding:14px 16px;font-size:13.5px;}
-  .faq-body{padding:12px 16px 14px;font-size:12.5px;}
-
-  /* CTA box */
-  .cta-box{padding:40px 24px;}
-  .cta-btns{flex-direction:column;gap:8px;}
-  .cta-btns .hcta,.cta-btns .btn-out{width:100%;}
-
-  /* Hero call card */
-  .hero-call-card{padding:18px 16px;margin-top:20px;max-width:100%;width:100%;}
-  .hero-call-inner{flex-direction:column;text-align:center;gap:12px;}
-  .hero-call-left{text-align:center;}
-  .hero-call-eyebrow{font-size:10px;}
-  .hero-call-title{font-size:14px;line-height:1.4;}
-  .hero-call-sub{font-size:11px;line-height:1.5;}
-  .hero-call-btn{width:100%;padding:12px 18px;font-size:12px;}
-  .hero-call-pulse{width:100px;height:100px;top:-40px;right:-40px;}
-
-  /* Book a call section */
-  .call-header{margin-bottom:36px;}
-  .call-why{grid-template-columns:1fr;gap:10px;margin-bottom:36px;}
-  .why-card{padding:20px 18px;}
-  .cal-embed-wrap,.cal-glow-wrap-inner{min-height:560px;border-radius:14px;}
-
-  /* Quiz modal */
-  .qhead{padding:20px 20px 0;}
-  .qbody{padding:4px 20px 16px;}
-  .qfoot{padding:12px 20px 18px;}
-  .qopt{padding:12px 13px;}
-}
-
-/* === SMALL MOBILE — 420px === */
-@media(max-width:420px){
-  nav{padding:0 12px;height:54px;}
-  .logo{font-size:15px;}
-  .nav-btn{padding:8px 12px;font-size:10px;}
-  .hero{padding:80px 14px 48px;}
-  .hh{font-size:clamp(26px,8vw,36px);}
-  .hsub{font-size:13px;}
-  .hcta{padding:12px 24px;font-size:12px;}
-  .hstats{gap:10px;flex-wrap:wrap;}
-  .hs-n{font-size:20px;}
-  .hs-l{font-size:8px;}
-  .hs-sep{display:none;}
-  .hero-call-card{padding:16px 14px;}
-  .hero-call-title{font-size:13px;}
-  .hero-call-sub{font-size:10px;}
-  .hero-call-btn{padding:11px 16px;font-size:11px;}
-  .section{padding:48px 14px;}
-  .sh{font-size:clamp(22px,6.5vw,28px);}
-  .pc{padding:24px 18px;}
-  .pc-price{font-size:38px;}
-  .cta-box{padding:34px 18px;}
-  .cal-embed-wrap,.cal-glow-wrap-inner{min-height:520px;}
-}
-
-/* === TOUCH / SMOOTH === */
-@media(hover:none){
-  .pain-card:hover,.fc:hover,.rv-card:hover,.pc-free:hover,.pc-pro:hover,.why-card:hover{transform:none;}
-  .hcta:hover,.hero-call-btn:hover{transform:none;}
-}
-
-/* Prevent horizontal scroll & iOS zoom on input focus */
-html,body{max-width:100vw;overflow-x:hidden;}
-*{box-sizing:border-box;}
-input,textarea,select{font-size:16px;}
-
-/* =====================================================
-   QUIZ MODAL
-===================================================== */
-.qoverlay{
-  position:fixed;inset:0;z-index:1000;
-  display:flex;align-items:center;justify-content:center;padding:12px;
-  opacity:0;pointer-events:none;transition:opacity 0.3s ease;
-}
-.qoverlay.active{opacity:1;pointer-events:all;}
-.qbg{position:absolute;inset:0;background:rgba(0,2,50,0.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);}
-.qmodal{
-  position:relative;z-index:1;width:100%;max-width:600px;
-  background:#060932;border:1px solid var(--borderv);border-radius:16px;
-  box-shadow:0 40px 120px rgba(0,0,0,0.7);
-  overflow:hidden;
-  transform:translateY(16px) scale(0.98);
-  transition:transform 0.3s ease;
-  max-height:95vh;display:flex;flex-direction:column;
-}
-.qoverlay.active .qmodal{transform:translateY(0) scale(1);}
-.qhead{padding:24px 28px 0;flex-shrink:0;}
-.qtop{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;}
-.qbrand{font-size:10px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;}
-.qclose{
-  width:28px;height:28px;border-radius:6px;
-  background:rgba(255,255,255,0.06);border:1px solid var(--border);
-  display:flex;align-items:center;justify-content:center;
-  font-size:13px;color:var(--muted2);cursor:pointer;transition:all 0.2s;
-}
-.qclose:hover{border-color:var(--violet);color:var(--violet);}
-.qprog-track{height:3px;background:rgba(255,255,255,0.06);border-radius:3px;overflow:hidden;}
-.qprog-fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--violet));border-radius:3px;transition:width 0.5s ease;width:0%;}
-.qstep-lbl{font-size:11px;color:var(--muted);letter-spacing:0.06em;margin-top:12px;margin-bottom:4px;}
-.qbody{padding:4px 28px 20px;overflow-y:auto;flex:1;}
-
-/* Question */
-.qq{font-family:var(--serif);font-size:clamp(18px,3vw,24px);font-weight:300;color:#fff;line-height:1.25;margin-bottom:4px;letter-spacing:-0.01em;}
-.qhint{font-size:12px;color:var(--muted);margin-bottom:18px;font-style:italic;}
-.qopts{display:flex;flex-direction:column;gap:7px;}
-.qopt{
-  display:flex;align-items:center;gap:11px;
-  padding:11px 14px;border:1px solid var(--border);
-  background:rgba(255,255,255,0.02);border-radius:8px;
-  cursor:pointer;transition:all 0.15s;text-align:left;width:100%;
-}
-.qopt:hover{border-color:var(--borderv);background:rgba(151,125,255,0.06);}
-.qopt.sel{border-color:var(--violet);background:rgba(151,125,255,0.1);}
-.qltr{
-  width:22px;height:22px;border-radius:5px;flex-shrink:0;
-  border:1px solid var(--border);
-  display:flex;align-items:center;justify-content:center;
-  font-size:9px;font-weight:600;color:var(--muted);transition:all 0.15s;
-}
-.qopt.sel .qltr{background:var(--violet);border-color:var(--violet);color:#fff;}
-.qtxt{font-size:13px;color:var(--muted2);transition:color 0.15s;line-height:1.3;}
-.qopt.sel .qtxt{color:#fff;}
-
-/* Info fields */
-.qfields{display:flex;flex-direction:column;gap:12px;}
-.qfield label{display:block;font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
-.qfield input{
-  width:100%;background:rgba(255,255,255,0.04);border:1px solid var(--border);
-  color:#fff;font-family:var(--sans);font-size:14px;font-weight:300;
-  padding:11px 14px;border-radius:7px;transition:border-color 0.2s;outline:none;
-}
-.qfield input:focus{border-color:var(--violet);}
-.qfield input::placeholder{color:var(--muted);}
-
-/* Modal footer */
-.qfoot{
-  padding:12px 28px 20px;flex-shrink:0;
-  border-top:1px solid rgba(255,255,255,0.06);
-  display:flex;align-items:center;justify-content:space-between;
-}
-.qback-btn{font-size:12px;color:var(--muted);background:transparent;padding:8px 0;cursor:pointer;border:none;transition:color 0.2s;}
-.qback-btn:hover{color:#fff;}
-.qnext-btn{
-  font-size:12px;font-weight:600;letter-spacing:0.04em;
-  background:var(--blue);color:#fff;padding:10px 26px;border-radius:7px;
-  transition:all 0.2s;border:none;
-}
-.qnext-btn:hover:not(:disabled){background:var(--blue2);}
-.qnext-btn:disabled{opacity:0.3;cursor:not-allowed;}
-
-/* === RESULT SCREEN === */
-.qresult{padding:4px 0 4px;}
-.qr-greeting{font-size:12px;color:var(--violet);letter-spacing:0.08em;margin-bottom:4px;}
-.qr-title{font-family:var(--serif);font-size:22px;font-weight:300;color:#fff;margin-bottom:4px;line-height:1.2;}
-.qr-sub{font-size:12px;color:var(--muted2);margin-bottom:18px;line-height:1.6;font-weight:300;}
-
-/* Score gauge — Canvas-based semicircle, works at any score */
-.gauge-wrap{text-align:center;margin-bottom:18px;}
-.gauge-lbl{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
-/* gauge now uses canvas */
-
-/* Spending bars */
-.bars-sec{margin-bottom:18px;}
-.bars-title{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;}
-.bar-row{display:flex;align-items:center;gap:10px;margin-bottom:7px;}
-.bar-cat{font-size:12px;color:var(--muted2);width:100px;flex-shrink:0;font-weight:300;}
-.bar-track{flex:1;height:6px;background:rgba(255,255,255,0.06);border-radius:3px;overflow:hidden;}
-.bar-fill{height:100%;border-radius:3px;width:0%;transition:width 1.1s cubic-bezier(0.25,0.46,0.45,0.94);}
-.bar-pct{font-size:11px;color:var(--muted);width:30px;text-align:right;flex-shrink:0;}
-
-/* Free vs Pro */
-.path-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;}
-.path-card{border-radius:9px;padding:14px;}
-.path-free{background:rgba(255,255,255,0.03);border:1px solid var(--border);}
-.path-pro{background:linear-gradient(135deg,rgba(0,51,255,0.1),rgba(151,125,255,0.08));border:1px solid var(--borderv);}
-.path-lbl{font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;}
-.path-free .path-lbl{color:var(--muted);}
-.path-pro .path-lbl{color:var(--violet);}
-.path-item{font-size:11px;display:flex;align-items:flex-start;gap:5px;line-height:1.3;margin-bottom:5px;}
-.path-free .path-item{color:var(--muted);}
-.path-pro .path-item{color:var(--muted2);}
-.path-free .path-item::before{content:'→';color:var(--muted);font-size:9px;flex-shrink:0;margin-top:1px;}
-.path-pro .path-item::before{content:'✓';color:var(--violet);font-size:9px;flex-shrink:0;margin-top:1px;}
-
-/* Projections */
-.proj-sec{margin-bottom:6px;}
-.proj-title{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
-.proj-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:6px;}
-.proj-box{border-radius:8px;padding:12px;text-align:center;}
-.proj-free{background:rgba(255,255,255,0.03);border:1px solid var(--border);}
-.proj-pro{background:rgba(151,125,255,0.08);border:1px solid var(--borderv);}
-.proj-n{font-family:var(--serif);font-size:20px;font-weight:400;line-height:1;}
-.proj-free .proj-n{color:var(--muted2);}
-.proj-pro .proj-n{color:var(--violet);}
-.proj-l{font-size:10px;color:var(--muted);margin-top:3px;letter-spacing:0.03em;}
-.proj-extra{font-size:11px;color:var(--violet);text-align:center;margin-bottom:14px;font-weight:500;}
-
-/* Result buttons */
-.res-btns{display:flex;flex-direction:column;gap:7px;}
-.res-pro-btn{
-  display:block;width:100%;text-align:center;font-size:13px;font-weight:600;
-  background:var(--blue);color:#fff;padding:13px;border-radius:8px;
-  transition:all 0.2s;cursor:pointer;border:none;box-shadow:0 0 24px rgba(0,51,255,0.28);
-}
-.res-pro-btn:hover{background:var(--blue2);}
-.res-free-btn{
-  display:block;width:100%;text-align:center;font-size:12px;font-weight:400;
-  color:var(--muted2);background:transparent;padding:11px;border-radius:8px;
-  border:1px solid var(--border);transition:all 0.2s;cursor:pointer;
-}
-.res-free-btn:hover{color:#fff;border-color:rgba(255,255,255,0.2);}
-.res-note{font-size:11px;color:var(--muted);text-align:center;margin-top:8px;line-height:1.5;}
-
-/* =====================================================
-   GATE MODAL (Free friction form)
-===================================================== */
-.goverlay{
-  position:fixed;inset:0;z-index:1100;
-  display:flex;align-items:center;justify-content:center;padding:12px;
-  opacity:0;pointer-events:none;transition:opacity 0.3s ease;
-}
-.goverlay.active{opacity:1;pointer-events:all;}
-.gbg{position:absolute;inset:0;background:rgba(0,1,40,0.93);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);}
-.gmodal{
-  position:relative;z-index:1;width:100%;max-width:540px;
-  background:#060932;border:1px solid var(--borderv);border-radius:16px;
-  box-shadow:0 40px 120px rgba(0,0,0,0.8);
-  max-height:92vh;overflow-y:auto;
-  transform:scale(0.97);transition:transform 0.3s ease;
-}
-.goverlay.active .gmodal{transform:scale(1);}
-.ghead{padding:24px 28px 18px;border-bottom:1px solid var(--border);position:relative;}
-.gclose-btn{
-  position:absolute;top:18px;right:18px;
-  width:28px;height:28px;border-radius:6px;
-  background:rgba(255,255,255,0.06);border:1px solid var(--border);
-  display:flex;align-items:center;justify-content:center;
-  font-size:13px;color:var(--muted2);cursor:pointer;transition:all 0.2s;
-}
-.gclose-btn:hover{border-color:var(--violet);color:var(--violet);}
-.geyebrow{font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--violet);margin-bottom:8px;}
-.gtitle{font-family:var(--serif);font-size:21px;font-weight:300;color:#fff;line-height:1.3;padding-right:32px;}
-
-/* Step progress */
-.g-prog{display:flex;align-items:center;gap:0;padding:16px 28px 0;}
-.g-step{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;background:rgba(255,255,255,0.06);border:1px solid var(--border);color:var(--muted);transition:all 0.3s;flex-shrink:0;}
-.g-step.cur{background:var(--blue);border-color:var(--blue);color:#fff;}
-.g-step.done{background:rgba(0,204,136,0.15);border-color:#00CC88;color:#00CC88;}
-.g-line{flex:1;height:1px;background:var(--border);}
-
-/* Gate sections */
-.gbody{padding:0 28px;}
-.gsec{padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
-.gsec:last-of-type{border-bottom:none;}
-.gsec-num{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--violet);margin-bottom:6px;font-weight:500;}
-.gsec-q{font-size:14px;font-weight:500;color:#fff;margin-bottom:3px;line-height:1.4;}
-.gsec-hint{font-size:12px;color:var(--muted);font-style:italic;margin-bottom:12px;}
-.gopts{display:flex;flex-direction:column;gap:5px;}
-.gopt{
-  display:flex;align-items:flex-start;gap:9px;padding:9px 12px;
-  border:1px solid var(--border);background:rgba(255,255,255,0.02);
-  border-radius:7px;cursor:pointer;transition:all 0.15s;text-align:left;width:100%;
-}
-.gopt:hover{border-color:var(--borderv);background:rgba(151,125,255,0.05);}
-.gopt.sel{border-color:var(--violet);background:rgba(151,125,255,0.08);}
-.gdot{width:13px;height:13px;border-radius:50%;border:1px solid var(--border);flex-shrink:0;margin-top:2px;transition:all 0.15s;}
-.gopt.sel .gdot{background:var(--violet);border-color:var(--violet);}
-.gopt-txt{font-size:12px;color:var(--muted2);transition:color 0.15s;line-height:1.35;}
-.gopt.sel .gopt-txt{color:#fff;}
-
-/* Gate upsell */
-.gupsell{margin:14px 0;padding:18px;background:linear-gradient(135deg,rgba(0,51,255,0.08),rgba(151,125,255,0.06));border:1px solid var(--borderv);border-radius:9px;}
-.gupsell h4{font-family:var(--serif);font-size:17px;font-weight:400;color:#fff;margin-bottom:8px;line-height:1.3;}
-.gupsell p{font-size:12px;color:var(--muted2);line-height:1.75;margin-bottom:10px;font-weight:300;}
-.glist{list-style:none;display:flex;flex-direction:column;gap:5px;margin-bottom:12px;}
-.glist li{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted2);font-weight:300;}
-.glist li::before{content:'✓';color:var(--violet);font-size:9px;flex-shrink:0;}
-.gpill{display:inline-block;font-size:11px;font-weight:500;color:var(--violet);background:rgba(151,125,255,0.1);border:1px solid var(--borderv);padding:3px 10px;border-radius:100px;margin-bottom:12px;}
-.ggopro{display:block;width:100%;text-align:center;font-size:13px;font-weight:600;background:var(--blue);color:#fff;padding:12px;border-radius:7px;transition:all 0.2s;cursor:pointer;border:none;box-shadow:0 0 20px rgba(0,51,255,0.2);}
-.ggopro:hover{background:var(--blue2);}
-
-.gfoot{padding:12px 28px 20px;border-top:1px solid var(--border);}
-.gfree-btn{display:block;width:100%;text-align:center;font-size:12px;font-weight:400;color:var(--muted);background:transparent;border:none;cursor:pointer;padding:8px;transition:color 0.2s;}
-.gfree-btn:hover{color:#fff;}
 
 /* === BOOK A CALL SECTION === */
 .call-section{padding:96px 20px;background:linear-gradient(180deg,rgba(0,51,255,0.04) 0%,transparent 100%);}
@@ -683,9 +309,7 @@ input,textarea,select{font-size:16px;}
 .hero-call-btn:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 0 48px rgba(151,125,255,0.7);}
 
 /* === CALENDAR SECTION GLAMOUR === */
-.cal-glow-wrap{
-  position:relative;
-}
+.cal-glow-wrap{position:relative;}
 .cal-glow-wrap::before{
   content:'';position:absolute;inset:-2px;border-radius:18px;
   background:linear-gradient(135deg,rgba(0,51,255,0.5),rgba(151,125,255,0.5),rgba(0,51,255,0.5));
@@ -704,40 +328,6 @@ input,textarea,select{font-size:16px;}
   min-height:680px;
 }
 
-/* === THANK YOU OVERLAY === */
-.ty-overlay{
-  position:fixed;inset:0;z-index:1200;
-  display:flex;align-items:center;justify-content:center;padding:12px;
-  opacity:0;pointer-events:none;transition:opacity 0.35s ease;
-}
-.ty-overlay.active{opacity:1;pointer-events:all;}
-.ty-bg{position:absolute;inset:0;background:rgba(0,2,50,0.92);backdrop-filter:blur(24px);}
-.ty-modal{
-  position:relative;z-index:1;width:100%;max-width:860px;
-  background:#060932;border:1px solid rgba(151,125,255,0.3);border-radius:20px;
-  box-shadow:0 40px 120px rgba(0,0,0,0.8),0 0 80px rgba(151,125,255,0.1);
-  overflow:hidden;max-height:95vh;display:flex;flex-direction:column;
-}
-.ty-modal::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--violet),#FF6B9D);}
-.ty-top{padding:28px 32px 20px;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-shrink:0;}
-.ty-close{width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--muted2);cursor:pointer;transition:all 0.2s;flex-shrink:0;}
-.ty-close:hover{border-color:var(--violet);color:var(--violet);}
-.ty-check{font-size:32px;margin-bottom:8px;}
-.ty-h{font-family:var(--serif);font-size:clamp(20px,3vw,30px);font-weight:300;color:#fff;line-height:1.2;margin-bottom:6px;}
-.ty-h em{font-style:italic;color:var(--violet);}
-.ty-sub{font-size:13px;color:var(--muted2);font-weight:300;line-height:1.6;}
-.ty-body{flex:1;overflow-y:auto;padding:0 32px 24px;}
-.ty-nudge{
-  margin:20px 0 16px;padding:16px 20px;
-  background:linear-gradient(135deg,rgba(0,51,255,0.1),rgba(151,125,255,0.08));
-  border:1px solid rgba(151,125,255,0.25);border-radius:10px;
-}
-.ty-nudge-h{font-size:14px;font-weight:600;color:#fff;margin-bottom:4px;}
-.ty-nudge-p{font-size:12px;color:var(--muted2);font-weight:300;line-height:1.6;}
-.ty-cal-wrap{border-radius:12px;overflow:hidden;border:1px solid rgba(151,125,255,0.2);background:#0a0f3a;min-height:580px;}
-.ty-skip{display:block;width:100%;text-align:center;font-size:12px;color:var(--muted);background:transparent;border:none;padding:12px;cursor:pointer;transition:color 0.2s;margin-top:8px;}
-.ty-skip:hover{color:#fff;}
-
 /* === FLOATING PARTICLES === */
 .particles{position:absolute;inset:0;pointer-events:none;overflow:hidden;}
 .particle{position:absolute;border-radius:50%;animation:float linear infinite;}
@@ -748,17 +338,223 @@ input,textarea,select{font-size:16px;}
   100%{transform:translateY(-100vh) translateX(30px);opacity:0;}
 }
 
-/* Geo-pricing badge */
-.geo-badge{
-  display:none;align-items:center;gap:8px;
-  background:rgba(151,125,255,0.08);
-  border:1px solid rgba(151,125,255,0.2);
-  border-radius:6px;padding:8px 14px;
-  margin-top:12px;font-size:12px;color:var(--muted2);
-  text-align:center;justify-content:center;
+/* === APPLICATION MODAL === */
+.app-overlay{
+  position:fixed;inset:0;z-index:1100;
+  display:flex;align-items:center;justify-content:center;padding:12px;
+  opacity:0;pointer-events:none;transition:opacity 0.3s ease;
 }
-.geo-badge .geo-flag{font-size:16px;}
-.geo-price-tag{color:var(--violet);font-weight:600;}
+.app-overlay.active{opacity:1;pointer-events:all;}
+.app-bg{position:absolute;inset:0;background:rgba(0,2,50,0.92);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);}
+.app-modal{
+  position:relative;z-index:1;width:100%;max-width:560px;
+  background:#060932;border:1px solid var(--borderv);border-radius:16px;
+  box-shadow:0 40px 120px rgba(0,0,0,0.8),0 0 80px rgba(151,125,255,0.1);
+  overflow:hidden;max-height:92vh;display:flex;flex-direction:column;
+  transform:scale(0.97);transition:transform 0.3s ease;
+}
+.app-overlay.active .app-modal{transform:scale(1);}
+.app-modal::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--violet),#FF6B9D);}
+.app-head{padding:24px 28px 0;flex-shrink:0;}
+.app-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;}
+.app-brand{font-size:10px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;}
+.app-close{
+  width:28px;height:28px;border-radius:6px;
+  background:rgba(255,255,255,0.06);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;color:var(--muted2);cursor:pointer;transition:all 0.2s;
+}
+.app-close:hover{border-color:var(--violet);color:var(--violet);}
+.app-prog-track{height:3px;background:rgba(255,255,255,0.06);border-radius:3px;overflow:hidden;}
+.app-prog-fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--violet));border-radius:3px;transition:width 0.5s ease;width:33%;}
+.app-step-lbl{font-size:11px;color:var(--muted);letter-spacing:0.06em;margin-top:12px;margin-bottom:4px;}
+.app-body{padding:4px 28px 20px;overflow-y:auto;flex:1;}
+.app-q{font-family:var(--serif);font-size:clamp(18px,3vw,24px);font-weight:300;color:#fff;line-height:1.25;margin-bottom:4px;letter-spacing:-0.01em;}
+.app-hint{font-size:12px;color:var(--muted);margin-bottom:18px;font-style:italic;}
+.app-opts{display:flex;flex-direction:column;gap:7px;}
+.app-opt{
+  display:flex;align-items:center;gap:11px;
+  padding:14px 16px;border:1px solid var(--border);
+  background:rgba(255,255,255,0.02);border-radius:8px;
+  cursor:pointer;transition:all 0.15s;text-align:left;width:100%;
+}
+.app-opt:hover{border-color:var(--borderv);background:rgba(151,125,255,0.06);}
+.app-opt.sel{border-color:var(--violet);background:rgba(151,125,255,0.1);}
+.app-dot{width:18px;height:18px;border-radius:50%;border:2px solid var(--border);flex-shrink:0;transition:all 0.15s;display:flex;align-items:center;justify-content:center;}
+.app-opt.sel .app-dot{background:var(--violet);border-color:var(--violet);}
+.app-opt.sel .app-dot::after{content:'';width:6px;height:6px;background:#fff;border-radius:50%;}
+.app-txt{font-size:14px;color:var(--muted2);transition:color 0.15s;line-height:1.3;}
+.app-opt.sel .app-txt{color:#fff;}
+.app-foot{
+  padding:12px 28px 20px;flex-shrink:0;
+  border-top:1px solid rgba(255,255,255,0.06);
+  display:flex;align-items:center;justify-content:space-between;
+}
+.app-back-btn{font-size:12px;color:var(--muted);background:transparent;padding:8px 0;cursor:pointer;border:none;transition:color 0.2s;}
+.app-back-btn:hover{color:#fff;}
+.app-next-btn{
+  font-size:12px;font-weight:600;letter-spacing:0.04em;
+  background:var(--blue);color:#fff;padding:10px 26px;border-radius:7px;
+  transition:all 0.2s;border:none;
+}
+.app-next-btn:hover:not(:disabled){background:var(--blue2);}
+.app-next-btn:disabled{opacity:0.3;cursor:not-allowed;}
+
+/* Missing Piece Result */
+.mp-result{padding:8px 0;}
+.mp-greeting{font-size:12px;color:var(--violet);letter-spacing:0.08em;margin-bottom:8px;text-transform:uppercase;}
+.mp-title{font-family:var(--serif);font-size:24px;font-weight:300;color:#fff;margin-bottom:8px;line-height:1.2;}
+.mp-sub{font-size:13px;color:var(--muted2);margin-bottom:24px;line-height:1.7;font-weight:300;}
+.mp-compare{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px;}
+@media(max-width:480px){.mp-compare{grid-template-columns:1fr;}}
+.mp-card{border-radius:10px;padding:18px;}
+.mp-diy{background:rgba(255,255,255,0.03);border:1px solid var(--border);}
+.mp-call{background:linear-gradient(135deg,rgba(0,51,255,0.1),rgba(151,125,255,0.08));border:1px solid var(--borderv);}
+.mp-lbl{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px;}
+.mp-diy .mp-lbl{color:var(--muted);}
+.mp-call .mp-lbl{color:var(--violet);}
+.mp-item{font-size:12px;display:flex;align-items:flex-start;gap:6px;line-height:1.4;margin-bottom:6px;}
+.mp-diy .mp-item{color:var(--muted);}
+.mp-call .mp-item{color:var(--muted2);}
+.mp-btns{display:flex;flex-direction:column;gap:8px;}
+.mp-call-btn{
+  display:block;width:100%;text-align:center;font-size:14px;font-weight:600;
+  background:var(--blue);color:#fff;padding:14px;border-radius:8px;
+  transition:all 0.2s;cursor:pointer;border:none;box-shadow:0 0 24px rgba(0,51,255,0.28);
+}
+.mp-call-btn:hover{background:var(--blue2);}
+.mp-free-btn{
+  display:block;width:100%;text-align:center;font-size:12px;font-weight:400;
+  color:var(--muted2);background:transparent;padding:11px;border-radius:8px;
+  border:1px solid var(--border);transition:all 0.2s;cursor:pointer;
+}
+.mp-free-btn:hover{color:#fff;border-color:rgba(255,255,255,0.2);}
+.mp-note{font-size:11px;color:var(--muted);text-align:center;margin-top:10px;line-height:1.5;}
+
+/* === TABLET === */
+@media(max-width:1024px){
+  nav{padding:0 28px;}
+  .section{padding:64px 24px;}
+  .vsec{padding:0 24px 64px;}
+  .call-section{padding:72px 24px;}
+  .about-grid{gap:48px;}
+  .pain-grid,.feat-grid{gap:10px;}
+  .rv-cards{gap:10px;}
+  .cal-embed-wrap,.cal-glow-wrap-inner{min-height:640px;}
+}
+
+/* === MOBILE === */
+@media(max-width:640px){
+  nav{padding:0 14px;height:56px;}
+  .nav-links{gap:0;}
+  .nav-links .nav-a{display:none;}
+  .nav-btn{padding:10px 18px;font-size:11px;margin-left:0;white-space:nowrap;}
+  .logo{font-size:17px;}
+  .hero{padding:86px 16px 56px;min-height:auto;}
+  .hero::after{width:100%;height:420px;top:-10%;}
+  .hcontent{width:100%;max-width:100%;padding:0;}
+  .hh{font-size:clamp(32px,8vw,48px);line-height:1.1;margin-bottom:16px;word-wrap:break-word;}
+  .hsub{font-size:14px;line-height:1.7;margin-bottom:28px;padding:0;max-width:100%;}
+  .hcta{padding:14px 28px;font-size:13px;width:auto;max-width:100%;justify-content:center;}
+  .hbadge{font-size:10px;padding:5px 12px;margin-bottom:20px;}
+  .hstats{gap:16px;margin-top:32px;justify-content:center;width:100%;}
+  .hs{min-width:0;}
+  .hs-n{font-size:22px;}
+  .hs-l{font-size:9px;white-space:nowrap;}
+  .hs-sep{height:24px;}
+  .section{padding:56px 18px;}
+  .vsec{padding:0 18px 56px;}
+  .call-section{padding:64px 18px;}
+  .sh{font-size:clamp(26px,7.5vw,38px);line-height:1.2;}
+  .ssub{font-size:14px;line-height:1.7;}
+  .qtrig{flex-direction:column;align-items:stretch;padding:18px 20px;gap:14px;text-align:center;}
+  .qtrig-btn{width:100%;padding:13px;}
+  .qtrig-title{font-size:17px;}
+  .about-grid{gap:56px;}
+  .about-photo{max-width:260px;margin:0 auto;}
+  .about-txt p{font-size:14px;line-height:1.8;}
+  .ptag{padding:9px 16px;}
+  .pain-grid{margin-top:36px;gap:10px;}
+  .pain-card{padding:22px 20px;}
+  .pain-card h3{font-size:14px;}
+  .pain-card p{font-size:12.5px;}
+  .pain-n{font-size:32px;margin-bottom:10px;}
+  .feat-grid{margin-top:36px;gap:10px;}
+  .fc{padding:20px 18px;}
+  .feat-imgs{grid-template-columns:1fr;gap:10px;margin-top:28px;}
+  .decoy-grid{margin-top:36px;gap:14px;}
+  .dc{padding:28px 22px;}
+  .dc-title{font-size:24px;}
+  .rv-cards{margin-top:28px;gap:10px;}
+  .rv-card{padding:20px 18px;}
+  .rv-stars{font-size:11px;margin-bottom:10px;}
+  .rv-q{font-size:13px;line-height:1.65;margin-bottom:14px;}
+  .rv-av{width:30px;height:30px;font-size:13px;}
+  .rv-name{font-size:12px;}
+  .rv-meta{font-size:10px;}
+  .rv-tag{font-size:8px;padding:1px 6px;}
+  .gal-label{margin-top:36px;margin-bottom:18px;font-size:10px;}
+  .gal-stream{max-width:100%;gap:8px;padding:0 4px;}
+  .gal-item{border-radius:8px;}
+  .faq-list{margin-top:36px;}
+  .faq-q{padding:14px 16px;font-size:13.5px;}
+  .faq-body{padding:12px 16px 14px;font-size:12.5px;}
+  .cta-box{padding:40px 24px;}
+  .cta-btns{flex-direction:column;gap:8px;}
+  .cta-btns .hcta,.cta-btns .btn-out{width:100%;}
+  .hero-call-card{padding:18px 16px;margin-top:20px;max-width:100%;width:100%;}
+  .hero-call-inner{flex-direction:column;text-align:center;gap:12px;}
+  .hero-call-left{text-align:center;}
+  .hero-call-eyebrow{font-size:10px;}
+  .hero-call-title{font-size:14px;line-height:1.4;}
+  .hero-call-sub{font-size:11px;line-height:1.5;}
+  .hero-call-btn{width:100%;text-align:center;padding:13px 18px;font-size:12px;}
+  .hero-call-pulse{width:100px;height:100px;top:-40px;right:-40px;}
+  .call-header{margin-bottom:36px;}
+  .call-why{grid-template-columns:1fr;gap:10px;margin-bottom:36px;}
+  .why-card{padding:20px 18px;}
+  .cal-embed-wrap,.cal-glow-wrap-inner{min-height:560px;border-radius:14px;}
+  .app-head{padding:20px 20px 0;}
+  .app-body{padding:4px 20px 16px;}
+  .app-foot{padding:12px 20px 18px;}
+  .app-opt{padding:12px 13px;}
+}
+
+/* === SMALL MOBILE === */
+@media(max-width:420px){
+  nav{padding:0 12px;height:54px;}
+  .logo{font-size:15px;}
+  .nav-btn{padding:8px 12px;font-size:10px;}
+  .hero{padding:80px 14px 48px;}
+  .hh{font-size:clamp(26px,8vw,36px);}
+  .hsub{font-size:13px;}
+  .hcta{padding:12px 24px;font-size:12px;}
+  .hstats{gap:10px;flex-wrap:wrap;}
+  .hs-n{font-size:20px;}
+  .hs-l{font-size:8px;}
+  .hs-sep{display:none;}
+  .hero-call-card{padding:16px 14px;}
+  .hero-call-title{font-size:13px;}
+  .hero-call-sub{font-size:10px;}
+  .hero-call-btn{padding:11px 16px;font-size:11px;}
+  .section{padding:48px 14px;}
+  .sh{font-size:clamp(22px,6.5vw,28px);}
+  .dc{padding:24px 18px;}
+  .dc-title{font-size:20px;}
+  .cta-box{padding:34px 18px;}
+  .cal-embed-wrap,.cal-glow-wrap-inner{min-height:520px;}
+}
+
+/* === TOUCH === */
+@media(hover:none){
+  .pain-card:hover,.fc:hover,.rv-card:hover,.dc-diy:hover,.dc-call:hover,.why-card:hover{transform:none;}
+  .hcta:hover,.hero-call-btn:hover{transform:none;}
+}
+
+/* Prevent horizontal scroll */
+html,body{max-width:100vw;overflow-x:hidden;}
+*{box-sizing:border-box;}
+input,textarea,select{font-size:16px;}
 </style>
 </head>
 <body>
@@ -771,84 +567,75 @@ input,textarea,select{font-size:16px;}
     <div class="nav-a" onclick="scrollToId('reviews')">Reviews</div>
     <div class="nav-a" onclick="scrollToId('faq')">FAQ</div>
     <div class="nav-a" onclick="scrollToId('book-call')" style="color:var(--violet);font-weight:600;">Book a Call</div>
-    <button class="nav-btn" onclick="scrollToId('book-call')">Book a Call</button>
+    <button class="nav-btn" onclick="openApplication()">Apply for Strategy Session</button>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hcontent reveal">
-    <div class="hbadge"><span class="bdot"></span>Free budget template &nbsp;·&nbsp; 3,000+ people &nbsp;·&nbsp; 4.8 ★</div>
-    <h1 class="hh" id="geoHeroH">Stop wondering<br>where your<br><em>money went</em></h1>
-    <p class="hsub" id="geoHeroSub">Get the free personalised budget template. Takes 2 minutes. See exactly where your salary is leaking — and fix it for good.</p>
+    <div class="hbadge"><span class="bdot"></span>Free budget template + strategy session</div>
+    <h1 class="hh">Stop wondering<br>where your<br><em>money went</em></h1>
+    <p class="hsub">Get the free personalised budget template. Then apply for a strategy session where Gopu builds your complete financial system live.</p>
 
-    <!-- Primary CTA: Free Template -->
-    <button class="hcta" onclick="requireAudit()">Get the Free Budget Template <span>→</span></button>
+    <!-- Primary CTA: Apply for Strategy Session -->
+    <button class="hcta" onclick="openApplication()">Apply for a Strategy Session <span>&#8594;</span></button>
 
-    <!-- Book a Call — styled as a glowing secondary card -->
+    <!-- Book a Call Card -->
     <div class="hero-call-card">
       <div class="hero-call-pulse"></div>
       <div class="hero-call-inner">
         <div class="hero-call-left">
-          <div class="hero-call-eyebrow">🎯 Get a plan built around your life</div>
-          <div class="hero-call-title">Book a 30-minute strategy session with Gopu</div>
-          <div class="hero-call-sub">Your income, your expenses, your goals — reviewed live. Leave with a clear budget and action plan.</div>
+          <div class="hero-call-eyebrow">LIMITED SLOTS AVAILABLE</div>
+          <div class="hero-call-title">Apply for a 30-minute strategy session with Gopu</div>
+          <div class="hero-call-sub">Your income, your expenses, your goals reviewed live. Leave with a complete system built for your life.</div>
         </div>
-        <button class="hero-call-btn" onclick="document.getElementById('book-call').scrollIntoView({behavior:'smooth'})">Book Free Call →</button>
+        <button class="hero-call-btn" onclick="openApplication()">Apply Now &#8594;</button>
       </div>
     </div>
 
     <div class="hstats">
-      <div class="hs"><div class="hs-n">3,000+</div><div class="hs-l">Users globally</div></div>
+      <div class="hs"><div class="hs-n">3,000+</div><div class="hs-l">People helped</div></div>
       <div class="hs-sep"></div>
-      <div class="hs"><div class="hs-n" id="geoAvgSavings">₹8,000</div><div class="hs-l">Avg extra saved/month</div></div>
+      <div class="hs"><div class="hs-n">30 min</div><div class="hs-l">Strategy sessions</div></div>
       <div class="hs-sep"></div>
-      <div class="hs"><div class="hs-n">₹80K–5L</div><div class="hs-l">Extra saved per year</div></div>
-      <div class="hs-sep"></div>
-      <div class="hs"><div class="hs-n">4.8 ★</div><div class="hs-l">Average rating</div></div>
+      <div class="hs"><div class="hs-n">4.8 &#9733;</div><div class="hs-l">Average rating</div></div>
     </div>
   </div>
 </section>
 
-<!-- BOOK A CALL — RIGHT AFTER HERO, UNMISSABLE -->
+<!-- INLINE CALENDAR — ONE-CLICK BOOKING (NO POPUP) -->
 <section id="book-call" style="padding:0 20px 80px;background:linear-gradient(180deg,rgba(0,51,255,0.05) 0%,transparent 100%);position:relative;overflow:hidden;">
-
-  <!-- Floating particles -->
   <div class="particles" id="calParticles"></div>
-
   <div style="max-width:900px;margin:0 auto;position:relative;z-index:1;">
-
-    <!-- Header -->
     <div style="text-align:center;padding-bottom:36px;" class="reveal">
-      <div class="slabel" style="justify-content:center;">📞 Free Strategy Call</div>
-      <h2 class="sh" style="text-align:center;">Pick a time. Gopu will fix your <em>money leaks live.</em></h2>
+      <div class="slabel" style="justify-content:center;">STRATEGY SESSION</div>
+      <h2 class="sh" style="text-align:center;">Pick a time. Gopu will build your <em>complete system live.</em></h2>
       <p style="font-size:15px;color:var(--muted2);font-weight:300;line-height:1.75;max-width:540px;margin:12px auto 0;">
-        30 minutes. Your exact numbers. Leave with a clear budget structure, your #1 money leak identified, You leave with full clarity and a session recap.
+        30 minutes. Your exact numbers. Leave with a complete budget structure, automated dashboards, and a clear action plan.
       </p>
     </div>
 
-    <!-- 3 trust chips -->
+    <!-- Trust chips -->
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:32px;" class="reveal">
-      <div style="display:flex;align-items:center;gap:7px;background:rgba(151,125,255,0.08);border:1px solid rgba(151,125,255,0.2);border-radius:100px;padding:7px 16px;font-size:12px;color:var(--muted2);">✅ Find your #1 money leak in 10 min</div>
-      <div style="display:flex;align-items:center;gap:7px;background:rgba(151,125,255,0.08);border:1px solid rgba(151,125,255,0.2);border-radius:100px;padding:7px 16px;font-size:12px;color:var(--muted2);">📋 Full session recap sent after</div>
-      <div style="display:flex;align-items:center;gap:7px;background:rgba(151,125,255,0.08);border:1px solid rgba(151,125,255,0.2);border-radius:100px;padding:7px 16px;font-size:12px;color:var(--muted2);">📋 Session recap sent after</div>
+      <div style="display:flex;align-items:center;gap:7px;background:rgba(151,125,255,0.08);border:1px solid rgba(151,125,255,0.2);border-radius:100px;padding:7px 16px;font-size:12px;color:var(--muted2);">Complete 9-tab system built for you</div>
+      <div style="display:flex;align-items:center;gap:7px;background:rgba(151,125,255,0.08);border:1px solid rgba(151,125,255,0.2);border-radius:100px;padding:7px 16px;font-size:12px;color:var(--muted2);">EMI + SIP + Goals setup</div>
+      <div style="display:flex;align-items:center;gap:7px;background:rgba(151,125,255,0.08);border:1px solid rgba(151,125,255,0.2);border-radius:100px;padding:7px 16px;font-size:12px;color:var(--muted2);">Session recap sent after</div>
     </div>
 
-    <!-- Glowing animated calendar embed -->
+    <!-- EMBEDDED CALENDAR — INLINE, NO POPUP -->
     <div class="cal-glow-wrap reveal">
       <div class="cal-glow-wrap-inner">
         <div style="width:100%;height:100%;min-height:680px;overflow:scroll" id="my-cal-inline-30min"></div>
       </div>
     </div>
 
-    <p style="text-align:center;margin-top:14px;font-size:12px;color:var(--muted);">Live 1-on-1 video call · 30 minutes · Mon–Sat</p>
+    <p style="text-align:center;margin-top:14px;font-size:12px;color:var(--muted);">Live 1-on-1 video call with Gopu | 30 minutes | Mon-Sat</p>
 
-    <!-- Fallback -->
     <div style="margin-top:28px;text-align:center;" class="reveal">
-      <p style="font-size:13px;color:var(--muted);margin-bottom:10px;">Prefer to start with just the free template?</p>
-      <button onclick="requireAudit()" style="font-size:12px;font-weight:500;color:var(--muted2);background:transparent;border:1px solid var(--border);padding:10px 22px;border-radius:7px;cursor:pointer;transition:all 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--muted2)'">Get Free Template →</button>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:10px;">Want to start with just the free basic template?</p>
+      <button onclick="getFreeTemplate()" style="font-size:12px;font-weight:500;color:var(--muted2);background:transparent;border:1px solid var(--border);padding:10px 22px;border-radius:7px;cursor:pointer;transition:all 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--muted2)'">Download Free Template &#8594;</button>
     </div>
-
   </div>
 </section>
 
@@ -863,7 +650,7 @@ Cal.ns["30min"]("inline", {
 Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
 </script>
 
-<!-- Spawn floating particles in calendar section -->
+<!-- Floating particles -->
 <script>
 (function(){
   var c = document.getElementById('calParticles');
@@ -891,13 +678,13 @@ Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
     <div class="vwrap">
       <wistia-player media-id="n9wv5mr1hy" aspect="1.7777777777777777"></wistia-player>
     </div>
-    <p class="vcap">Watch this first — it shows exactly how the system works</p>
-    <div class="qtrig" onclick="openQuiz()">
+    <p class="vcap">Watch this first to see how the complete system transforms your finances</p>
+    <div class="qtrig" onclick="openApplication()">
       <div>
-        <div class="qtrig-title">Take your personalised <em>money audit</em></div>
-        <div class="qtrig-sub">10 questions · Graphical breakdown · See your financial future</div>
+        <div class="qtrig-title">Ready to get your <em>complete system?</em></div>
+        <div class="qtrig-sub">Apply for a strategy session | Limited slots available</div>
       </div>
-      <div class="qtrig-btn">Start Now →</div>
+      <div class="qtrig-btn">Apply Now &#8594;</div>
     </div>
   </div>
 </section>
@@ -914,10 +701,10 @@ Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
       </div>
       <div class="about-txt">
         <div class="slabel">Your Financial Consultant</div>
-        <h2 class="sh" id="geoAboutH">Over 3,000 clients. One proven system. <em>Real results.</em></h2>
-        <p id="geoAboutP1">As a Personal Finance Consultant with a Mathematics background, I've spent years helping individuals and families transform their financial habits. After consulting with hundreds of clients, I noticed the same problem: existing tools weren't designed for how we actually earn and spend in India.</p>
-        <p id="geoAboutP2"><strong>So I built a system that works.</strong> My clients consistently save ₹8,000–₹20,000 more every month — without earning a single rupee more. The results speak for themselves: ₹80,000 to ₹2 lakh recovered per year, just by implementing the right system.</p>
-        <button class="btnp" onclick="document.getElementById('book-call').scrollIntoView({behavior:'smooth'})">📞 Book a Free Strategy Call →</button>
+        <h2 class="sh">Over 3,000 clients. One proven system. <em>Real results.</em></h2>
+        <p>As a Personal Finance Consultant with a Mathematics background, I have spent years helping individuals and families transform their financial habits. After consulting with hundreds of clients, I noticed the same problem: existing tools were not designed for how we actually earn and spend.</p>
+        <p><strong>So I built a complete system that works.</strong> My clients consistently find and fix their money leaks within the first session. The results speak for themselves: complete clarity on spending, automated tracking, and a clear path to their financial goals.</p>
+        <button class="btnp" onclick="openApplication()">Apply for a Strategy Session &#8594;</button>
       </div>
     </div>
   </div>
@@ -930,95 +717,86 @@ Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
   <div class="inner">
     <div class="reveal">
       <div class="slabel">The Problem</div>
-      <h2 class="sh" id="geoPainTitle">Does any of this sound familiar?</h2>
-      <p class="ssub">If yes — you're not bad with money. You just don't have the right system yet.</p>
+      <h2 class="sh">Does any of this sound familiar?</h2>
+      <p class="ssub">If yes, you are not bad with money. You just do not have the right system yet.</p>
     </div>
     <div class="pain-grid">
-      <div class="pain-card reveal d1"><div class="pain-n">01</div><h3 id="geoPain1H">Salary gone by the 20th</h3><p id="geoPain1P">You earn well. But every month the same sinking feeling hits — and you genuinely can't explain why.</p></div>
-      <div class="pain-card reveal d2"><div class="pain-n">02</div><h3 id="geoPain2H">No idea where it went</h3><p id="geoPain2P">₹40,000 salary. Zero savings. Money disappears between UPI, subscriptions, and Swiggy orders.</p></div>
-      <div class="pain-card reveal d3"><div class="pain-n">03</div><h3 id="geoPain3H">Apps that never stuck</h3><p id="geoPain3P">Walnut. Money Manager. A notes list. Used each for 4 days. None understood Indian expenses or EMIs.</p></div>
-      <div class="pain-card reveal d4"><div class="pain-n">04</div><h3 id="geoPain4H">No safety net</h3><p id="geoPain4P">One unexpected bill and everything falls apart. No emergency fund, no buffer, no financial safety.</p></div>
+      <div class="pain-card reveal d1"><div class="pain-n">01</div><h3>Salary gone by the 20th</h3><p>You earn well. But every month the same sinking feeling hits and you genuinely cannot explain why.</p></div>
+      <div class="pain-card reveal d2"><div class="pain-n">02</div><h3>No idea where it went</h3><p>Money disappears between UPI, subscriptions, and food orders. Zero visibility on your spending.</p></div>
+      <div class="pain-card reveal d3"><div class="pain-n">03</div><h3>Apps that never stuck</h3><p>Tried Walnut, Money Manager, a notes list. Used each for 4 days. None understood your actual life.</p></div>
+      <div class="pain-card reveal d4"><div class="pain-n">04</div><h3>No safety net</h3><p>One unexpected bill and everything falls apart. No emergency fund, no buffer, no financial safety.</p></div>
     </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- FEATURES -->
+<!-- FEATURES (THE MISSING PIECE) -->
 <section class="section" id="features">
   <div class="inner">
     <div class="reveal">
-      <div class="slabel">What's Inside</div>
-      <h2 class="sh">A complete money <em>management system</em></h2>
-      <p class="ssub" id="geoFeatSub">Not just a spreadsheet — a full financial operating system built for Indian life.</p>
+      <div class="slabel">The Complete Ecosystem</div>
+      <h2 class="sh">The free template is just <em>one piece</em></h2>
+      <p class="ssub">The basic expense tracker helps you see problems. The complete Advanced System helps you fix them forever.</p>
     </div>
     <div class="feat-grid">
-      <div class="fc reveal d1"><div class="fc-icon">📊</div><h3>50/30/20 Auto-Calculator</h3><p>Enter income once. Splits into Needs, Wants, Savings automatically.</p></div>
-      <div class="fc reveal d2"><div class="fc-icon">🏦</div><h3>Bank Account Tracker</h3><p>All accounts in one view. Always know where your money sits.</p></div>
-      <div class="fc reveal d3"><div class="fc-icon">📈</div><h3 id="geoFeat3H">SIP & Investment Tracker</h3><p id="geoFeat3P">Track monthly SIPs, project wealth over 1, 3, 5 years.</p></div>
-      <div class="fc reveal d1"><div class="fc-icon">💳</div><h3 id="geoFeat4H">EMI & Debt Planner</h3><p id="geoFeat4P">All loans in one place. See what % of income goes to debt.</p></div>
-      <div class="fc reveal d2"><div class="fc-icon">🎯</div><h3>Savings Goal Tracker</h3><p>Emergency fund, trip, wedding — track progress automatically.</p></div>
-      <div class="fc reveal d3"><div class="fc-icon">📅</div><h3>Bill & Payment Calendar</h3><p>Every due date in one calendar. Never get surprised again.</p></div>
-      <div class="fc reveal d1"><div class="fc-icon">📉</div><h3>Annual Dashboard</h3><p>Full year — income vs expenses vs savings, month by month.</p></div>
-      <div class="fc reveal d2"><div class="fc-icon">💰</div><h3>Net Worth Tracker</h3><p>Track money set aside for future goals. Watch position grow.</p></div>
-      <div class="fc reveal d3"><div class="fc-icon">🎬</div><h3>Full Video Tutorial</h3><p>Every tab explained. Set up in 20 minutes — no experience needed.</p></div>
+      <div class="fc reveal d1"><div class="fc-icon">&#128202;</div><h3>50/30/20 Auto-Calculator</h3><p>Enter income once. Splits into Needs, Wants, Savings automatically.</p></div>
+      <div class="fc reveal d2"><div class="fc-icon">&#127974;</div><h3>Bank Account Tracker</h3><p>All accounts in one view. Always know where your money sits.</p></div>
+      <div class="fc reveal d3"><div class="fc-icon">&#128200;</div><h3>SIP + Investment Tracker</h3><p>Track monthly SIPs, project wealth over 1, 3, 5 years.</p></div>
+      <div class="fc reveal d1"><div class="fc-icon">&#128179;</div><h3>EMI + Debt Planner</h3><p>All loans in one place. See what % of income goes to debt.</p></div>
+      <div class="fc reveal d2"><div class="fc-icon">&#127919;</div><h3>Savings Goal Tracker</h3><p>Emergency fund, trip, wedding, track progress automatically.</p></div>
+      <div class="fc reveal d3"><div class="fc-icon">&#128197;</div><h3>Bill + Payment Calendar</h3><p>Every due date in one calendar. Never get surprised again.</p></div>
+      <div class="fc reveal d1"><div class="fc-icon">&#128201;</div><h3>Annual Dashboard</h3><p>Full year income vs expenses vs savings, month by month.</p></div>
+      <div class="fc reveal d2"><div class="fc-icon">&#128176;</div><h3>Net Worth Tracker</h3><p>Track money set aside for future goals. Watch position grow.</p></div>
+      <div class="fc reveal d3"><div class="fc-icon">&#127916;</div><h3>Full Video Tutorial</h3><p>Every tab explained. Set up in 20 minutes, no experience needed.</p></div>
     </div>
-
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- PRICING -->
-<section class="section secalt" id="pricing">
+<!-- DECOY COMPARISON (DIY vs STRATEGY CALL) -->
+<section class="section secalt" id="compare">
   <div class="inner">
     <div class="reveal" style="text-align:center">
-      <div class="slabel" style="justify-content:center">Get Started</div>
-      <h2 class="sh">Start free. Then get a <em>personalised strategy</em></h2>
-      <p class="ssub" style="margin:12px auto 0;text-align:center">The template is free. The strategy call is where the real change happens.</p>
+      <div class="slabel" style="justify-content:center">Your Options</div>
+      <h2 class="sh">Two paths forward. <em>You choose.</em></h2>
+      <p class="ssub" style="margin:12px auto 0;text-align:center">Get the free basic template and figure it out yourself, or let Gopu build the complete system for you.</p>
     </div>
-    <div class="price-grid reveal">
-      <div class="pc pc-free">
-        <div class="pc-name">Free Template</div>
-        <div class="pc-price"><span class="geo-free-price">₹0</span></div>
-        <div class="pc-period">forever</div>
-        <ul class="pc-list">
-          <li><span class="ld ly">✓</span>Monthly expense tracker (1 tab)</li>
-          <li><span class="ld ln">✗</span>50/30/20 auto-calculator</li>
-          <li><span class="ld ln">✗</span>Bank account tracker</li>
-          <li><span class="ld ln">✗</span>SIP &amp; investment tracker</li>
-          <li><span class="ld ln">✗</span>EMI &amp; debt planner</li>
-          <li><span class="ld ln">✗</span>Savings goal tracker</li>
-          <li><span class="ld ln">✗</span>Annual dashboard</li>
-          <li><span class="ld ln">✗</span>Video tutorial</li>
-          <li><span class="ld ln">✗</span>Personalised plan from Gopu</li>
+    <div class="decoy-grid reveal">
+      <!-- DECOY: DIY Path -->
+      <div class="dc dc-diy">
+        <div class="dc-name">Option A: DIY</div>
+        <div class="dc-title">Get the Free Template</div>
+        <div class="dc-sub">Download the basic expense tracker and figure out your finances on your own.</div>
+        <ul class="dc-list">
+          <li><span class="ld ln">&#8594;</span>1-tab basic expense tracker</li>
+          <li><span class="ld ln">&#8594;</span>See your spending leaks</li>
+          <li><span class="ld ln">&#8594;</span>No guidance on fixing them</li>
+          <li><span class="ld ln">&#8594;</span>No EMI, SIP, or goal tracking</li>
+          <li><span class="ld ln">&#8594;</span>No personalised strategy</li>
+          <li><span class="ld ln">&#8594;</span>Figure it out yourself</li>
         </ul>
-        <button class="pc-btn" onclick="requireAudit()">Get Free Template →</button>
+        <button class="dc-btn" onclick="getFreeTemplate()">Download Free Template</button>
       </div>
-      <div class="pc pc-pro">
-        <div class="pc-badge">Most Impactful</div>
-        <div class="pc-name">Strategy Call</div>
-        <div class="pc-price" style="font-size:36px;padding-top:8px;">30 mins</div>
-        <div class="pc-period">30 minutes · book your slot</div>
-        <ul class="pc-list">
-          <li><span class="ld ly">✓</span>Gopu reviews your exact numbers</li>
-          <li><span class="ld ly">✓</span>Identify your #1 money leak instantly</li>
-          <li><span class="ld ly">✓</span>Personalised budget structure for you</li>
-          <li><span class="ld ly">✓</span>SIP / savings recommendation</li>
-          <li><span class="ld ly">✓</span>Full Pro template included</li>
-          <li><span class="ld ly">✓</span>Session recap & next steps covered</li>
-          <li><span class="ld ly">✓</span>Session recap & next steps covered live</li>
-          <li><span class="ld ly">✓</span>Next steps mapped out live on the call</li>
-          <li><span class="ld ly">✓</span>Walk away with a real plan</li>
+      <!-- TARGET: Strategy Call -->
+      <div class="dc dc-call">
+        <div class="dc-badge">Recommended</div>
+        <div class="dc-name">Option B: Strategy Session</div>
+        <div class="dc-title">Apply for a Free Call</div>
+        <div class="dc-sub">Gopu reviews your numbers live and builds the complete Advanced System with you.</div>
+        <ul class="dc-list">
+          <li><span class="ld ly">&#10003;</span>Complete 9-tab system built for you</li>
+          <li><span class="ld ly">&#10003;</span>Your #1 money leak identified live</li>
+          <li><span class="ld ly">&#10003;</span>Personalised budget structure</li>
+          <li><span class="ld ly">&#10003;</span>EMI + SIP + Goals all set up</li>
+          <li><span class="ld ly">&#10003;</span>Session recap with next steps</li>
+          <li><span class="ld ly">&#10003;</span>Walk away with full clarity</li>
         </ul>
-        <button class="pc-btn" onclick="scrollToId('book-call')">Book Your Free Call →</button>
+        <button class="dc-btn" onclick="openApplication()">Apply for Strategy Session &#8594;</button>
       </div>
     </div>
-    <p class="price-note">30 minutes · Your numbers reviewed live · Clear next steps</p>
-    <div class="geo-badge" id="geoPriceBadge" style="max-width:820px;margin:12px auto 0;">
-      <span class="geo-flag">🌍</span>
-      <span>Showing price for <span class="geo-country"></span> — local pricing applies</span>
-    </div>
+    <p style="text-align:center;margin-top:14px;font-size:11px;color:var(--muted);letter-spacing:0.04em;">Limited slots available each week | 30-minute sessions</p>
   </div>
 </section>
 
@@ -1028,70 +806,70 @@ Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
 <section class="section" id="reviews">
   <div class="inner">
     <div class="reveal" style="text-align:center;margin-bottom:0">
-      <div class="slabel" style="justify-content:center">3,000+ people · Real results</div>
-      <h2 class="sh" style="text-align:center">What people <em>actually saved</em></h2>
-      <p style="text-align:center;font-size:14px;color:var(--muted2);margin-top:8px;">Average: ₹8,000/month extra saved. Top results: ₹80,000–₹2L/year.</p>
+      <div class="slabel" style="justify-content:center">3,000+ people helped</div>
+      <h2 class="sh" style="text-align:center">What people <em>actually achieved</em></h2>
+      <p style="text-align:center;font-size:14px;color:var(--muted2);margin-top:8px;">Real results from real strategy sessions.</p>
     </div>
     <div class="rv-cards">
       <div class="rv-card reveal d1">
-        <div class="rv-stars">★★★★★</div>
-        <p class="rv-q" id="geoRv1Q">"Was blowing ₹14,000/month on food delivery and had <strong>absolutely no idea.</strong> Cut it to ₹4,000. That's ₹1.2L back in my pocket every year."</p>
-        <div class="rv-who"><div class="rv-av" style="background:linear-gradient(135deg,#0033FF,#977DFF)">R</div><div><div class="rv-name" id="geoRv1Name">Rahul M.</div><div class="rv-meta" id="geoRv1Meta">Software Engineer · Bengaluru</div><span class="rv-tag" id="geoRv1Tag">₹1.2L saved/year</span></div></div>
+        <div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rv-q">"Was blowing money on food delivery and had <strong>absolutely no idea.</strong> Gopu found it in 10 minutes. Complete game changer."</p>
+        <div class="rv-who"><div class="rv-av" style="background:linear-gradient(135deg,#0033FF,#977DFF)">R</div><div><div class="rv-name">Rahul M.</div><div class="rv-meta">Software Engineer | Bengaluru</div><span class="rv-tag">Found major leak</span></div></div>
       </div>
       <div class="rv-card reveal d2">
-        <div class="rv-stars">★★★★★</div>
-        <p class="rv-q" id="geoRv2Q">"Found ₹18,000 in forgotten subscriptions and unused memberships. <strong>In one sitting.</strong> Couldn't believe it."</p>
-        <div class="rv-who"><div class="rv-av" style="background:linear-gradient(135deg,#977DFF,#FFCCF2)">P</div><div><div class="rv-name" id="geoRv2Name">Priya S.</div><div class="rv-meta" id="geoRv2Meta">Marketing Manager · Mumbai</div><span class="rv-tag" id="geoRv2Tag">₹18K found instantly</span></div></div>
+        <div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rv-q">"Found forgotten subscriptions and unused memberships. <strong>In one sitting.</strong> My finances finally make sense."</p>
+        <div class="rv-who"><div class="rv-av" style="background:linear-gradient(135deg,#977DFF,#FFCCF2)">P</div><div><div class="rv-name">Priya S.</div><div class="rv-meta">Marketing Manager | Mumbai</div><span class="rv-tag">Complete clarity</span></div></div>
       </div>
       <div class="rv-card reveal d3">
-        <div class="rv-stars">★★★★★</div>
-        <p class="rv-q" id="geoRv3Q">"I was earning ₹1.1L/month and saving zero. <strong>Now I'm saving ₹22,000 every month.</strong> That's ₹2.6L a year I wasn't saving before."</p>
-        <div class="rv-who"><div class="rv-av" style="background:linear-gradient(135deg,#0033FF,#00AAFF)">A</div><div><div class="rv-name" id="geoRv3Name">Arjun N.</div><div class="rv-meta" id="geoRv3Meta">Product Manager · Hyderabad</div><span class="rv-tag" id="geoRv3Tag">₹2.6L saved/year</span></div></div>
+        <div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rv-q">"I was earning well and saving zero. <strong>Now I have a real system.</strong> The session was worth every minute."</p>
+        <div class="rv-who"><div class="rv-av" style="background:linear-gradient(135deg,#0033FF,#00AAFF)">A</div><div><div class="rv-name">Arjun N.</div><div class="rv-meta">Product Manager | Hyderabad</div><span class="rv-tag">System that works</span></div></div>
       </div>
       <div class="rv-card reveal d1">
-        <div class="rv-stars">★★★★★</div>
-        <p class="rv-q">"Called Gopu for a strategy session. <strong>He found three leaks in 15 minutes</strong> that I'd been blind to for two years. Total: ₹9,500/month going nowhere."</p>
-        <div class="rv-who"><div class="rv-av" style="background:linear-gradient(135deg,#FF6B35,#977DFF)">S</div><div><div class="rv-name">Sneha K.</div><div class="rv-meta">Finance Analyst · Pune</div><span class="rv-tag">₹1.14L recovered/year</span></div></div>
+        <div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rv-q">"Called Gopu for a strategy session. <strong>He found three leaks in 15 minutes</strong> that I had been blind to for two years."</p>
+        <div class="rv-who"><div class="rv-av" style="background:linear-gradient(135deg,#FF6B35,#977DFF)">S</div><div><div class="rv-name">Sneha K.</div><div class="rv-meta">Finance Analyst | Pune</div><span class="rv-tag">3 leaks identified</span></div></div>
       </div>
       <div class="rv-card reveal d2">
-        <div class="rv-stars">★★★★★</div>
-        <p class="rv-q">"EMIs were eating 55% of my income. <strong>After the call I restructured everything.</strong> Now it's 32%. I actually have breathing room for the first time."</p>
-        <div class="rv-who"><div class="rv-av" style="background:linear-gradient(135deg,#00CC88,#0033FF)">V</div><div><div class="rv-name">Vikram T.</div><div class="rv-meta">Engineer · Chennai</div><span class="rv-tag">EMI burden cut by half</span></div></div>
+        <div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rv-q">"EMIs were eating 55% of my income. <strong>After the call I restructured everything.</strong> Finally have breathing room."</p>
+        <div class="rv-who"><div class="rv-av" style="background:linear-gradient(135deg,#00CC88,#0033FF)">V</div><div><div class="rv-name">Vikram T.</div><div class="rv-meta">Engineer | Chennai</div><span class="rv-tag">EMI restructured</span></div></div>
       </div>
       <div class="rv-card reveal d3">
-        <div class="rv-stars">★★★★★</div>
-        <p class="rv-q">"Started a SIP of ₹15,000/month after this. <strong>In 3 years that's ₹7L+ in investments.</strong> I had the income. I just had no system."</p>
-        <div class="rv-who"><div class="rv-av" style="background:linear-gradient(135deg,#977DFF,#0033FF)">M</div><div><div class="rv-name">Meera R.</div><div class="rv-meta">Doctor · Delhi</div><span class="rv-tag">₹7L invested in 3 years</span></div></div>
+        <div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="rv-q">"Started a proper SIP after the session. <strong>Never would have figured out the right amount on my own.</strong>"</p>
+        <div class="rv-who"><div class="rv-av" style="background:linear-gradient(135deg,#977DFF,#0033FF)">M</div><div><div class="rv-name">Meera R.</div><div class="rv-meta">Doctor | Delhi</div><span class="rv-tag">Started investing</span></div></div>
       </div>
     </div>
     <p class="gal-label">Real screenshots from real users</p>
     <div class="gal-stream" id="galStream">
-<div class="gal-item"><img src="dm-proof.jpg" alt="User DM" loading="lazy"></div>
-<div class="gal-item"><img src="rv1.jpg" alt="Review" loading="lazy"></div>
-<div class="gal-item"><img src="tweet1.jpg" alt="Tweet" loading="lazy"></div>
-<div class="gal-item"><img src="rv2.jpg" alt="Review" loading="lazy"></div>
-<div class="gal-item"><img src="rv3.jpg" alt="Review" loading="lazy"></div>
-<div class="gal-item"><img src="tweet2.jpg" alt="Review" loading="lazy"></div>
-<div class="gal-item"><img src="rv4.jpg" alt="Review" loading="lazy"></div>
-<div class="gal-item"><img src="rv5.jpg" alt="Review" loading="lazy"></div>
-<div class="gal-item"><img src="rv6.jpg" alt="Review" loading="lazy"></div>
-<div class="gal-item"><img src="rv7.jpg" alt="Review" loading="lazy"></div>
-<div class="gal-item"><img src="rv8.jpg" alt="Review" loading="lazy"></div>
-<div class="gal-item"><img src="rv9.jpg" alt="Review" loading="lazy"></div>
-<div class="gal-item"><img src="rv10.jpg" alt="Review" loading="lazy"></div>
-<div class="gal-item"><img src="rv11.jpg" alt="Review" loading="lazy"></div>
+      <div class="gal-item"><img src="dm-proof.jpg" alt="User DM" loading="lazy"></div>
+      <div class="gal-item"><img src="rv1.jpg" alt="Review" loading="lazy"></div>
+      <div class="gal-item"><img src="tweet1.jpg" alt="Tweet" loading="lazy"></div>
+      <div class="gal-item"><img src="rv2.jpg" alt="Review" loading="lazy"></div>
+      <div class="gal-item"><img src="rv3.jpg" alt="Review" loading="lazy"></div>
+      <div class="gal-item"><img src="tweet2.jpg" alt="Review" loading="lazy"></div>
+      <div class="gal-item"><img src="rv4.jpg" alt="Review" loading="lazy"></div>
+      <div class="gal-item"><img src="rv5.jpg" alt="Review" loading="lazy"></div>
+      <div class="gal-item"><img src="rv6.jpg" alt="Review" loading="lazy"></div>
+      <div class="gal-item"><img src="rv7.jpg" alt="Review" loading="lazy"></div>
+      <div class="gal-item"><img src="rv8.jpg" alt="Review" loading="lazy"></div>
+      <div class="gal-item"><img src="rv9.jpg" alt="Review" loading="lazy"></div>
+      <div class="gal-item"><img src="rv10.jpg" alt="Review" loading="lazy"></div>
+      <div class="gal-item"><img src="rv11.jpg" alt="Review" loading="lazy"></div>
     </div>
   </div>
 </section>
 
-<!-- MINI CALL REMINDER after reviews -->
+<!-- MINI CALL REMINDER -->
 <div style="padding:36px 20px;background:linear-gradient(135deg,rgba(0,51,255,0.1),rgba(151,125,255,0.08));border-top:1px solid rgba(151,125,255,0.15);border-bottom:1px solid rgba(151,125,255,0.15);">
   <div style="max-width:720px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
     <div>
       <div style="font-size:14px;font-weight:600;color:#fff;margin-bottom:4px;">Every one of these results came from having a real system.</div>
-      <div style="font-size:13px;color:var(--muted2);">Book a 30-minute session. Gopu reviews your numbers live and builds yours.</div>
+      <div style="font-size:13px;color:var(--muted2);">Apply for a 30-minute session. Gopu builds your complete system live.</div>
     </div>
-    <button onclick="document.getElementById('book-call').scrollIntoView({behavior:'smooth'})" style="flex-shrink:0;font-size:13px;font-weight:600;background:var(--blue);color:#fff;padding:13px 28px;border-radius:8px;border:none;cursor:pointer;white-space:nowrap;box-shadow:0 0 28px rgba(0,51,255,0.3);">📞 Book Strategy Session →</button>
+    <button onclick="openApplication()" style="flex-shrink:0;font-size:13px;font-weight:600;background:var(--blue);color:#fff;padding:13px 28px;border-radius:8px;border:none;cursor:pointer;white-space:nowrap;box-shadow:0 0 28px rgba(0,51,255,0.3);">Apply for Strategy Session &#8594;</button>
   </div>
 </div>
 
@@ -1105,12 +883,12 @@ Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
       <h2 class="sh" style="text-align:center">Common <em>questions</em></h2>
     </div>
     <div class="faq-list reveal">
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do I need spreadsheet experience?<span class="faq-arr">▾</span></div><div class="faq-a"><div class="faq-body">None at all. A complete video tutorial walks through every tab. Most people are set up within 20 minutes. All calculations happen automatically — you just enter your numbers.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What's the difference between Free and Pro?<span class="faq-arr">▾</span></div><div class="faq-a"><div class="faq-body">Free is one tab — a basic monthly tracker. Pro is a complete system with 9+ tabs, automated dashboards, investment tracker, EMI planner, and annual dashboard.</div></div></div>
-      <div class="faq-item" id="geoFaqBuiltForItem"><div class="faq-q" onclick="toggleFaq(this)" id="geoFaqBuiltForQ">Is it built for Indian expenses?<span class="faq-arr">▾</span></div><div class="faq-a"><div class="faq-body" id="geoFaqBuiltForA">Yes — designed for Indian financial life. EMIs, SIPs, UPI habits, family transfers, festival season. Customise currency, categories, and expense types.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Does it work on mobile?<span class="faq-arr">▾</span></div><div class="faq-a"><div class="faq-body">Yes. Built on Google Sheets — works on Android and iOS. Enter transactions on phone, review dashboards on desktop.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" id="geoFaqPriceQ">What happens on the strategy call?<span class="faq-arr">▾</span></div><div class="faq-a"><div class="faq-body" id="geoFaqPay">It's a live 1-on-1 video call. Gopu reviews your income, expenses and goals in real time, identifies your biggest leaks, and builds a personalised budget structure for your life. You leave the call with full clarity on your numbers and a clear set of next steps.</div></div></div>
-      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How do I get the free template?<span class="faq-arr">▾</span></div><div class="faq-a"><div class="faq-body">Click "Get Free Template", take the quick audit, and you'll get instant access to the Google Sheets file. Make a copy to your own Drive — it's yours.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What happens on the strategy session?<span class="faq-arr">&#9662;</span></div><div class="faq-a"><div class="faq-body">It is a live 1-on-1 video call. Gopu reviews your income, expenses and goals in real time, identifies your biggest leaks, and builds a personalised budget structure for your life. You leave the call with full clarity on your numbers and a clear set of next steps.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is the free template?<span class="faq-arr">&#9662;</span></div><div class="faq-a"><div class="faq-body">The free template is a basic expense tracker with 1 tab. It helps you see where your money is going. For the complete system with automated dashboards, EMI planner, SIP tracker, and goal tracking, you apply for a strategy session.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Why do I need to apply?<span class="faq-arr">&#9662;</span></div><div class="faq-a"><div class="faq-body">Gopu only has limited time each week. The application helps ensure each session goes to someone who is serious about transforming their finances. Answer 3 quick questions and you will see available slots.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do I need spreadsheet experience?<span class="faq-arr">&#9662;</span></div><div class="faq-a"><div class="faq-body">None at all. Gopu walks you through everything on the call. Most people are set up within the 30-minute session. All calculations happen automatically once your numbers are entered.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Does it work on mobile?<span class="faq-arr">&#9662;</span></div><div class="faq-a"><div class="faq-body">Yes. Built on Google Sheets, it works on Android and iOS. Enter transactions on phone, review dashboards on desktop.</div></div></div>
+      <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How do I get the free template?<span class="faq-arr">&#9662;</span></div><div class="faq-a"><div class="faq-body">Click the download link and you will get instant access to the Google Sheets file. Make a copy to your own Drive and it is yours. For the complete system, apply for a strategy session.</div></div></div>
     </div>
   </div>
 </section>
@@ -1119,177 +897,36 @@ Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
 <section class="section">
   <div class="inner">
     <div class="cta-box reveal">
-      <h2>Ready to finally know — and fix — <em>where your money goes?</em></h2>
-      <p>Book a free 30-minute strategy call. Gopu reviews your numbers live and builds a plan that works for your life. Or start with the free template today.</p>
+      <h2>Ready to finally know and fix <em>where your money goes?</em></h2>
+      <p>Apply for a free 30-minute strategy session. Gopu reviews your numbers live and builds a complete system that works for your life. Limited slots available.</p>
       <div class="cta-btns">
-        <button class="btnp" onclick="scrollToId('book-call')">Book a Free Strategy Call →</button>
-        <button class="btn-out" onclick="requireAudit()">Get Free Template</button>
+        <button class="btnp" onclick="openApplication()">Apply for Strategy Session &#8594;</button>
+        <button class="btn-out" onclick="getFreeTemplate()">Just Get Free Template</button>
       </div>
     </div>
   </div>
 </section>
 
-<footer><p>© 2025 Orgatreeker &nbsp;·&nbsp; orgatreeker.com &nbsp;·&nbsp; 3,000+ people worldwide saving more every month</p></footer>
+<footer><p>2025 Orgatreeker | orgatreeker.com | 3,000+ people helped worldwide</p></footer>
 
 <!-- ======================================================
-     THANK YOU MODAL — shown after free template download
+     APPLICATION MODAL (3 QUALIFYING QUESTIONS)
 ====================================================== -->
-<div class="ty-overlay" id="tyOverlay">
-  <div class="ty-bg" onclick="closeTy()"></div>
-  <div class="ty-modal">
-    <div class="ty-top">
-      <div>
-        <div class="ty-check">✅</div>
-        <h2 class="ty-h">Template is opening now.<br><em>Book your strategy session while you're here.</em></h2>
-        <p class="ty-sub">The template tracks your numbers. A 30-minute session with Gopu tells you exactly what to do with them — custom-built around your income, your expenses, your goals.</p>
+<div class="app-overlay" id="appOverlay">
+  <div class="app-bg" onclick="closeApplication()"></div>
+  <div class="app-modal">
+    <div class="app-head">
+      <div class="app-top">
+        <span class="app-brand">STRATEGY SESSION APPLICATION</span>
+        <button class="app-close" onclick="closeApplication()">&#10005;</button>
       </div>
-      <button class="ty-close" onclick="closeTy()">✕</button>
+      <div class="app-prog-track"><div class="app-prog-fill" id="appProgFill"></div></div>
+      <div class="app-step-lbl" id="appStepLbl">Question 1 of 3</div>
     </div>
-    <div class="ty-body">
-      <div class="ty-nudge">
-        <div class="ty-nudge-h">📞 Book your 30-minute strategy session — slots are limited</div>
-        <div class="ty-nudge-p">Gopu reviews your income, expenses and goals live on the call. You leave knowing exactly where your money is going — with a budget structure built for your life and your next steps clear.</div>
-      </div>
-      <div class="ty-cal-wrap">
-        <div style="width:100%;height:100%;min-height:580px;overflow:scroll" id="ty-cal-inline"></div>
-      </div>
-      <button class="ty-skip" onclick="closeTy()">I'll explore the template on my own →</button>
-    </div>
-  </div>
-</div>
-
-<script type="text/javascript">
-/* Lazy-init the thank-you calendar only when the modal opens */
-var tyCalInited = false;
-function initTyCal() {
-  if (tyCalInited) return;
-  tyCalInited = true;
-  Cal.ns["30min"]("inline", {
-    elementOrSelector:"#ty-cal-inline",
-    config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
-    calLink: "gopal-halder/30min",
-  });
-}
-function openTy() {
-  document.getElementById('tyOverlay').classList.add('active');
-  document.body.style.overflow = 'hidden';
-  setTimeout(initTyCal, 300);
-}
-function closeTy() {
-  document.getElementById('tyOverlay').classList.remove('active');
-  document.body.style.overflow = '';
-}
-</script>
-
-<!-- ======================================================
-     QUIZ MODAL
-====================================================== -->
-<div class="qoverlay" id="qoverlay">
-  <div class="qbg" onclick="closeQuiz()"></div>
-  <div class="qmodal">
-    <div class="qhead">
-      <div class="qtop">
-        <span class="qbrand">ORGATREEKER · PERSONALISED AUDIT</span>
-        <button class="qclose" onclick="closeQuiz()">✕</button>
-      </div>
-      <div class="qprog-track"><div class="qprog-fill" id="qProgFill"></div></div>
-      <div class="qstep-lbl" id="qStepLbl"></div>
-    </div>
-    <div class="qbody" id="qBody"></div>
-    <div class="qfoot" id="qFoot">
-      <button class="qback-btn" id="qBackBtn" onclick="qPrev()">← Back</button>
-      <button class="qnext-btn" id="qNextBtn" onclick="qNext()" disabled>Continue →</button>
-    </div>
-  </div>
-</div>
-
-<!-- ======================================================
-     GATE MODAL
-====================================================== -->
-<div class="goverlay" id="goverlay">
-  <div class="gbg" onclick="closeGate()"></div>
-  <div class="gmodal">
-    <div class="ghead">
-      <button class="gclose-btn" onclick="closeGate()">✕</button>
-      <div class="geyebrow">Wait — before the free template</div>
-      <div class="gtitle">4 honest questions. 60 seconds. Then you decide.</div>
-    </div>
-    <!-- Step progress -->
-    <div class="g-prog">
-      <div class="g-step cur" id="gs1">1</div>
-      <div class="g-line"></div>
-      <div class="g-step" id="gs2">2</div>
-      <div class="g-line"></div>
-      <div class="g-step" id="gs3">3</div>
-      <div class="g-line"></div>
-      <div class="g-step" id="gs4">4</div>
-    </div>
-    <div class="gbody">
-      <!-- Q1 -->
-      <div class="gsec" id="gsec1">
-        <div class="gsec-num">Question 1 of 4</div>
-        <div class="gsec-q">How long have you been trying to fix your money situation?</div>
-        <div class="gsec-hint">Every month without a system is money gone forever.</div>
-        <div class="gopts">
-          <button class="gopt" onclick="gPick(this,1)"><span class="gdot"></span><span class="gopt-txt">Just started thinking about it</span></button>
-          <button class="gopt" onclick="gPick(this,1)"><span class="gdot"></span><span class="gopt-txt">A few months — tried apps, nothing worked</span></button>
-          <button class="gopt" onclick="gPick(this,1)"><span class="gdot"></span><span class="gopt-txt">Over a year — I keep saying "next month"</span></button>
-          <button class="gopt" onclick="gPick(this,1)"><span class="gdot"></span><span class="gopt-txt">Too long. This is genuinely affecting my life.</span></button>
-        </div>
-      </div>
-      <!-- Q2 -->
-      <div class="gsec" id="gsec2" style="display:none">
-        <div class="gsec-num">Question 2 of 4</div>
-        <div class="gsec-q">Do you know the exact reason your salary runs out before month end?</div>
-        <div class="gsec-hint">Not a guess — the actual number draining your account.</div>
-        <div class="gopts">
-          <button class="gopt" onclick="gPick(this,2)"><span class="gdot"></span><span class="gopt-txt">Yes — food delivery and eating out</span></button>
-          <button class="gopt" onclick="gPick(this,2)"><span class="gdot"></span><span class="gopt-txt">EMIs eating most of my income</span></button>
-          <button class="gopt" onclick="gPick(this,2)"><span class="gdot"></span><span class="gopt-txt">Subscriptions I keep forgetting about</span></button>
-          <button class="gopt" onclick="gPick(this,2)"><span class="gdot"></span><span class="gopt-txt">Honestly — I don't know exactly</span></button>
-        </div>
-      </div>
-      <!-- Q3 -->
-      <div class="gsec" id="gsec3" style="display:none">
-        <div class="gsec-num">Question 3 of 4</div>
-        <div class="gsec-q">The free version shows problems. What do you actually need to fix them?</div>
-        <div class="gsec-hint">The free version has 1 tab. It cannot do any of these.</div>
-        <div class="gopts">
-          <button class="gopt" onclick="gPick(this,3)"><span class="gdot"></span><span class="gopt-txt">📊 Auto-tracking — know where every rupee goes</span></button>
-          <button class="gopt" onclick="gPick(this,3)"><span class="gdot"></span><span class="gopt-txt">📈 SIP tracker to finally start investing</span></button>
-          <button class="gopt" onclick="gPick(this,3)"><span class="gdot"></span><span class="gopt-txt">💳 EMI planner to pay off debt faster</span></button>
-          <button class="gopt" onclick="gPick(this,3)"><span class="gdot"></span><span class="gopt-txt">🎯 Savings goals I can actually hit</span></button>
-        </div>
-      </div>
-      <!-- Q4 -->
-      <div class="gsec" id="gsec4" style="display:none">
-        <div class="gsec-num">Question 4 of 4</div>
-        <div class="gsec-q">You described what the free version can't do. What's stopping you from getting Pro?</div>
-        <div class="gsec-hint">Honest answer — this helps me understand where you're at.</div>
-        <div class="gopts">
-          <button class="gopt" onclick="gPick(this,4)"><span class="gdot"></span><span class="gopt-txt">₹499 feels like too much right now</span></button>
-          <button class="gopt" onclick="gPick(this,4)"><span class="gdot"></span><span class="gopt-txt">I want to try the free version first</span></button>
-          <button class="gopt" onclick="gPick(this,4)"><span class="gdot"></span><span class="gopt-txt">I'm not sure it'll work for me specifically</span></button>
-          <button class="gopt" onclick="gPick(this,4)"><span class="gdot"></span><span class="gopt-txt">Actually — let me reconsider Pro</span></button>
-        </div>
-      </div>
-      <!-- Upsell revealed after Q4 -->
-      <div class="gupsell" id="gupsell" style="display:none">
-        <h4>You just described exactly what a 30-minute session can solve.</h4>
-        <p>Book a strategy session — Gopu reviews your exact numbers and builds your plan live on the call:</p>
-        <ul class="glist">
-          <li>Find your #1 money leak in the first 10 minutes</li>
-          <li>Custom budget structure for your income and goals</li>
-          <li>SIP / savings / EMI recommendations built for you</li>
-          <li>Session recap with next steps — covered in the call itself</li>
-          <li>Leave the call knowing exactly what to do next</li>
-        </ul>
-        <div class="gpill">30 minutes · Your numbers reviewed live · Clear next steps</div>
-        <button class="ggopro" onclick="closeGate(); setTimeout(function(){ scrollToId('book-call'); }, 300);">Book Your Free Strategy Call →</button>
-      </div>
-    </div>
-    <div class="gfoot">
-      <button class="gfree-btn" onclick="getFree()">I still want the free version →</button>
+    <div class="app-body" id="appBody"></div>
+    <div class="app-foot" id="appFoot">
+      <button class="app-back-btn" id="appBackBtn" onclick="appPrev()" style="visibility:hidden;">&#8592; Back</button>
+      <button class="app-next-btn" id="appNextBtn" onclick="appNext()" disabled>Continue &#8594;</button>
     </div>
   </div>
 </div>
@@ -1316,7 +953,7 @@ var revealObs = new IntersectionObserver(function(entries) {
 }, {threshold: 0.06});
 document.querySelectorAll('.reveal').forEach(function(el){ revealObs.observe(el); });
 
-/* Gallery — one by one */
+/* Gallery reveal */
 var galItems = document.querySelectorAll('.gal-item');
 var galObs = new IntersectionObserver(function(entries) {
   entries.forEach(function(e) {
@@ -1330,1147 +967,181 @@ var galObs = new IntersectionObserver(function(entries) {
 }, {threshold: 0.1, rootMargin: '0px 0px -20px 0px'});
 galItems.forEach(function(el){ galObs.observe(el); });
 
-/* Quiz trigger pulse on scroll */
-var trigPulsed = false;
-window.addEventListener('scroll', function() {
-  if (trigPulsed) return;
-  var t = document.querySelector('.qtrig');
-  if (t && t.getBoundingClientRect().top < window.innerHeight * 0.9) {
-    trigPulsed = true;
-    t.style.borderColor = 'var(--violet)';
-    setTimeout(function(){ t.style.borderColor = ''; }, 1600);
+/* === APPLICATION MODAL (3 QUALIFYING QUESTIONS) === */
+var APP_QUESTIONS = [
+  {
+    q: "How long have you been trying to fix your money situation?",
+    hint: "This helps us understand where you are in your journey.",
+    opts: [
+      "Just started thinking about it",
+      "A few months, tried apps but nothing worked",
+      "Over a year, I keep saying next month",
+      "Too long, this is genuinely affecting my life"
+    ]
+  },
+  {
+    q: "What is your biggest financial pain point right now?",
+    hint: "Be honest. This helps Gopu prepare for your session.",
+    opts: [
+      "Salary runs out before month end",
+      "No idea where my money actually goes",
+      "EMIs and debt eating most of my income",
+      "Cannot seem to save or invest anything"
+    ]
+  },
+  {
+    q: "Are you ready to commit 30 minutes to transform your finances?",
+    hint: "Strategy sessions are limited. We want serious applicants only.",
+    opts: [
+      "Yes, I am ready to take action now",
+      "Yes, but I need the right guidance",
+      "I think so, show me what is possible",
+      "Not sure yet, I want the free template first"
+    ]
   }
-}, {passive: true});
+];
 
-/* === QUIZ ENGINE === */
-var QS_BY_REGION = {
-  india: [
-    {type:'choice', q:"By which date does your salary feel gone?", hint:"Be completely honest.",
-     opts:["😰 Before the 10th","😬 Around the 15th","😐 Around the 20th","😌 Around the 25th","💪 I manage till month end"],
-     scores:[0,1,2,3,4]},
-    {type:'choice', q:"Do you know exactly where every rupee went last month?", hint:"Not roughly — exactly.",
-     opts:["✅ Yes — I track everything","🤔 Roughly yes","😅 Honestly no","🤷 Zero idea"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"How much are you actually saving right now?", hint:"This month's real number.",
-     opts:["😰 Nothing at all","🪙 Under 10% of salary","💰 10–20% of salary","🚀 Over 20%"],
-     scores:[0,1,2,4]},
-    {type:'choice', q:"Do you have an emergency fund — 3 months of expenses saved?", hint:"The single thing separating financially stable people from everyone else.",
-     opts:["✅ Yes — 3+ months covered","🪙 Some savings, not 3 months","😔 Been meaning to start","😰 No — one bad month and I'm in trouble"],
-     scores:[4,2,1,0]},
-    {type:'choice', q:"How much of your income goes to EMIs or loans?", hint:"Add up all monthly EMI payments.",
-     opts:["✅ Zero — no loans","😌 Under 20% of income","😐 20–40% of income","😰 Over 40% — it's a lot"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"What do you spend on food delivery and eating out monthly?", hint:"Swiggy, Zomato, restaurants — combine everything.",
-     opts:["😌 Under ₹2,000","🍕 ₹2,000–₹5,000","😬 ₹5,000–₹10,000","😰 Over ₹10,000"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"How many paid subscriptions are you paying for?", hint:"OTT, apps, gym, music, cloud — all of them.",
-     opts:["📱 1–2 subscriptions","📱 3–5 subscriptions","😬 6–10 subscriptions","🙈 I honestly don't know"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"Have you started a SIP, mutual fund, or any investment?", hint:"Any amount counts — even ₹500/month.",
-     opts:["📈 Yes — investing every month","🤔 Yes, but inconsistently","😔 Meaning to start","❌ Not yet"],
-     scores:[4,2,1,0]},
-    {type:'choice', q:"12 months from today — if nothing changes — where will your finances be?", hint:"Be completely honest with yourself.",
-     opts:["📈 Better — I have a real plan","😐 Exactly the same","📉 Slightly worse, debt creeping up","😰 Significantly worse — this scares me"],
-     scores:[4,2,1,0]}
-  ],
-  north_am: [
-    {type:'choice', q:"By which point in the month does your paycheck feel gone?", hint:"Be completely honest.",
-     opts:["😰 First week — it's gone fast","😬 Around the 2nd week","😐 Around the 3rd week","😌 Last few days","💪 I make it to the next paycheck"],
-     scores:[0,1,2,3,4]},
-    {type:'choice', q:"Do you know exactly where every dollar went last month?", hint:"Not roughly — exactly.",
-     opts:["✅ Yes — I track everything","🤔 Roughly yes","😅 Honestly no","🤷 Zero idea"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"How much are you actually saving right now?", hint:"This month's real number.",
-     opts:["😰 Nothing at all","🪙 Under 10% of income","💰 10–20% of income","🚀 Over 20%"],
-     scores:[0,1,2,4]},
-    {type:'choice', q:"Do you have an emergency fund — 3 months of expenses saved?", hint:"The single thing separating financially stable people from everyone else.",
-     opts:["✅ Yes — 3+ months covered","🪙 Some savings, not 3 months","😔 Been meaning to start","😰 No — one bad month and I'm in trouble"],
-     scores:[4,2,1,0]},
-    {type:'choice', q:"How much of your income goes to debt payments or loans?", hint:"Student loans, car payments, credit cards — add it all up.",
-     opts:["✅ Zero — no debt payments","😌 Under 20% of income","😐 20–40% of income","😰 Over 40% — it's a lot"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"What do you spend on food delivery and eating out monthly?", hint:"DoorDash, Uber Eats, restaurants — combine everything.",
-     opts:["😌 Under $150","🍕 $150–$400","😬 $400–$800","😰 Over $800"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"How many paid subscriptions are you paying for?", hint:"Streaming, apps, gym, cloud storage — all of them.",
-     opts:["📱 1–2 subscriptions","📱 3–5 subscriptions","😬 6–10 subscriptions","🙈 I honestly don't know"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"Are you investing or contributing to retirement (401k, IRA, etc.)?", hint:"Any amount counts.",
-     opts:["📈 Yes — investing every month","🤔 Yes, but inconsistently","😔 Meaning to start","❌ Not yet"],
-     scores:[4,2,1,0]},
-    {type:'choice', q:"12 months from today — if nothing changes — where will your finances be?", hint:"Be completely honest with yourself.",
-     opts:["📈 Better — I have a real plan","😐 Exactly the same","📉 Slightly worse, debt creeping up","😰 Significantly worse — this scares me"],
-     scores:[4,2,1,0]}
-  ],
-  uk: [
-    {type:'choice', q:"By which point in the month does your pay feel gone?", hint:"Be completely honest.",
-     opts:["😰 First week — it goes fast","😬 Around the 2nd week","😐 Around the 3rd week","😌 Last few days","💪 I manage to the next payday"],
-     scores:[0,1,2,3,4]},
-    {type:'choice', q:"Do you know exactly where every pound went last month?", hint:"Not roughly — exactly.",
-     opts:["✅ Yes — I track everything","🤔 Roughly yes","😅 Honestly no","🤷 Zero idea"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"How much are you actually saving right now?", hint:"This month's real number.",
-     opts:["😰 Nothing at all","🪙 Under 10% of income","💰 10–20% of income","🚀 Over 20%"],
-     scores:[0,1,2,4]},
-    {type:'choice', q:"Do you have an emergency fund — 3 months of expenses saved?", hint:"The single thing separating financially stable people from everyone else.",
-     opts:["✅ Yes — 3+ months covered","🪙 Some savings, not 3 months","😔 Been meaning to start","😰 No — one bad month and I'm in trouble"],
-     scores:[4,2,1,0]},
-    {type:'choice', q:"How much of your income goes to debt payments?", hint:"Credit cards, car finance, personal loans — add it all up.",
-     opts:["✅ Zero — no debt payments","😌 Under 20% of income","😐 20–40% of income","😰 Over 40% — it's a lot"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"What do you spend on food delivery and eating out monthly?", hint:"Deliveroo, Just Eat, restaurants — combine everything.",
-     opts:["😌 Under £80","🍕 £80–£200","😬 £200–£400","😰 Over £400"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"How many paid subscriptions are you paying for?", hint:"Streaming, apps, gym, cloud — all of them.",
-     opts:["📱 1–2 subscriptions","📱 3–5 subscriptions","😬 6–10 subscriptions","🙈 I honestly don't know"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"Are you investing or contributing to a pension or ISA?", hint:"Any amount counts.",
-     opts:["📈 Yes — every month","🤔 Yes, but inconsistently","😔 Meaning to start","❌ Not yet"],
-     scores:[4,2,1,0]},
-    {type:'choice', q:"12 months from today — if nothing changes — where will your finances be?", hint:"Be completely honest with yourself.",
-     opts:["📈 Better — I have a real plan","😐 Exactly the same","📉 Slightly worse, debt creeping up","😰 Significantly worse — this scares me"],
-     scores:[4,2,1,0]}
-  ],
-  europe: [
-    {type:'choice', q:"By which point in the month does your salary feel gone?", hint:"Be completely honest.",
-     opts:["😰 First week — it goes fast","😬 Around the 2nd week","😐 Around the 3rd week","😌 Last few days","💪 I manage to the next payday"],
-     scores:[0,1,2,3,4]},
-    {type:'choice', q:"Do you know exactly where every euro went last month?", hint:"Not roughly — exactly.",
-     opts:["✅ Yes — I track everything","🤔 Roughly yes","😅 Honestly no","🤷 Zero idea"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"How much are you actually saving right now?", hint:"This month's real number.",
-     opts:["😰 Nothing at all","🪙 Under 10% of income","💰 10–20% of income","🚀 Over 20%"],
-     scores:[0,1,2,4]},
-    {type:'choice', q:"Do you have an emergency fund — 3 months of expenses saved?", hint:"The single thing separating financially stable people from everyone else.",
-     opts:["✅ Yes — 3+ months covered","🪙 Some savings, not 3 months","😔 Been meaning to start","😰 No — one bad month and I'm in trouble"],
-     scores:[4,2,1,0]},
-    {type:'choice', q:"How much of your income goes to debt payments?", hint:"Car finance, credit cards, personal loans — add it all up.",
-     opts:["✅ Zero — no debt payments","😌 Under 20% of income","😐 20–40% of income","😰 Over 40% — it's a lot"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"What do you spend on food delivery and eating out monthly?", hint:"Delivery apps, restaurants, cafes — combine everything.",
-     opts:["😌 Under €80","🍕 €80–€200","😬 €200–€400","😰 Over €400"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"How many paid subscriptions are you paying for?", hint:"Streaming, apps, gym, cloud — all of them.",
-     opts:["📱 1–2 subscriptions","📱 3–5 subscriptions","😬 6–10 subscriptions","🙈 I honestly don't know"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"Are you investing or contributing to a pension or savings plan?", hint:"Any amount counts.",
-     opts:["📈 Yes — every month","🤔 Yes, but inconsistently","😔 Meaning to start","❌ Not yet"],
-     scores:[4,2,1,0]},
-    {type:'choice', q:"12 months from today — if nothing changes — where will your finances be?", hint:"Be completely honest with yourself.",
-     opts:["📈 Better — I have a real plan","😐 Exactly the same","📉 Slightly worse, debt creeping up","😰 Significantly worse — this scares me"],
-     scores:[4,2,1,0]}
-  ],
-  oceania: [
-    {type:'choice', q:"By which point in the fortnight does your pay feel gone?", hint:"Be completely honest.",
-     opts:["😰 First few days — it's gone fast","😬 About halfway","😐 Around day 10","😌 Last couple of days","💪 I make it to the next payday"],
-     scores:[0,1,2,3,4]},
-    {type:'choice', q:"Do you know exactly where every dollar went last fortnight?", hint:"Not roughly — exactly.",
-     opts:["✅ Yes — I track everything","🤔 Roughly yes","😅 Honestly no","🤷 Zero idea"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"How much are you actually saving right now?", hint:"This fortnight's real number.",
-     opts:["😰 Nothing at all","🪙 Under 10% of income","💰 10–20% of income","🚀 Over 20%"],
-     scores:[0,1,2,4]},
-    {type:'choice', q:"Do you have an emergency fund — 3 months of expenses saved?", hint:"The single thing separating financially stable people from everyone else.",
-     opts:["✅ Yes — 3+ months covered","🪙 Some savings, not 3 months","😔 Been meaning to start","😰 No — one bad month and I'm in trouble"],
-     scores:[4,2,1,0]},
-    {type:'choice', q:"How much of your income goes to debt payments?", hint:"Car loan, credit cards, personal loans, HECS — add it all up.",
-     opts:["✅ Zero — no debt payments","😌 Under 20% of income","😐 20–40% of income","😰 Over 40% — it's a lot"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"What do you spend on food delivery and eating out monthly?", hint:"Uber Eats, DoorDash, restaurants — combine everything.",
-     opts:["😌 Under $100","🍕 $100–$300","😬 $300–$600","😰 Over $600"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"How many paid subscriptions are you paying for?", hint:"Streaming, apps, gym, cloud — all of them.",
-     opts:["📱 1–2 subscriptions","📱 3–5 subscriptions","😬 6–10 subscriptions","🙈 I honestly don't know"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"Are you investing or contributing to super beyond minimum?", hint:"Any extra amount counts.",
-     opts:["📈 Yes — every month","🤔 Yes, but inconsistently","😔 Meaning to start","❌ Not yet"],
-     scores:[4,2,1,0]},
-    {type:'choice', q:"12 months from today — if nothing changes — where will your finances be?", hint:"Be completely honest with yourself.",
-     opts:["📈 Better — I have a real plan","😐 Exactly the same","📉 Slightly worse, debt creeping up","😰 Significantly worse — this scares me"],
-     scores:[4,2,1,0]}
-  ],
-  global: [
-    {type:'choice', q:"By which point in the month does your income feel spent?", hint:"Be completely honest.",
-     opts:["😰 First week — it goes fast","😬 Around the 2nd week","😐 Around the 3rd week","😌 Last few days","💪 I manage to the next pay"],
-     scores:[0,1,2,3,4]},
-    {type:'choice', q:"Do you know exactly where every bit of your income went last month?", hint:"Not roughly — exactly.",
-     opts:["✅ Yes — I track everything","🤔 Roughly yes","😅 Honestly no","🤷 Zero idea"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"How much are you actually saving right now?", hint:"This month's real number.",
-     opts:["😰 Nothing at all","🪙 Under 10% of income","💰 10–20% of income","🚀 Over 20%"],
-     scores:[0,1,2,4]},
-    {type:'choice', q:"Do you have an emergency fund — 3 months of expenses saved?", hint:"The single thing separating financially stable people from everyone else.",
-     opts:["✅ Yes — 3+ months covered","🪙 Some savings, not 3 months","😔 Been meaning to start","😰 No — one bad month and I'm in trouble"],
-     scores:[4,2,1,0]},
-    {type:'choice', q:"How much of your income goes to debt or loan payments?", hint:"All regular debt payments combined.",
-     opts:["✅ Zero — no debt payments","😌 Under 20% of income","😐 20–40% of income","😰 Over 40% — it's a lot"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"What do you spend on food delivery and eating out monthly?", hint:"Delivery apps, restaurants, cafes — combine everything.",
-     opts:["😌 Under 5% of monthly income","🍕 5–10% of income","😬 10–20% of income","😰 Over 20% of income"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"How many paid subscriptions are you paying for?", hint:"Streaming, apps, gym, cloud — all of them.",
-     opts:["📱 1–2 subscriptions","📱 3–5 subscriptions","😬 6–10 subscriptions","🙈 I honestly don't know"],
-     scores:[4,3,1,0]},
-    {type:'choice', q:"Are you investing or contributing to any savings/investment plan?", hint:"Any amount counts.",
-     opts:["📈 Yes — every month","🤔 Yes, but inconsistently","😔 Meaning to start","❌ Not yet"],
-     scores:[4,2,1,0]},
-    {type:'choice', q:"12 months from today — if nothing changes — where will your finances be?", hint:"Be completely honest with yourself.",
-     opts:["📈 Better — I have a real plan","😐 Exactly the same","📉 Slightly worse, debt creeping up","😰 Significantly worse — this scares me"],
-     scores:[4,2,1,0]}
-  ]
-};
+var appStep = 0;
+var appAnswers = [];
 
-/* Shared info step, always first */
-var QS_INFO = {
-  type: 'info',
-  q: "Let's personalise your audit",
-  hint: "Helps me show your exact financial picture — not generic advice.",
-  fields: [
-    {id: 'name', label: 'Your first name', placeholder: 'e.g. Alex', type: 'text'},
-    {id: 'age',  label: 'Your age',        placeholder: 'e.g. 26',   type: 'number'},
-    {id: 'income', label: 'Monthly take-home income', placeholder: (window._salPlaceholder || 'e.g. 5,000'), type: 'number'},
-    {id: 'city', label: 'Your city',       placeholder: 'e.g. London, New York, Mumbai', type: 'text'}
-  ]
-};
-
-function getQS() {
-  var region = (window._GEO && window._GEO.region) ? window._GEO.region : 'global';
-  /* Map specific regions to question sets */
-  var qMap = {
-    india: 'india', north_am: 'north_am', uk: 'uk',
-    europe: 'europe', oceania: 'oceania'
-  };
-  var key = qMap[region] || 'global';
-  var qs = [QS_INFO].concat(QS_BY_REGION[key] || QS_BY_REGION.global);
-  /* Update salary placeholder dynamically */
-  qs[0].fields[2].placeholder = window._salPlaceholder || qs[0].fields[2].placeholder;
-  return qs;
-}
-
-var QS = getQS(); /* will be refreshed when geo loads */
-
-var qStep = 0;
-var qAns = {};
-var qScore = 0;
-
-function openQuiz() {
-  QS = getQS(); /* refresh questions for current geo */
-  qStep = 0; qAns = {}; qScore = 0;
-  document.getElementById('qoverlay').classList.add('active');
+function openApplication() {
+  appStep = 0;
+  appAnswers = [];
+  document.getElementById('appOverlay').classList.add('active');
   document.body.style.overflow = 'hidden';
-  renderQ();
+  renderAppStep();
 }
-function closeQuiz() {
-  document.getElementById('qoverlay').classList.remove('active');
+
+function closeApplication() {
+  document.getElementById('appOverlay').classList.remove('active');
   document.body.style.overflow = '';
 }
 
-function renderQ() {
-  var body  = document.getElementById('qBody');
-  var foot  = document.getElementById('qFoot');
-  var lbl   = document.getElementById('qStepLbl');
-  var fill  = document.getElementById('qProgFill');
-  var back  = document.getElementById('qBackBtn');
-  var next  = document.getElementById('qNextBtn');
-  var total = QS.length;
+function renderAppStep() {
+  var body = document.getElementById('appBody');
+  var fill = document.getElementById('appProgFill');
+  var lbl = document.getElementById('appStepLbl');
+  var back = document.getElementById('appBackBtn');
+  var next = document.getElementById('appNextBtn');
+  var foot = document.getElementById('appFoot');
 
-  fill.style.width = Math.round((qStep / total) * 100) + '%';
-
-  if (qStep < QS.length) {
-    var q = QS[qStep];
-    lbl.textContent = q.type === 'info' ? 'About you' : ('Question ' + qStep + ' of ' + (QS.length - 1));
-    back.style.visibility = qStep > 0 ? 'visible' : 'hidden';
-    next.textContent = 'Continue →';
-
-    if (q.type === 'info') {
-      next.disabled = false;
-      var html = '<div class="qq">' + q.q + '</div><div class="qhint">' + q.hint + '</div><div class="qfields">';
-      for (var fi = 0; fi < q.fields.length; fi++) {
-        var f = q.fields[fi];
-        html += '<div class="qfield"><label>' + f.label + '</label>';
-        html += '<input type="' + f.type + '" id="qf_' + f.id + '" placeholder="' + f.placeholder + '" value="' + (qAns[f.id] || '') + '"></div>';
-      }
-      html += '</div>';
-      body.innerHTML = html;
-    } else {
-      next.disabled = (qAns[qStep] === undefined);
-      var letters = ['A','B','C','D','E'];
-      var html = '<div class="qq">' + q.q + '</div><div class="qhint">' + q.hint + '</div><div class="qopts">';
-      for (var oi = 0; oi < q.opts.length; oi++) {
-        var sel = (qAns[qStep] === oi) ? ' sel' : '';
-        html += '<button class="qopt' + sel + '" onclick="qSelect(' + oi + ')">';
-        html += '<span class="qltr">' + letters[oi] + '</span>';
-        html += '<span class="qtxt">' + q.opts[oi] + '</span></button>';
-      }
-      html += '</div>';
-      body.innerHTML = html;
-    }
+  if (appStep < APP_QUESTIONS.length) {
+    var q = APP_QUESTIONS[appStep];
+    fill.style.width = Math.round(((appStep + 1) / APP_QUESTIONS.length) * 100) + '%';
+    lbl.textContent = 'Question ' + (appStep + 1) + ' of ' + APP_QUESTIONS.length;
+    back.style.visibility = appStep > 0 ? 'visible' : 'hidden';
+    next.textContent = appStep === APP_QUESTIONS.length - 1 ? 'See Results' : 'Continue';
+    next.disabled = appAnswers[appStep] === undefined;
     foot.style.display = 'flex';
+
+    var html = '<div class="app-q">' + q.q + '</div>';
+    html += '<div class="app-hint">' + q.hint + '</div>';
+    html += '<div class="app-opts">';
+    for (var i = 0; i < q.opts.length; i++) {
+      var sel = appAnswers[appStep] === i ? ' sel' : '';
+      html += '<button class="app-opt' + sel + '" onclick="appSelect(' + i + ')">';
+      html += '<span class="app-dot"></span>';
+      html += '<span class="app-txt">' + q.opts[i] + '</span></button>';
+    }
+    html += '</div>';
+    body.innerHTML = html;
   } else {
-    lbl.textContent = 'Your personalised results';
+    // RESULT: Show Missing Piece comparison
+    fill.style.width = '100%';
+    lbl.textContent = 'Application Complete';
     foot.style.display = 'none';
-    renderResult();
+    renderMissingPiece();
   }
 }
 
-function qSelect(i) {
-  qAns[qStep] = i;
-  var btns = document.querySelectorAll('.qopt');
+function appSelect(i) {
+  appAnswers[appStep] = i;
+  var btns = document.querySelectorAll('.app-opt');
   for (var k = 0; k < btns.length; k++) btns[k].classList.toggle('sel', k === i);
-  document.getElementById('qNextBtn').disabled = false;
-  setTimeout(function(){ qNext(); }, 350);
+  document.getElementById('appNextBtn').disabled = false;
+  setTimeout(function(){ appNext(); }, 350);
 }
 
-function qNext() {
-  var q = QS[qStep];
-  if (q && q.type === 'info') {
-    for (var fi = 0; fi < q.fields.length; fi++) {
-      var f = q.fields[fi];
-      var el = document.getElementById('qf_' + f.id);
-      var val = el ? el.value.trim() : '';
-      if (!val) { if (el) el.focus(); return; }
-      qAns[f.id] = val;
-    }
-  }
-  if (q && q.type === 'choice' && qAns[qStep] !== undefined) {
-    qScore += q.scores[qAns[qStep]];
-  }
-  qStep++;
-  renderQ();
-}
-function qPrev() {
-  if (qStep > 0) { qStep--; renderQ(); }
+function appNext() {
+  if (appAnswers[appStep] === undefined) return;
+  appStep++;
+  renderAppStep();
 }
 
-/* Format Indian number */
-function fmtINR(n) {
-  n = Math.round(Math.abs(n || 0));
-  var sym = (window._PRICE && window._PRICE.symbol) ? window._PRICE.symbol : '₹';
-  var isINR = !window._PRICE || window._PRICE.isIndia;
-  if (n === 0) return sym + '0';
-  if (isINR) {
-    /* Indian numbering system */
-    if (n >= 10000000) return sym + (n / 10000000).toFixed(1) + 'Cr';
-    if (n >= 100000)   return sym + (n / 100000).toFixed(1) + 'L';
-    if (n >= 1000)     return sym + (n / 1000).toFixed(1) + 'K';
-    return sym + n;
+function appPrev() {
+  if (appStep > 0) {
+    appStep--;
+    renderAppStep();
+  }
+}
+
+function renderMissingPiece() {
+  var body = document.getElementById('appBody');
+  
+  // Check if user wants free template (last question = option 3)
+  var wantsFree = appAnswers[2] === 3;
+  
+  var html = '<div class="mp-result">';
+  html += '<div class="mp-greeting">Application Received</div>';
+  
+  if (wantsFree) {
+    html += '<div class="mp-title">The free template is a good start.</div>';
+    html += '<div class="mp-sub">But here is what you are missing out on. The free version only shows problems. A strategy session helps you fix them.</div>';
   } else {
-    /* International numbering */
-    if (n >= 1000000)  return sym + (n / 1000000).toFixed(1) + 'M';
-    if (n >= 1000)     return sym + (n / 1000).toFixed(0) + 'K';
-    return sym + n;
+    html += '<div class="mp-title">You are approved for a strategy session.</div>';
+    html += '<div class="mp-sub">Based on your answers, you are a perfect fit. Here is what Gopu will build with you on the call:</div>';
   }
-}
-
-function renderResult() {
-  var body = document.getElementById('qBody');
-  var name   = (qAns.name || 'there').split(' ')[0];
-  var income = Math.max(5000, parseInt(qAns.income) || 40000);
-  var age    = parseInt(qAns.age) || 25;
-  var city   = qAns.city || 'India';
-
-  /* Score */
-  var maxSc  = 36;
-  var sc     = Math.min(qScore, maxSc);
-  var pct    = Math.round((sc / maxSc) * 100);
-  var lbl, col;
-  if (pct >= 75)      { lbl = 'Strong Foundation';   col = '#00CC88'; }
-  else if (pct >= 50) { lbl = 'Needs Improvement';   col = '#F59E0B'; }
-  else if (pct >= 25) { lbl = 'At Risk';              col = '#FF6B35'; }
-  else                { lbl = 'Urgent Action Needed'; col = '#FF3355'; }
-
-  /* Spending % — all relative to income, always correct at any income */
-  var fp = [3,8,16,28][qAns[6] !== undefined ? qAns[6] : 1]; /* food */
-  var sp = [1,4,9,7] [qAns[7] !== undefined ? qAns[7] : 1]; /* subs */
-  var ep = [0,15,30,45][qAns[5] !== undefined ? qAns[5] : 0]; /* emi */
-  var vp = [0,7,15,22][qAns[3] !== undefined ? qAns[3] : 0]; /* savings */
-  var op = Math.min(28, Math.max(5, 100 - fp - sp - ep - vp)); /* other */
-  var tot = fp + sp + ep + vp + op;
-  var sc2 = tot > 100 ? 100 / tot : 1;
-
-  var bars = [
-    {cat:'Food & Dining', p: Math.round(fp*sc2), c:'#FF6B35'},
-    {cat:'EMIs & Debt',   p: Math.round(ep*sc2), c:'#977DFF'},
-    {cat:'Subscriptions', p: Math.round(sp*sc2), c:'#0033FF'},
-    {cat:'Savings',       p: Math.round(vp*sc2), c:'#00CC88'},
-    {cat:'Other Spend',   p: Math.round(op*sc2), c:'#8888AA'}
-  ];
-
-  /* Projections — always strictly different */
-  var freePct = vp;
-  var proPct  = Math.max(22, Math.round(freePct * 1.8), freePct + 8);
-  proPct = Math.min(proPct, 40);
-  if (proPct <= freePct) proPct = Math.min(freePct + 10, 40);
-  var freeAmt = Math.round(income * freePct / 100);
-  var proAmt  = Math.round(income * proPct / 100);
-  if (proAmt - freeAmt < 1000) proAmt = freeAmt + Math.max(1000, Math.round(income * 0.08));
-  var freeYr  = freeAmt * 12;
-  var proYr   = proAmt  * 12;
-  var extraYr = proYr - freeYr;
-
-  /* Build bars HTML */
-  var bHtml = '';
-  for (var bi = 0; bi < bars.length; bi++) {
-    var b = bars[bi];
-    bHtml += '<div class="bar-row">';
-    bHtml += '<div class="bar-cat">' + b.cat + '</div>';
-    bHtml += '<div class="bar-track"><div class="bar-fill" id="bf' + bi + '" style="background:' + b.c + ';width:0%"></div></div>';
-    bHtml += '<div class="bar-pct">' + b.p + '%</div></div>';
-  }
-
-  /* Build result HTML */
-  var html = '';
-  html += '<div class="qresult">';
-  html += '<div class="qr-greeting">Hi ' + name + ' &nbsp;·&nbsp; ' + age + ' yrs &nbsp;·&nbsp; ' + city + ' &nbsp;·&nbsp; ' + (window._PRICE ? window._PRICE.currency : 'INR') + '</div>';
-  html += '<div class="qr-title">Your Financial Health Audit</div>';
-  var incomeDisplay = (window._PRICE && window._PRICE.symbol ? window._PRICE.symbol : '₹') + income.toLocaleString();
-  html += '<div class="qr-sub">Income: ' + incomeDisplay + '/month &nbsp;·&nbsp; Personalised breakdown</div>';
-
-  /* GAUGE — Canvas-based, works at any score 0-100 */
-  html += '<div class="gauge-wrap">';
-  html += '<div class="gauge-lbl">Financial Health Score</div>';
-  html += '<div style="position:relative;display:inline-block;width:200px;height:110px;">';
-  html += '<canvas id="gaugeCanvas" width="200" height="110" style="display:block;"></canvas>';
-  html += '<div style="position:absolute;bottom:10px;left:0;right:0;text-align:center;">';
-  html += '<div style="font-family:Cormorant,Georgia,serif;font-size:34px;font-weight:400;color:#fff;line-height:1;">' + pct + '</div>';
-  html += '<div style="font-family:Inter,sans-serif;font-size:9px;font-weight:700;letter-spacing:1px;color:' + col + ';margin-top:3px;">' + lbl.toUpperCase() + '</div>';
-  html += '<div style="font-family:Inter,sans-serif;font-size:8px;color:#666;margin-top:1px;">out of 100</div>';
+  
+  // DECOY COMPARISON
+  html += '<div class="mp-compare">';
+  
+  // DIY Option (Decoy)
+  html += '<div class="mp-card mp-diy">';
+  html += '<div class="mp-lbl">Option A: DIY</div>';
+  html += '<div class="mp-item">&#8594; 1-tab basic tracker only</div>';
+  html += '<div class="mp-item">&#8594; See your leaks</div>';
+  html += '<div class="mp-item">&#8594; No guidance on fixing them</div>';
+  html += '<div class="mp-item">&#8594; Figure it out yourself</div>';
   html += '</div>';
+  
+  // Strategy Call (Target)
+  html += '<div class="mp-card mp-call">';
+  html += '<div class="mp-lbl">Option B: Strategy Session</div>';
+  html += '<div class="mp-item">&#10003; Complete 9-tab system</div>';
+  html += '<div class="mp-item">&#10003; Gopu builds it with you</div>';
+  html += '<div class="mp-item">&#10003; EMI + SIP + Goals setup</div>';
+  html += '<div class="mp-item">&#10003; Clear action plan</div>';
   html += '</div>';
+  
   html += '</div>';
-
-  /* BARS */
-  html += '<div class="bars-sec">';
-  var curSym = (window._PRICE && window._PRICE.symbol) ? window._PRICE.symbol : '₹';
-  html += '<div class="bars-title">How Your ' + curSym + income.toLocaleString() + '/month Is Allocated</div>';
-  html += bHtml;
+  
+  // BUTTONS
+  html += '<div class="mp-btns">';
+  html += '<button class="mp-call-btn" id="mpCallBtn">Book Your Strategy Session &#8594;</button>';
+  html += '<button class="mp-free-btn" id="mpFreeBtn">I still want the free template</button>';
   html += '</div>';
-
-  /* PATH */
-  html += '<div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:9px">Your Path — Free vs Pro</div>';
-  html += '<div class="path-row">';
-  html += '<div class="path-card path-free">';
-  html += '<div class="path-lbl">Free Version</div>';
-  html += '<div class="path-item">1-tab tracker only</div>';
-  html += '<div class="path-item">See leaks — cannot fix them</div>';
-  html += '<div class="path-item">No EMI, SIP, or goals</div>';
-  html += '<div class="path-item">Same stress next month</div>';
+  
+  html += '<div class="mp-note">Strategy sessions are limited to 10 per week. Book your slot now.</div>';
   html += '</div>';
-  html += '<div class="path-card path-pro">';
-  html += '<div class="path-lbl">Pro Version</div>';
-  html += '<div class="path-item">Complete 9-tab system</div>';
-  html += '<div class="path-item">Auto-tracking, zero effort</div>';
-  html += '<div class="path-item">EMI planner + SIP tracker</div>';
-  html += '<div class="path-item">Plan from YOUR numbers</div>';
-  html += '</div>';
-  html += '</div>';
-
-  /* PROJECTION */
-  html += '<div class="proj-sec">';
-  html += '<div class="proj-title">12-Month Savings Projection for ' + name + '</div>';
-  html += '<div class="proj-row">';
-  html += '<div class="proj-box proj-free"><div class="proj-n">' + fmtINR(freeYr) + '</div><div class="proj-l">Free (' + freePct + '% saved)</div></div>';
-  html += '<div class="proj-box proj-pro"><div class="proj-n">' + fmtINR(proYr) + '</div><div class="proj-l">Pro (' + proPct + '% saved)</div></div>';
-  html += '</div>';
-  if (extraYr > 0) {
-    html += '<div class="proj-extra">⬆ Pro unlocks ' + fmtINR(extraYr) + ' more savings per year</div>';
-  }
-  html += '</div>';
-
-  /* BUTTONS */
-  html += '<div class="res-btns">';
-  html += '<button class="res-pro-btn" id="resCallBtn">📞 Book a Free Strategy Call with Gopu →</button>';
-  html += '<button class="res-free-btn" id="resFreeBtn">Start with the free template →</button>';
-  html += '</div>';
-  html += '<div class="res-note">Gopu reviews your exact numbers live and builds a personalised plan on the call. Free, 30 minutes.</div>';
-  html += '</div>';
-
+  
   body.innerHTML = html;
-
-  /* Attach onclick AFTER innerHTML — avoids all quote escaping issues */
-  var callBtn = document.getElementById('resCallBtn');
-  if (callBtn) {
-    callBtn.addEventListener('click', function() {
-      closeQuiz();
-      setTimeout(function(){ scrollToId('book-call'); }, 300);
-    });
-  }
-  var freeBtn = document.getElementById('resFreeBtn');
-  if (freeBtn) {
-    freeBtn.addEventListener('click', function() {
-      closeQuiz();
-      scrollToId('pricing');
-      setTimeout(openGate, 600);
-    });
-  }
-
-  /* Animate gauge and bars AFTER DOM renders */
-  requestAnimationFrame(function() {
-    requestAnimationFrame(function() {
-      /* Gauge — Canvas animated semicircle */
-      (function() {
-        var canvas = document.getElementById('gaugeCanvas');
-        if (!canvas) return;
-        var ctx = canvas.getContext('2d');
-        var W = 200, H = 110;
-        var cx = W / 2, cy = H - 5;
-        var R = 78, lw = 14;
-        var startAngle = Math.PI; /* 180deg */
-        var endAngle = 0;        /* 0deg (right) */
-        /* But we go left-to-right, so: left = PI, right = 0 (via 2PI path)
-           For conic sweep from left end to right end = PI total */
-        var targetSweep = Math.PI * (pct / 100);
-        var currentSweep = 0;
-        var duration = 1600;
-        var startTime = null;
-        function ease(t) { return 1 - Math.pow(1 - t, 3); }
-        function drawGauge(sweep) {
-          ctx.clearRect(0, 0, W, H);
-          /* Track (background arc) */
-          ctx.beginPath();
-          ctx.arc(cx, cy, R, Math.PI, 0, false);
-          ctx.strokeStyle = 'rgba(255,255,255,0.09)';
-          ctx.lineWidth = lw;
-          ctx.lineCap = 'round';
-          ctx.stroke();
-          /* Fill arc */
-          if (sweep > 0) {
-            ctx.beginPath();
-            ctx.arc(cx, cy, R, Math.PI, Math.PI + sweep, false);
-            ctx.strokeStyle = col;
-            ctx.lineWidth = lw;
-            ctx.lineCap = 'round';
-            ctx.stroke();
-          }
-        }
-        function animate(ts) {
-          if (!startTime) startTime = ts;
-          var t = Math.min((ts - startTime) / duration, 1);
-          currentSweep = ease(t) * targetSweep;
-          drawGauge(currentSweep);
-          if (t < 1) requestAnimationFrame(animate);
-        }
-        drawGauge(0);
-        setTimeout(function() { requestAnimationFrame(animate); }, 120);
-      })();
-      /* Bar animations — normalised to max for visual impact */
-      var maxBar = 0;
-      for (var bj = 0; bj < bars.length; bj++) { if (bars[bj].p > maxBar) maxBar = bars[bj].p; }
-      for (var bi2 = 0; bi2 < bars.length; bi2++) {
-        (function(i, pval) {
-          setTimeout(function() {
-            var el = document.getElementById('bf' + i);
-            if (el) {
-              var visualW = maxBar > 0 ? Math.round((pval / maxBar) * 88) : 0;
-              el.style.width = Math.max(visualW, pval > 0 ? 3 : 0) + '%';
-            }
-          }, 200 + i * 130);
-        })(bi2, bars[bi2].p);
-      }
-    });
+  
+  // Attach event listeners
+  document.getElementById('mpCallBtn').addEventListener('click', function() {
+    closeApplication();
+    setTimeout(function(){ scrollToId('book-call'); }, 300);
+  });
+  
+  document.getElementById('mpFreeBtn').addEventListener('click', function() {
+    getFreeTemplate();
+    closeApplication();
   });
 }
 
-/* Require audit before free template */
-function requireAudit() {
-  if (qAns && qAns.name) {
-    openGate();
-  } else {
-    openQuiz();
-  }
-}
-
-/* === GATE MODAL === */
-var gCurrentStep = 1;
-
-function openGate() {
-  gCurrentStep = 1;
-  /* Reset all steps */
-  for (var i = 1; i <= 4; i++) {
-    var sec  = document.getElementById('gsec' + i);
-    var step = document.getElementById('gs' + i);
-    if (sec)  sec.style.display  = (i === 1) ? 'block' : 'none';
-    if (step) step.className = 'g-step' + (i === 1 ? ' cur' : '');
-  }
-  var up = document.getElementById('gupsell');
-  if (up) up.style.display = 'none';
-  document.getElementById('goverlay').classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-function closeGate() {
-  document.getElementById('goverlay').classList.remove('active');
-  document.body.style.overflow = '';
-}
-
-function gPick(btn, fromStep) {
-  /* Mark selected */
-  var siblings = btn.parentElement.querySelectorAll('.gopt');
-  for (var k = 0; k < siblings.length; k++) siblings[k].classList.remove('sel');
-  btn.classList.add('sel');
-
-  /* Mark step done, move to next */
-  var curStep = document.getElementById('gs' + fromStep);
-  if (curStep) curStep.className = 'g-step done';
-  var curSec  = document.getElementById('gsec' + fromStep);
-
-  setTimeout(function() {
-    if (curSec) curSec.style.display = 'none';
-
-    if (fromStep < 4) {
-      var nextStep = document.getElementById('gs' + (fromStep + 1));
-      if (nextStep) nextStep.className = 'g-step cur';
-      var nextSec  = document.getElementById('gsec' + (fromStep + 1));
-      if (nextSec) {
-        nextSec.style.opacity = '0';
-        nextSec.style.display = 'block';
-        nextSec.style.transform = 'translateX(16px)';
-        requestAnimationFrame(function() {
-          nextSec.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-          nextSec.style.opacity = '1';
-          nextSec.style.transform = 'translateX(0)';
-        });
-      }
-    } else {
-      /* After Q4 — show upsell */
-      var up = document.getElementById('gupsell');
-      if (up) {
-        up.style.opacity = '0';
-        up.style.display = 'block';
-        requestAnimationFrame(function() {
-          up.style.transition = 'opacity 0.4s ease';
-          up.style.opacity = '1';
-        });
-      }
-    }
-  }, 300);
-}
-
-function getFree() {
+/* === FREE TEMPLATE DOWNLOAD (ENDOWMENT EFFECT) === */
+function getFreeTemplate() {
   window.open('https://superprofile.bio/lf/684a5ac7bd8ddc0013868207', '_blank');
-  closeGate();
-  setTimeout(openTy, 400);
 }
-</script>
-
-<script>
-/* ═══════════════════════════════════════════════════════════════════════
-   USD-PEGGED GLOBAL PRICING ENGINE v2.0
-   ───────────────────────────────────────────────────────────────────────
-   India  → ₹499  (always, no conversion)
-   World  → $USD  (amount varies per country PPP index, live FX rate)
-
-   Step A: Detect country via IP
-   Step B: India? inject ₹499 and stop.
-   Step C: Otherwise → PPP math → live INR/USD rate → display $XX
-═══════════════════════════════════════════════════════════════════════ */
-(function () {
-'use strict';
-
-/* ── CONFIG ─────────────────────────────────────────────────────────── */
-var BASE_INR       = 499;
-var DEFAULT_INDEX  = 300;   /* fallback for unknown countries */
-var FALLBACK_USD   = 27;    /* shown if all APIs fail */
-var FX_API         = 'https://open.er-api.com/v6/latest/INR';
-var GEO_PRIMARY    = 'https://ipapi.co/json/';
-var GEO_FALLBACK   = 'https://ip-api.com/json/?fields=countryCode';
-var CACHE_KEY      = 'orga_v2_cache';
-var CACHE_TTL      = 6 * 60 * 60 * 1000; /* 6 hours */
-
-/* ── PPP INDEX DATABASE ─────────────────────────────────────────────── */
-var PPP = {
-  /* Tier 1 — ×5.0 */
-  "US":500,"GB":500,"CA":500,"AU":500,"NZ":500,
-  /* Tier 2 — ×3.0 */
-  "AT":300,"BE":300,"HR":300,"EE":300,"FI":300,"FR":300,
-  "DE":300,"GR":300,"IE":300,"IT":300,"SK":300,"SI":300,
-  "ES":300,"DZ":300,"AM":300,"BD":300,"BY":300,"BA":300,
-  "BG":300,"CR":300,"CZ":300,"DK":300,"DO":300,"GE":300,
-  "HU":300,"IS":300,"IL":300,"JM":300,"JO":300,"KZ":300,
-  "KW":300,"RS":300,"SG":300,"SE":300,"TW":300,"TH":300,
-  "TT":300,"TN":300,"UA":300,"AE":300,"UY":300,"VE":300,
-  /* Tier 3 — custom */
-  "CL":289,"KE":269,"LK":248,"ZA":221,"EG":206,"CN":197,"BR":166,
-  /* Tier 4 — base (same value as India but shown in USD) */
-  "IN":100,"AR":100,"CO":100,"ID":100,
-  "JP":100,"KR":100,"TR":100,"VN":100
-};
-
-/* ── PSYCHOLOGICAL ROUNDING ─────────────────────────────────────────── */
-/* Snaps USD values to clean, trustworthy numbers */
-function psychRound(usd) {
-  if (usd <= 5)   return Math.ceil(usd);           /* $3.1 → $4 */
-  if (usd <= 15)  {
-    var w = Math.ceil(usd);
-    return (w % 2 === 0) ? w - 1 : w;             /* prefer odd: $9, $11, $13 */
-  }
-  if (usd <= 30)  return Math.ceil(usd);           /* $26.8 → $27 */
-  if (usd <= 100) return Math.round(usd / 5) * 5; /* snap to nearest $5 */
-  return Math.round(usd / 10) * 10;               /* snap to nearest $10 */
-}
-
-/* ── INJECT: push price into every element on the page ─────────────── */
-function inject(displayPrice, checkoutPrice, isIndia) {
-  /* Store globally so quiz + any other JS can read it */
-  window._PRICE = {
-    display:    displayPrice,
-    checkout:   checkoutPrice,
-    isIndia:    isIndia,
-    symbol:     isIndia ? '₹' : '$',
-    currency:   isIndia ? 'INR' : 'USD'
-  };
-
-  /* All .geo-free-price elements */
-  document.querySelectorAll('.geo-free-price').forEach(function(el) {
-    el.textContent = isIndia ? '₹0' : '$0';
-  });
-  /* Geo badge */
-  var badge = document.getElementById('geoPriceBadge');
-  if (badge && !isIndia) {
-    badge.style.display = 'flex';
-  }
-  /* Fire event so quiz + other code can react */
-  try {
-    document.dispatchEvent(new CustomEvent('pricingReady', { detail: window._PRICE }));
-  } catch(e) {}
-}
-
-/* ── FETCH HELPER ───────────────────────────────────────────────────── */
-function fetchJSON(url) {
-  return new Promise(function(resolve, reject) {
-    var x = new XMLHttpRequest();
-    x.open('GET', url, true);
-    x.timeout = 5000;
-    x.onload = function() {
-      if (x.status >= 200 && x.status < 300) {
-        try { resolve(JSON.parse(x.responseText)); }
-        catch(e) { reject(e); }
-      } else { reject(new Error('HTTP ' + x.status)); }
-    };
-    x.onerror = x.ontimeout = function() { reject(new Error('fail')); };
-    x.send();
-  });
-}
-
-/* ── CACHE ──────────────────────────────────────────────────────────── */
-function readCache() {
-  try {
-    var r = sessionStorage.getItem(CACHE_KEY);
-    if (!r) return null;
-    var c = JSON.parse(r);
-    if (Date.now() - c.ts > CACHE_TTL) { sessionStorage.removeItem(CACHE_KEY); return null; }
-    return c.d;
-  } catch(e) { return null; }
-}
-function writeCache(d) {
-  try { sessionStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), d: d })); } catch(e) {}
-}
-
-/* ── MAIN ───────────────────────────────────────────────────────────── */
-function run() {
-  /* Check cache */
-  var cached = readCache();
-  if (cached) { inject(cached.display, cached.checkout, cached.isIndia); return; }
-
-  /* Step A: Detect country */
-  fetchJSON(GEO_PRIMARY)
-    .then(function(d) {
-      return (d.country_code || '').toUpperCase() || Promise.reject('no cc');
-    })
-    .catch(function() {
-      return fetchJSON(GEO_FALLBACK).then(function(d) {
-        return (d.countryCode || '').toUpperCase() || 'US';
-      });
-    })
-    .then(function(cc) {
-      /* Step B: India → ₹499, done */
-      if (cc === 'IN') {
-        var res = { display: '\u20b9499', checkout: 499, isIndia: true };
-        writeCache(res);
-        inject(res.display, res.checkout, true);
-        applyStory(cc);
-        return;
-      }
-
-      /* Step C: PPP math + live USD rate */
-      var index    = PPP.hasOwnProperty(cc) ? PPP[cc] : DEFAULT_INDEX;
-      var targetINR = BASE_INR * (index / 100); /* e.g. 499 * 5 = 2495 */
-
-      fetchJSON(FX_API)
-        .then(function(fx) {
-          var rate    = fx.rates && fx.rates['USD'] ? fx.rates['USD'] : (1/83);
-          var rawUSD  = targetINR * rate;          /* 2495 * 0.01204 = 30.04 */
-          var rounded = psychRound(rawUSD);         /* 30.04 → 29 */
-          var display = '$' + rounded;
-
-          var res = { display: display, checkout: rounded, isIndia: false };
-          writeCache(res);
-          inject(display, rounded, false);
-          applyStory(cc);
-
-          console.log('[Pricing] ' + cc + ' | idx:' + index + ' | INR:' + targetINR.toFixed(0) + ' | rate:' + rate.toFixed(5) + ' | raw:$' + rawUSD.toFixed(2) + ' | final:' + display);
-        })
-        .catch(function() {
-          /* FX API failed — use hardcoded fallback rate */
-          var rawUSD  = targetINR / 83;
-          var rounded = psychRound(rawUSD);
-          var display = '$' + rounded;
-          var res = { display: display, checkout: rounded, isIndia: false };
-          writeCache(res);
-          inject(display, rounded, false);
-          applyStory(cc);
-        });
-    })
-    .catch(function() {
-      /* All geo APIs failed → default $27 */
-      inject('$' + FALLBACK_USD, FALLBACK_USD, false);
-      applyStory('US');
-    });
-}
-
-/* ── STORIES: regional copy per country code ────────────────────────── */
-var REGION_MAP = {
-  IN:'india', US:'north_am', CA:'north_am', GB:'uk',
-  AT:'europe', BE:'europe', HR:'europe', EE:'europe', FI:'europe',
-  FR:'europe', DE:'europe', GR:'europe', IE:'europe', IT:'europe',
-  SK:'europe', SI:'europe', ES:'europe', DK:'europe', SE:'europe',
-  NO:'europe', CH:'europe', PL:'europe', CZ:'europe', HU:'europe',
-  RO:'europe', BG:'europe', RS:'europe', TR:'europe', RU:'europe',
-  UA:'europe', GE:'europe', AM:'europe', KZ:'europe', BY:'europe', BA:'europe',
-  AU:'oceania', NZ:'oceania',
-  AE:'mena', SA:'mena', KW:'mena', OM:'mena', IL:'mena', JO:'mena', EG:'mena',
-  SG:'sea', MY:'sea', TH:'sea', PH:'sea', VN:'sea', ID:'sea', MM:'sea',
-  JP:'asia', KR:'asia', CN:'asia', TW:'asia', BD:'asia', PK:'asia', LK:'asia',
-  NG:'africa', ZA:'africa', KE:'africa', MA:'africa', DZ:'africa', TN:'africa',
-  BR:'latam', MX:'latam', CL:'latam', AR:'latam', CO:'latam',
-  PE:'latam', CR:'latam', DO:'latam', JM:'latam', UY:'latam', TT:'latam', VE:'latam'
-};
-
-var STORIES = {
-  india: {
-    heroH:'Stop wondering<br>where your<br><em>salary went</em>',
-    heroSub:'Take the free 2-minute personalised audit. See exactly where your salary is leaking \u2014 and get the system built for Indian life.',
-    painTitle:'Does any of this sound familiar?',
-    pains:[
-      {h:'Salary gone by the 20th',  p:'You earn well. But every month the same sinking feeling hits \u2014 and you genuinely cannot explain why.'},
-      {h:'No idea where it went',    p:'\u20b940,000 salary. Zero savings. Money disappears between UPI transfers, Swiggy orders, and forgotten subscriptions.'},
-      {h:'Apps that never stuck',    p:'Walnut. Money Manager. A notes list. Used each for 4 days. None understood Indian EMIs, SIPs, or family transfers.'},
-      {h:'No financial safety net',  p:'One hospital bill, one job scare \u2014 and everything falls apart. No emergency fund, no buffer, no peace of mind.'}
-    ],
-    aboutH:  'Over 3,000 clients. One proven system. <em>Real results.</em>',
-    aboutP1: 'As a Personal Finance Consultant with a Mathematics background, I\u2019ve spent years helping individuals and families transform their financial habits. After consulting with hundreds of clients, I noticed the same problem: existing tools weren\u2019t designed for how we actually earn and spend in India.',
-    aboutP2: 'My clients consistently save \u20b98,000\u2013\u20b920,000 more every month \u2014 without earning a single rupee more. The results speak for themselves: \u20b980,000 to \u20b92 lakh recovered per year, just by implementing the right system.',
-    avgSavings:'\u20b98,000',
-    faqBuiltForQ:'Is it built for Indian expenses?',
-    faqBuiltForA:'Yes \u2014 designed specifically for Indian financial life. EMIs, SIPs, UPI habits, family transfers, festival season. Fully customisable.',
-    faqPay:'\u20b9499 \u2014 one time, no subscription, yours forever.',
-    reviews:[
-      {q:'"Was spending \u20b98,000/month on food deliveries and had <strong>absolutely no idea.</strong> Cut it to \u20b93,500. Saving \u20b94,500 extra now."', name:'Rahul M.', meta:'Software Engineer \u00b7 Bengaluru', tag:'Saved \u20b94,500/month'},
-      {q:'"Found \u20b912,000 in subscriptions I forgot about. <strong>In 20 minutes.</strong> My finances finally make sense."', name:'Priya S.', meta:'Marketing Manager \u00b7 Mumbai', tag:'Found \u20b912,000 in leaks'},
-      {q:'"Budgeting used to give me anxiety. <strong>This made it feel doable.</strong> I look forward to month-end reviews now."', name:'Arjun N.', meta:'Student \u00b7 Mumbai', tag:'Anxiety \u2192 habit'}
-    ]
-  },
-  north_am: {
-    heroH:'Stop wondering<br>where your<br><em>paycheck went</em>',
-    heroSub:'Take the free 2-minute personalised audit. Discover exactly where your income is leaking \u2014 then get the system 12,800+ people use to save more every month.',
-    painTitle:'Does this sound like you?',
-    pains:[
-      {h:'Paycheck gone in 2 weeks',       p:'You make good money. But two weeks after payday you\u2019re budgeting groceries and wondering what happened.'},
-      {h:'No idea where it all goes',       p:'Subscriptions, takeout, impulse buys. Hundreds of transactions and you genuinely can\u2019t account for it all.'},
-      {h:'Budgeting apps you abandoned',    p:'Mint. YNAB. A notes app. A spreadsheet you made once. None of them survived contact with real life.'},
-      {h:'Nothing saved, nothing invested', p:'You know you should be building an emergency fund and investing. But there\u2019s never anything left over.'}
-    ],
-    aboutH:  'Over 12,800 clients worldwide. <em>Proven results.</em>',
-    aboutP1: 'As a Personal Finance Consultant, I\u2019ve helped thousands transform their relationship with money. Most budgeting tools are either too complicated or not designed for real life \u2014 subscriptions, credit cards, student loans, savings goals, 401k contributions.',
-    aboutP2: 'My clients worldwide save an extra $400\u2013$800/month in the first 30 days. Simple Google Sheets setup \u2014 no app to install. Works on your phone or laptop.',
-    avgSavings:'$500',
-    faqBuiltForQ:'Is it built for US and Canadian expenses?',
-    faqBuiltForA:'Yes \u2014 works for North American financial life. Credit cards, student loans, 401k/RRSP contributions, subscriptions. Fully customisable.',
-    faqPay:'One-time payment. No subscription ever. Yours to keep forever.',
-    reviews:[
-      {q:'"Was spending $400/month on DoorDash and <strong>had absolutely no idea.</strong> Cut it down. Saving an extra $280 every month now."', name:'Marcus T.', meta:'Software Engineer \u00b7 Austin, TX', tag:'Saves $280/month'},
-      {q:'"Found $140/month in subscriptions I completely forgot about. <strong>In 20 minutes.</strong> Paid for itself instantly."', name:'Ashley R.', meta:'Marketing Manager \u00b7 Chicago', tag:'Found $140 in leaks'},
-      {q:'"Tried Mint, YNAB, everything. <strong>This is the only system that actually stuck.</strong> Simple and it works."', name:'Derek M.', meta:'Grad Student \u00b7 Boston', tag:'Finally sticking with it'}
-    ]
-  },
-  uk: {
-    heroH:'Stop wondering<br>where your<br><em>money went</em>',
-    heroSub:'Take the free 2-minute audit. Find exactly where your income is leaking every month \u2014 and get a proven system to fix it.',
-    painTitle:'Sound familiar?',
-    pains:[
-      {h:'Pay gone before payday',    p:'You earn decent money. But by the third week, you\u2019re watching your balance drop and wondering what happened.'},
-      {h:'No idea where it goes',     p:'Direct debits, subscriptions, takeaways. \u00a33,000 in. Nothing left. Tracking it feels impossible.'},
-      {h:'Apps you stopped using',    p:'Monzo budgets. Spreadsheets. A notes app. None of them stuck longer than a week.'},
-      {h:'No financial cushion',      p:'One boiler breakdown, one redundancy \u2014 no safety net. The anxiety never fully goes away.'}
-    ],
-    aboutH:  'Over 12,800 clients worldwide. <em>Proven results.</em>',
-    aboutP1: 'As a Personal Finance Consultant, I\u2019ve helped thousands take control of their money. I built this system for real UK life \u2014 direct debits, standing orders, council tax, pension contributions.',
-    aboutP2: 'My clients consistently find an extra \u00a3200\u2013\u00a3400/month they didn\u2019t know they had. Set up in 20 minutes on Google Sheets.',
-    avgSavings:'$350',
-    faqBuiltForQ:'Is it built for UK finances?',
-    faqBuiltForA:'Yes \u2014 works for UK life. Direct debits, standing orders, council tax, pension contributions. Works in any currency.',
-    faqPay:'One-time payment. No subscription. Yours forever.',
-    reviews:[
-      {q:'"Was spending \u00a3280/month on takeaways and <strong>had no idea.</strong> Cut it right down. Saving \u00a3180 extra every month."', name:'James T.', meta:'Software Engineer \u00b7 London', tag:'Saves \u00a3180/month'},
-      {q:'"Found \u00a390/month in forgotten subscriptions. <strong>In 20 minutes.</strong> My finances finally make sense."', name:'Sophie R.', meta:'Marketing Manager \u00b7 Manchester', tag:'Found \u00a390 in leaks'},
-      {q:'"Budgeting always felt overwhelming. <strong>This made it simple.</strong> I look forward to reviewing my numbers now."', name:'Callum B.', meta:'Graduate \u00b7 Edinburgh', tag:'Finally in control'}
-    ]
-  },
-  europe: {
-    heroH:'Stop wondering<br>where your<br><em>income went</em>',
-    heroSub:'Take the free personalised audit. See exactly where your money is leaking \u2014 and get a system that finally works for you.',
-    painTitle:'Does this feel familiar?',
-    pains:[
-      {h:'Money disappears mid-month',        p:'Your salary arrives and somehow you can\u2019t account for where most of it went before month-end.'},
-      {h:'Subscriptions eating your budget',  p:'Streaming, gym, apps, insurance top-ups. Small amounts everywhere that quietly drain your account.'},
-      {h:'You\u2019ve tried tracking before', p:'An app, a spreadsheet, a notebook. It works for a week, then life gets in the way.'},
-      {h:'No emergency fund',                 p:'You keep meaning to start one. But when month-end comes, there\u2019s never enough left.'}
-    ],
-    aboutH:  'Over 12,800 clients worldwide. <em>Proven results.</em>',
-    aboutP1: 'As a Personal Finance Consultant, I\u2019ve helped thousands across the globe take control of their finances. This system works for any country, any currency, any income.',
-    aboutP2: 'My clients set up in 20 minutes on Google Sheets and start seeing results immediately. Works on any device.',
-    avgSavings:'$300',
-    faqBuiltForQ:'Does it work for my country?',
-    faqBuiltForA:'Yes \u2014 works for any European country and currency. Fully customisable categories, pension contributions, and local expenses.',
-    faqPay:'One-time payment. No subscription. Yours forever.',
-    reviews:[
-      {q:'"Was spending \u20ac250/month on food delivery and had <strong>no idea.</strong> Saving \u20ac150 more every month now."', name:'Lucas M.', meta:'Engineer \u00b7 Berlin', tag:'Saves \u20ac150/month'},
-      {q:'"Found \u20ac90/month in forgotten subscriptions. <strong>In 20 minutes.</strong> Finally understand where my money goes."', name:'Emma V.', meta:'Project Manager \u00b7 Amsterdam', tag:'Found \u20ac90 in leaks'},
-      {q:'"Every app felt too complicated. <strong>This just works.</strong> Set up in 20 minutes."', name:'Pierre D.', meta:'Student \u00b7 Paris', tag:'Simple and it sticks'}
-    ]
-  },
-  oceania: {
-    heroH:'Stop wondering<br>where your<br><em>pay went</em>',
-    heroSub:'Take the free 2-minute personalised audit. Discover exactly where your money leaks \u2014 then get the proven system to fix it.',
-    painTitle:'Sound familiar?',
-    pains:[
-      {h:'Fortnight gone before next pay',  p:'You earn well. But two weeks after payday you\u2019re watching your balance and wondering where it all went.'},
-      {h:'Cost of living is brutal',        p:'Rent, groceries, petrol, power bills \u2014 everything costs more. Saving anything meaningful feels impossible.'},
-      {h:'Budgeting apps you forgot about', p:'Downloaded three. Used them for a week. The categories never matched how you actually spend.'},
-      {h:'No financial safety net',         p:'One car repair, one unexpected bill \u2014 and savings are back to zero. The cycle continues.'}
-    ],
-    aboutH:  'Over 12,800 clients worldwide. <em>Proven results.</em>',
-    aboutP1: 'As a Personal Finance Consultant, I\u2019ve helped thousands transform their financial habits. Designed for how people actually live \u2014 subscriptions, bills, savings goals, investments.',
-    aboutP2: 'My clients find an extra A$300\u2013A$600/month. Simple Google Sheets \u2014 works on any device.',
-    avgSavings:'$400',
-    faqBuiltForQ:'Is it built for Australian and NZ finances?',
-    faqBuiltForA:'Yes \u2014 works for AU and NZ. Super contributions, HECS, mortgage. Customise currency and categories to match your life.',
-    faqPay:'One-time payment. No subscription. Yours forever.',
-    reviews:[
-      {q:'"Was spending A$350/month on Uber Eats and <strong>had no idea.</strong> Saving A$220 extra every month now."', name:'Liam H.', meta:'Engineer \u00b7 Sydney', tag:'Saves A$220/month'},
-      {q:'"Found A$95/month in forgotten subscriptions. <strong>In 20 minutes.</strong> My finances finally make sense."', name:'Emma W.', meta:'Marketing \u00b7 Melbourne', tag:'Found A$95 in leaks'},
-      {q:'"Cost of living is brutal. <strong>This helped me find breathing room</strong> I didn\u2019t know I had."', name:'Jack P.', meta:'Graduate \u00b7 Brisbane', tag:'Found hidden money'}
-    ]
-  },
-  mena: {
-    heroH:'Stop wondering<br>where your<br><em>salary went</em>',
-    heroSub:'Take the free personalised audit. Discover exactly where your income is going \u2014 and get a system built for your lifestyle.',
-    painTitle:'Does this sound like you?',
-    pains:[
-      {h:'Salary gone before month-end', p:'You have a good income. But every month the last week arrives and your account is nearly empty.'},
-      {h:'No visibility on spending',    p:'You know you\u2019re spending, but you can\u2019t tell exactly where.'},
-      {h:'Tried apps, gave up quickly',  p:'A budgeting app, a spreadsheet, a notes list. Nothing stuck for more than a few weeks.'},
-      {h:'No financial buffer',          p:'One emergency, one unexpected expense \u2014 and you\u2019re stressed.'}
-    ],
-    aboutH:  'Over 12,800 clients worldwide. <em>Proven results.</em>',
-    aboutP1: 'As a Personal Finance Consultant, I\u2019ve helped thousands across different regions take control of their finances \u2014 family obligations, seasonal spending, savings goals alongside investments.',
-    aboutP2: 'My clients use this simple Google Sheets system to transform their finances. Works on your phone or laptop.',
-    avgSavings:'$200',
-    faqBuiltForQ:'Does it support my currency?',
-    faqBuiltForA:'Yes \u2014 fully customisable for AED, SAR, KWD, ILS, EGP, and all regional currencies.',
-    faqPay:'One-time payment. No subscription. Yours forever.',
-    reviews:[
-      {q:'"My salary was disappearing every month. <strong>Now I know exactly where every dirham goes.</strong>"', name:'Khalid A.', meta:'Engineer \u00b7 Dubai', tag:'Finally in control'},
-      {q:'"Found subscriptions I completely forgot about. <strong>In 20 minutes.</strong>"', name:'Sara M.', meta:'Manager \u00b7 Cairo', tag:'Found hidden leaks'},
-      {q:'"Every app I tried was built for a different market. <strong>This one fits how I live.</strong>"', name:'Omar T.', meta:'Graduate \u00b7 Riyadh', tag:'Built for my life'}
-    ]
-  },
-  sea: {
-    heroH:'Stop wondering<br>where your<br><em>salary went</em>',
-    heroSub:'Take the free 2-minute personalised audit. Find out exactly where your income disappears \u2014 and get a system that works.',
-    painTitle:'Does this sound like you?',
-    pains:[
-      {h:'Salary gone before month-end',  p:'You earn a good income. But every month the last week arrives wondering why your account is almost empty.'},
-      {h:'Can\u2019t track mobile payments', p:'GrabPay, GoPay, PayNow, cash \u2014 money moves everywhere and you can\u2019t keep up.'},
-      {h:'Tried apps, gave up quickly',   p:'A budgeting app, a notes app, a spreadsheet. Nothing stuck for longer than two weeks.'},
-      {h:'No savings, no investments',    p:'You know you should be investing. But there\u2019s never quite enough left at month-end.'}
-    ],
-    aboutH:  'Over 12,800 clients worldwide. <em>Proven results.</em>',
-    aboutP1: 'As a Personal Finance Consultant, I\u2019ve helped thousands across Asia transform how they manage money \u2014 designed for how people in our region actually spend and save.',
-    aboutP2: 'My clients use this simple Google Sheets system to take control. Works on your phone or laptop.',
-    avgSavings:'$200',
-    faqBuiltForQ:'Does it work for my currency?',
-    faqBuiltForA:'Yes \u2014 fully customisable for SGD, MYR, THB, PHP and all regional currencies.',
-    faqPay:'One-time payment. No subscription. Yours forever.',
-    reviews:[
-      {q:'"My salary was gone every month and I couldn\u2019t explain it. <strong>Now I know exactly where every ringgit goes.</strong>"', name:'Wei Liang T.', meta:'Engineer \u00b7 Kuala Lumpur', tag:'Full visibility'},
-      {q:'"Found leaks across GrabPay, bank, and cash. <strong>In 20 minutes.</strong> Finally in control."', name:'Siti R.', meta:'Manager \u00b7 Singapore', tag:'Found hidden leaks'},
-      {q:'"Every app didn\u2019t match how I spend. <strong>This one finally does.</strong>"', name:'Budi S.', meta:'Graduate \u00b7 Jakarta', tag:'Built for how I spend'}
-    ]
-  },
-  africa: {
-    heroH:'Stop wondering<br>where your<br><em>salary went</em>',
-    heroSub:'Take the free 2-minute audit. Discover where your money is really going \u2014 and get a system that works in your currency.',
-    painTitle:'Does this sound familiar?',
-    pains:[
-      {h:'Salary disappears fast',            p:'You bring in good money. But week three arrives and your account is nearly empty again.'},
-      {h:'No clear picture of spending',      p:'Mobile money, cash, bank \u2014 it\u2019s hard to track everything.'},
-      {h:'Tried tracking, didn\u2019t last',  p:'A notes app, a spreadsheet, budgeting software. Each lasted a few weeks before real life took over.'},
-      {h:'Nothing set aside for emergencies', p:'One hospital visit, one car problem \u2014 and everything is gone.'}
-    ],
-    aboutH:  'Over 12,800 clients worldwide. <em>Proven results.</em>',
-    aboutP1: 'As a Personal Finance Consultant, I\u2019ve helped thousands across the globe transform their finances. This works for any currency and any income structure.',
-    aboutP2: 'My clients use this simple Google Sheets system to take control. Works on mobile and desktop.',
-    avgSavings:'$150',
-    faqBuiltForQ:'Does it support African currencies?',
-    faqBuiltForA:'Yes \u2014 supports NGN, ZAR, KES, MAD and all African currencies. Fully customisable.',
-    faqPay:'One-time payment. No subscription. Yours forever.',
-    reviews:[
-      {q:'"My salary was disappearing before month-end. <strong>Now I track everything and actually save.</strong>"', name:'Chidi O.', meta:'Engineer \u00b7 Lagos', tag:'Saving every month'},
-      {q:'"Found spending leaks across mobile money and bank. <strong>In 20 minutes.</strong>"', name:'Amara K.', meta:'Manager \u00b7 Nairobi', tag:'Finally clear'},
-      {q:'"Spreadsheets never lasted. <strong>This system is different \u2014 it actually sticks.</strong>"', name:'Fatima D.', meta:'Graduate \u00b7 Accra', tag:'System that sticks'}
-    ]
-  },
-  latam: {
-    heroH:'Para de se perguntar<br>para onde foi<br><em>o seu dinheiro</em>',
-    heroSub:'Fa\u00e7a a auditoria gratuita de 2 minutos. Descubra exatamente onde seu sal\u00e1rio vai \u2014 e obtenha um sistema que realmente funciona.',
-    painTitle:'Isso soa familiar?',
-    pains:[
-      {h:'Sal\u00e1rio vai antes do fim do m\u00eas', p:'Voc\u00ea ganha bem, mas antes do fim do m\u00eas j\u00e1 est\u00e1 se perguntando como o dinheiro acabou.'},
-      {h:'Sem ideia para onde foi',                   p:'Cart\u00e3o, assinaturas, delivery. O total nunca fecha.'},
-      {h:'Aplicativos que voc\u00ea parou de usar',   p:'Uma semana com app, outra com planilha. Nada ficou por mais de um m\u00eas.'},
-      {h:'Sem reserva financeira',                    p:'Uma emerg\u00eancia \u2014 e tudo vai embora. Voc\u00ea merece uma reserva de verdade.'}
-    ],
-    aboutH:  'M\u00e1s de 12,800 clientes en todo el mundo. <em>Resultados comprobados.</em>',
-    aboutP1: 'Como Consultor de Finanzas Personales, he ayudado a miles a transformar sus h\u00e1bitos financieros. Esta plantilla funciona para cualquier pa\u00eds y moneda.',
-    aboutP2: 'Mis clientes configuran todo en 20 minutos en Google Sheets y empiezan a ver resultados. Funciona en m\u00f3vil.',
-    avgSavings:'$150',
-    faqBuiltForQ:'\u00bFFunciona para mi pa\u00eds?',
-    faqBuiltForA:'S\u00ed \u2014 funciona para cualquier pa\u00eds y moneda de Am\u00e9rica Latina.',
-    faqPay:'Pago \u00fanico. Sin suscripci\u00f3n. Tuyo para siempre.',
-    reviews:[
-      {q:'"Gastaba demasiado en delivery y <strong>no ten\u00eda idea.</strong> Ahora ahorro mucho m\u00e1s cada mes."', name:'Carlos M.', meta:'Ingeniero \u00b7 S\u00e3o Paulo', tag:'Ahorra todos los meses'},
-      {q:'"Encontr\u00e9 suscripciones olvidadas. <strong>En 20 minutos.</strong>"', name:'Valentina R.', meta:'Marketing \u00b7 Buenos Aires', tag:'Gastos encontrados'},
-      {q:'"Intent\u00e9 varias apps. <strong>Esta es la \u00fanica que funciona.</strong>"', name:'Diego P.', meta:'Estudiante \u00b7 M\u00e9xico', tag:'Simple y efectivo'}
-    ]
-  },
-  asia: {
-    heroH:'Stop wondering<br>where your<br><em>salary went</em>',
-    heroSub:'Take the free 2-minute personalised audit. Discover exactly where your income is leaking \u2014 and get a system built for your life.',
-    painTitle:'Does this sound familiar?',
-    pains:[
-      {h:'Salary gone before month-end',  p:'You earn a good income. But by the third week, your account is running low and you can\u2019t explain why.'},
-      {h:'No visibility on spending',     p:'Bank transfers, digital payments, cash \u2014 you\u2019ve lost track of where it all went.'},
-      {h:'Apps you tried but abandoned',  p:'A budgeting app, a notes list, a spreadsheet. Each worked for a few days then stopped.'},
-      {h:'No savings, no investments',    p:'You know you should be investing for the future. But there\u2019s never enough left.'}
-    ],
-    aboutH:  'Over 12,800 clients worldwide. <em>Proven results.</em>',
-    aboutP1: 'As a Personal Finance Consultant, I\u2019ve helped thousands transform their financial habits. This works for any currency, any income structure.',
-    aboutP2: 'My clients use this simple Google Sheets system to take control. Works on your phone or laptop.',
-    avgSavings:'$200',
-    faqBuiltForQ:'Does it work for my country?',
-    faqBuiltForA:'Yes \u2014 works for Japan, Korea, China, Taiwan, and all Asian countries. Supports any currency.',
-    faqPay:'One-time payment. No subscription. Yours forever.',
-    reviews:[
-      {q:'"My salary was running out before month-end. <strong>Now I know exactly where every yen goes.</strong>"', name:'Kenji T.', meta:'Engineer \u00b7 Tokyo', tag:'Full visibility'},
-      {q:'"Found forgotten subscriptions. <strong>In 20 minutes.</strong> My finances finally make sense."', name:'Min-Ji L.', meta:'Manager \u00b7 Seoul', tag:'Found hidden leaks'},
-      {q:'"Every app was too complicated. <strong>This one finally works.</strong>"', name:'Mei L.', meta:'Graduate \u00b7 Shanghai', tag:'Finally works for me'}
-    ]
-  },
-  global: {
-    heroH:'Stop wondering<br>where your<br><em>money went</em>',
-    heroSub:'Take the free 2-minute personalised audit. Discover exactly where your income is leaking \u2014 and get the system to fix it.',
-    painTitle:'Does this sound familiar?',
-    pains:[
-      {h:'Income gone before month-end',     p:'You earn well. But every month your account is nearly empty before the next paycheck.'},
-      {h:'No idea where it goes',            p:'Subscriptions, payments, daily spending. Money moves fast with no clear picture.'},
-      {h:'Tried tracking before',            p:'An app, a spreadsheet, a notebook. It worked for a while, then life got in the way.'},
-      {h:'Nothing set aside for emergencies',p:'One unexpected expense and savings are gone. You know you need a buffer but never build one.'}
-    ],
-    aboutH:  'Over 12,800 clients worldwide. <em>Proven results.</em>',
-    aboutP1: 'As a Personal Finance Consultant, I\u2019ve helped thousands across the globe transform their relationship with money. Works for any country, any currency, any income.',
-    aboutP2: 'My clients use this simple Google Sheets system to take control. Works on any device, in your local currency.',
-    avgSavings:'$300',
-    faqBuiltForQ:'Does it work for my country?',
-    faqBuiltForA:'Yes \u2014 works for any country and currency. Used by people in 50+ countries worldwide.',
-    faqPay:'One-time payment. No subscription. Yours forever.',
-    reviews:[
-      {q:'"My income was disappearing and I had <strong>no idea where.</strong> This showed me in 20 minutes."', name:'Alex M.', meta:'Software Engineer', tag:'Full clarity fast'},
-      {q:'"Found subscriptions I completely forgot about. <strong>Instantly.</strong>"', name:'Sam R.', meta:'Marketing Manager', tag:'Found hidden leaks'},
-      {q:'"Budgeting always felt overwhelming. <strong>This made it simple.</strong>"', name:'Jordan P.', meta:'Graduate', tag:'Simple and it sticks'}
-    ]
-  }
-};
-
-function applyStory(cc) {
-  var region  = REGION_MAP[cc] || 'global';
-  var story   = STORIES[region] || STORIES.global;
-  var isIndia = (cc === 'IN');
-
-  /* Hero */
-  var hh = document.getElementById('geoHeroH');   if (hh) hh.innerHTML = story.heroH;
-  var hs = document.getElementById('geoHeroSub'); if (hs) hs.textContent = story.heroSub;
-
-  /* Hero avg savings stat */
-  var as = document.getElementById('geoAvgSavings');
-  if (as) as.textContent = story.avgSavings || '$300';
-
-  /* About */
-  var ah  = document.getElementById('geoAboutH');  if (ah)  ah.innerHTML    = story.aboutH;
-  var ap1 = document.getElementById('geoAboutP1'); if (ap1) ap1.textContent = story.aboutP1;
-  var ap2 = document.getElementById('geoAboutP2'); if (ap2) ap2.textContent = story.aboutP2;
-
-  /* Pain points */
-  var pt = document.getElementById('geoPainTitle'); if (pt) pt.textContent = story.painTitle;
-  story.pains.forEach(function(p, i) {
-    var hEl = document.getElementById('geoPain'+(i+1)+'H');
-    var pEl = document.getElementById('geoPain'+(i+1)+'P');
-    if (hEl) hEl.textContent = p.h;
-    if (pEl) pEl.textContent = p.p;
-  });
-
-  /* Features label */
-  var fsub = document.getElementById('geoFeatSub');
-  if (fsub) fsub.textContent = isIndia
-    ? 'Not just a spreadsheet \u2014 a full financial system built for Indian life.'
-    : 'Not just a spreadsheet \u2014 a complete financial system that works for your life.';
-  var f3h = document.getElementById('geoFeat3H');
-  var f3p = document.getElementById('geoFeat3P');
-  var f4h = document.getElementById('geoFeat4H');
-  var f4p = document.getElementById('geoFeat4P');
-  if (!isIndia) {
-    if (f3h) f3h.textContent = 'Investment & Wealth Tracker';
-    if (f3p) f3p.textContent = 'Track investments, project wealth growth over 1, 3, 5 years.';
-    if (f4h) f4h.textContent = 'Debt & Loan Planner';
-    if (f4p) f4p.textContent = 'All loans in one place. See exactly what % of income goes to debt.';
-  }
-
-  /* Reviews */
-  story.reviews.forEach(function(r, i) {
-    var n = i + 1;
-    var qEl = document.getElementById('geoRv'+n+'Q');
-    var nEl = document.getElementById('geoRv'+n+'Name');
-    var mEl = document.getElementById('geoRv'+n+'Meta');
-    var tEl = document.getElementById('geoRv'+n+'Tag');
-    if (qEl) qEl.innerHTML   = r.q;
-    if (nEl) nEl.textContent = r.name;
-    if (mEl) mEl.textContent = r.meta;
-    if (tEl) tEl.textContent = r.tag;
-  });
-
-  /* FAQ */
-  var fbq = document.getElementById('geoFaqBuiltForQ');
-  if (fbq && fbq.childNodes[0]) fbq.childNodes[0].textContent = story.faqBuiltForQ;
-  var fba = document.getElementById('geoFaqBuiltForA');
-  if (fba) fba.textContent = story.faqBuiltForA;
-  /* Note: pricing FAQ now reflects free strategy call — no geo override needed */
-}
-
-/* ── Boot ───────────────────────────────────────────────────────────── */
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', run);
-} else { run(); }
-
-})();
 </script>
 
 </body>
