@@ -1,100 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Orgatreeker</title>
-<meta name="description" content="Watch our product video">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-/* === RESET === */
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;background:#fafafa;}
-body{font-family:'Inter',sans-serif;background:#fafafa;color:#1a1a1a;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
-img{max-width:100%;height:auto;display:block;}
-a{text-decoration:none;color:inherit;}
-button{cursor:pointer;border:none;outline:none;font-family:inherit;}
-:root{
-  --bg:#fafafa;
-  --text:#1a1a1a;
-  --accent:#000;
-  --border:#e5e5e5;
-  --sans:'Inter',sans-serif;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Budget Template Pro — Orgatreeker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* === MINIMAL LAYOUT === */
-body{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:40px 20px;}
+    :root {
+      --navy:   #00033D;
+      --blue:   #0033FF;
+      --purple: #977DFF;
+      --white:  #F0EEFF;
+      --muted:  #4A4888;
+      --border: #0A0E55;
+    }
 
-/* === VIDEO CONTAINER === */
-.video-section{width:100%;max-width:900px;margin-bottom:40px;}
+    body {
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      overflow-x: hidden;
+    }
 
-.video-wrapper{
-  position:relative;
-  width:100%;
-  padding-bottom:56.25%;
-  border-radius:16px;
-  overflow:hidden;
-  border:1px solid var(--border);
-  background:#fff;
-  box-shadow:0 12px 48px rgba(0,0,0,0.08);
-}
+    /* blobs */
+    .blob {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(130px);
+      opacity: 0.15;
+      pointer-events: none;
+    }
+    .b1 { width: 520px; height: 520px; background: var(--blue);   top: -180px; left: -140px; }
+    .b2 { width: 420px; height: 420px; background: var(--purple); bottom: -120px; right: -120px; }
 
-.video-wrapper iframe{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  border:none;
-}
+    /* page */
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 640px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
 
-/* === BUTTON === */
-.cta-button{
-  display:inline-block;
-  padding:16px 48px;
-  background:var(--accent);
-  color:#fff;
-  font-size:14px;
-  font-weight:600;
-  border-radius:8px;
-  cursor:pointer;
-  border:none;
-  transition:all 0.3s ease;
-  box-shadow:0 4px 16px rgba(0,0,0,0.12);
-  text-decoration:none;
-}
+    /* badge */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(151,125,255,0.1);
+      border: 1px solid rgba(151,125,255,0.25);
+      border-radius: 30px;
+      padding: 5px 15px;
+      font-size: 10px;
+      color: var(--purple);
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      margin-bottom: 26px;
+      opacity: 0;
+      animation: up 0.7s 0.1s ease forwards;
+    }
+    .dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--purple);
+      animation: blink 2s infinite;
+    }
 
-.cta-button:hover{
-  transform:translateY(-2px);
-  box-shadow:0 8px 24px rgba(0,0,0,0.16);
-  background:#222;
-}
+    /* headline */
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(30px, 6.5vw, 48px);
+      font-weight: 900;
+      line-height: 1.1;
+      text-align: center;
+      margin-bottom: 14px;
+      opacity: 0;
+      animation: up 0.7s 0.2s ease forwards;
+    }
+    h1 em {
+      font-style: normal;
+      background: linear-gradient(120deg, var(--blue), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
 
-/* === RESPONSIVE === */
-@media(max-width:768px){
-  body{padding:32px 16px;}
-  .video-section{margin-bottom:32px;}
-  .cta-button{padding:14px 36px;font-size:13px;}
-}
+    /* sub */
+    .sub {
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.75;
+      max-width: 440px;
+      margin-bottom: 40px;
+      opacity: 0;
+      animation: up 0.7s 0.3s ease forwards;
+    }
 
-@media(max-width:480px){
-  body{padding:24px 16px;}
-  .video-section{margin-bottom:24px;}
-  .cta-button{padding:12px 28px;font-size:13px;}
-}
-</style>
+    /* video */
+    .video-wrap {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: #020520;
+      box-shadow:
+        0 0 0 1px rgba(0,51,255,0.08),
+        0 0 60px rgba(0,51,255,0.1),
+        0 32px 64px rgba(0,0,0,0.6);
+      margin-bottom: 44px;
+      opacity: 0;
+      animation: up 0.7s 0.4s ease forwards;
+      position: relative;
+    }
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    /* booking organizer section */
+    .booking-section {
+      width: 100%;
+      background: rgba(151,125,255,0.05);
+      border: 1px solid rgba(151,125,255,0.2);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 32px;
+      opacity: 0;
+      animation: up 0.7s 0.45s ease forwards;
+    }
+
+    .booking-section h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      color: var(--white);
+    }
+
+    .booking-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--purple);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .form-group input,
+    .form-group select {
+      padding: 12px 14px;
+      background: rgba(240,238,255,0.05);
+      border: 1px solid rgba(151,125,255,0.3);
+      border-radius: 8px;
+      color: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .form-group input::placeholder,
+    .form-group select::placeholder {
+      color: var(--muted);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--blue);
+      background: rgba(0,51,255,0.08);
+      box-shadow: 0 0 12px rgba(0,51,255,0.15);
+    }
+
+    .form-group select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23977DFF' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 36px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .booking-button {
+      padding: 14px 24px;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .booking-button::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 55%);
+    }
+
+    .booking-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(0,51,255,0.5), 0 8px 24px rgba(0,0,0,0.4);
+    }
+
+    .booking-button:active {
+      transform: scale(0.98);
+    }
+
+    .booking-success {
+      display: none;
+      padding: 16px;
+      background: rgba(74, 184, 124, 0.1);
+      border: 1px solid rgba(74, 184, 124, 0.3);
+      border-radius: 8px;
+      color: #4ab87c;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 12px;
+      animation: slideIn 0.3s ease;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* cta */
+    .cta-wrap {
+      width: 100%;
+      max-width: 400px;
+      opacity: 0;
+      animation: up 0.7s 0.55s ease forwards;
+    }
+
+    .cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      background: var(--blue);
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      padding: 18px 28px;
+      border-radius: 14px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow:
+        0 0 0 0 rgba(0,51,255,0),
+        0 8px 28px rgba(0,0,0,0.5);
+      animation: glow-pulse 2.8s 1.5s ease-in-out infinite;
+    }
+    .cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.14) 0%, transparent 55%);
+    }
+    /* shimmer sweep */
+    .cta::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.18), transparent);
+      animation: shimmer 3s 2s ease-in-out infinite;
+    }
+    .cta:hover {
+      transform: translateY(-4px) scale(1.015);
+      box-shadow:
+        0 0 40px rgba(0,51,255,0.55),
+        0 16px 40px rgba(0,0,0,0.55);
+      animation: none;
+    }
+    .cta:active { transform: scale(0.98); }
+
+    .arrow {
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+    .cta:hover .arrow { transform: translateX(4px); }
+
+    .cta-hint {
+      text-align: center;
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 11px;
+      letter-spacing: 0.4px;
+      font-style: italic;
+    }
+
+    /* animations */
+    @keyframes up {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes blink {
+      0%,100% { opacity: 1; } 50% { opacity: 0.2; }
+    }
+    @keyframes shimmer {
+      0%   { left: -100%; }
+      100% { left: 160%;  }
+    }
+    @keyframes glow-pulse {
+      0%, 100% { box-shadow: 0 0 18px rgba(0,51,255,0.3), 0 8px 28px rgba(0,0,0,0.5); }
+      50%       { box-shadow: 0 0 44px rgba(0,51,255,0.65), 0 8px 28px rgba(0,0,0,0.5); }
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 32px 16px; }
+      .booking-section { padding: 24px; }
+      .form-row { grid-template-columns: 1fr; }
+      .booking-section h2 { font-size: 20px; }
+    }
+  </style>
 </head>
 <body>
 
-<div class="video-section">
-  <div class="video-wrapper">
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1186519212?h=237a8200c1" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
-  </div>
-</div>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
 
-<button class="cta-button" onclick="window.open('https://superprofile.bio/vp/orgatreeker', '_blank')">Visit Product</button>
+  <div class="page">
+
+    <div class="badge"><span class="dot"></span> Orgatreeker</div>
+
+    <h1>Fix Your Finances.<br /><em>Keep More Every Month.</em></h1>
+
+    <p class="sub">
+      Watch the video — then grab the system thousands of Indians use
+      to finally take control of their money.
+    </p>
+
+    <div class="video-wrap">
+      <iframe
+        src="https://player.vimeo.com/video/1186519212?h=237a8200c1&autoplay=0&title=0&byline=0&portrait=0&color=0033FF"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+        title="Orgatreeker Budget Template Pro"
+      ></iframe>
+    </div>
+
+    <!-- Booking Organizer Section -->
+    <div class="booking-section">
+      <h2>Book Your Session</h2>
+      <form class="booking-form" id="bookingForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookingName">Full Name</label>
+            <input 
+              type="text" 
+              id="bookingName" 
+              name="name" 
+              placeholder="Your full name" 
+              required 
+            />
+          </div>
+          <div class="form-group">
+            <label for="bookingEmail">Email</label>
+            <input 
+              type="email" 
+              id="bookingEmail" 
+              name="email" 
+              placeholder="your@email.com" 
+              required 
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookingDate">Preferred Date</label>
+            <input 
+              type="date" 
+              id="bookingDate" 
+              name="date" 
+              required 
+            />
+          </div>
+          <div class="form-group">
+            <label for="bookingTime">Preferred Time</label>
+            <select id="bookingTime" name="time" required>
+              <option value="">Select time slot</option>
+              <option value="09:00">9:00 AM</option>
+              <option value="10:00">10:00 AM</option>
+              <option value="11:00">11:00 AM</option>
+              <option value="14:00">2:00 PM</option>
+              <option value="15:00">3:00 PM</option>
+              <option value="16:00">4:00 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="bookingMessage">Message (Optional)</label>
+          <input 
+            type="text" 
+            id="bookingMessage" 
+            name="message" 
+            placeholder="Tell us about your goals or questions..." 
+          />
+        </div>
+
+        <button type="submit" class="booking-button">Schedule Booking</button>
+        <div class="booking-success" id="bookingSuccess">
+          ✓ Booking confirmed! We&apos;ll reach out shortly.
+        </div>
+      </form>
+    </div>
+
+    <div class="cta-wrap">
+      <a class="cta" href="https://topmate.io/orgatreeker/2020619" target="_blank" rel="noopener">
+        Get Instant Access <span class="arrow">→</span>
+      </a>
+      <p class="cta-hint">Takes 30 seconds. Works on mobile, tablet &amp; laptop.</p>
+    </div>
+
+  </div>
+
+  <script>
+    // Booking form handler
+    const bookingForm = document.getElementById('bookingForm');
+    const bookingSuccess = document.getElementById('bookingSuccess');
+
+    bookingForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Collect form data
+      const formData = {
+        name: document.getElementById('bookingName').value,
+        email: document.getElementById('bookingEmail').value,
+        date: document.getElementById('bookingDate').value,
+        time: document.getElementById('bookingTime').value,
+        message: document.getElementById('bookingMessage').value,
+        timestamp: new Date().toISOString()
+      };
+
+      // Log booking data (in production, send to backend)
+      console.log('[v0] Booking submitted:', formData);
+
+      // Show success message
+      bookingSuccess.style.display = 'block';
+
+      // Reset form
+      bookingForm.reset();
+
+      // Hide success message after 4 seconds
+      setTimeout(() => {
+        bookingSuccess.style.display = 'none';
+      }, 4000);
+
+      // Optional: Store booking data in localStorage for demo purposes
+      const existingBookings = JSON.parse(localStorage.getItem('orgatreeker_bookings') || '[]');
+      existingBookings.push(formData);
+      localStorage.setItem('orgatreeker_bookings', JSON.stringify(existingBookings));
+    });
+
+    // Set minimum date to today
+    const dateInput = document.getElementById('bookingDate');
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.min = today;
+  </script>
 
 </body>
 </html>
