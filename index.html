@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MoneyOS — Budgeting Complete Bundle by Orgatreeker</title>
+  <title>Gopal Haldar — Paid Media Growth</title>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -15,227 +15,260 @@
       --white:  #F0EEFF;
       --muted:  #4A4888;
       --border: #0A0E55;
+      --grad: linear-gradient(135deg, #0033FF 0%, #977DFF 100%);
     }
+
+    html { scroll-behavior: smooth; }
 
     body {
-      background: var(--navy);
-      color: var(--white);
+      background: #F8F7FF;
+      color: var(--navy);
       font-family: 'DM Sans', sans-serif;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 20px;
       overflow-x: hidden;
+      padding-top: 70px;
     }
 
-    /* blobs */
-    .blob {
+    /* NAV */
+    nav {
       position: fixed;
-      border-radius: 50%;
-      filter: blur(130px);
-      opacity: 0.15;
-      pointer-events: none;
-    }
-    .b1 { width: 520px; height: 520px; background: var(--blue);   top: -180px; left: -140px; }
-    .b2 { width: 420px; height: 420px; background: var(--purple); bottom: -120px; right: -120px; }
-
-    /* page */
-    .page {
-      position: relative;
-      z-index: 1;
-      max-width: 640px;
-      width: 100%;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 20px 48px;
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
       align-items: center;
-      gap: 0;
+      background: rgba(248,247,255,0.95);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(0,51,255,0.08);
     }
 
-    /* badge */
-    .badge {
-      display: inline-flex;
+    .nav-logo {
+      display: flex;
       align-items: center;
-      gap: 7px;
-      background: rgba(151,125,255,0.1);
-      border: 1px solid rgba(151,125,255,0.25);
-      border-radius: 30px;
-      padding: 5px 15px;
-      font-size: 10px;
-      color: var(--purple);
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      margin-bottom: 26px;
-      opacity: 0;
-      animation: up 0.7s 0.1s ease forwards;
+      gap: 10px;
     }
-    .dot {
-      width: 5px; height: 5px;
-      border-radius: 50%;
-      background: var(--purple);
-      animation: blink 2s infinite;
+    .nav-logo img {
+      width: 36px;
+      height: 36px;
+      object-fit: cover;
+      border-radius: 8px;
     }
-
-    /* headline */
-    h1 {
+    .nav-name {
       font-family: 'Syne', sans-serif;
-      font-size: clamp(30px, 6.5vw, 48px);
-      font-weight: 900;
-      line-height: 1.1;
-      text-align: center;
-      margin-bottom: 14px;
-      opacity: 0;
-      animation: up 0.7s 0.2s ease forwards;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--navy);
+      letter-spacing: -0.3px;
     }
-    h1 em {
-      font-style: normal;
-      background: linear-gradient(120deg, var(--blue), var(--purple));
+
+    .nav-btn {
+      background: var(--grad);
+      color: white;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      padding: 10px 24px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+      box-shadow: 0 4px 20px rgba(0,51,255,0.25);
+    }
+    .nav-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+
+    /* BOOKING SECTION */
+    .booking {
+      padding: 80px;
+      background: #F8F7FF;
+    }
+
+    .booking-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .booking-h2 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(32px, 4vw, 52px);
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .booking-h2 .grad-text {
+      background: var(--grad);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
 
-    /* sub */
-    .sub {
+    .booking-sub {
       font-size: 15px;
       font-weight: 300;
-      color: var(--muted);
-      text-align: center;
+      color: #5A5888;
       line-height: 1.75;
-      max-width: 440px;
-      margin-bottom: 40px;
-      opacity: 0;
-      animation: up 0.7s 0.3s ease forwards;
+      margin-bottom: 24px;
     }
 
-    /* video */
-    .video-wrap {
-      width: 100%;
-      aspect-ratio: 16/9;
-      border-radius: 18px;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      background: #020520;
-      box-shadow:
-        0 0 0 1px rgba(0,51,255,0.08),
-        0 0 60px rgba(0,51,255,0.1),
-        0 32px 64px rgba(0,0,0,0.6);
-      margin-bottom: 44px;
-      opacity: 0;
-      animation: up 0.7s 0.4s ease forwards;
-      position: relative;
+    .booking-features {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
-    .video-wrap iframe {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
+    .booking-feature {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: #5A5888;
     }
-
-    /* cta */
-    .cta-wrap {
-      width: 100%;
-      max-width: 400px;
-      opacity: 0;
-      animation: up 0.7s 0.5s ease forwards;
-    }
-
-    .cta {
+    .feature-dot {
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      background: var(--grad);
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      width: 100%;
-      background: var(--blue);
-      color: #fff;
-      text-decoration: none;
-      font-family: 'Syne', sans-serif;
-      font-weight: 800;
-      font-size: 16px;
-      padding: 18px 28px;
-      border-radius: 14px;
-      position: relative;
+      font-size: 10px;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    /* CAL EMBED */
+    .cal-embed-wrap {
+      background: white;
+      border-radius: 20px;
       overflow: hidden;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      box-shadow:
-        0 0 0 0 rgba(0,51,255,0),
-        0 8px 28px rgba(0,0,0,0.5);
-      animation: glow-pulse 2.8s 1.5s ease-in-out infinite;
-    }
-    .cta::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(255,255,255,0.14) 0%, transparent 55%);
-    }
-    /* shimmer sweep */
-    .cta::after {
-      content: '';
-      position: absolute;
-      top: 0; left: -100%;
-      width: 60%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.18), transparent);
-      animation: shimmer 3s 2s ease-in-out infinite;
-    }
-    .cta:hover {
-      transform: translateY(-4px) scale(1.015);
-      box-shadow:
-        0 0 40px rgba(0,51,255,0.55),
-        0 16px 40px rgba(0,0,0,0.55);
-      animation: none;
-    }
-    .cta:active { transform: scale(0.98); }
-
-    .arrow {
-      display: inline-block;
-      transition: transform 0.2s ease;
-    }
-    .cta:hover .arrow { transform: translateX(4px); }
-
-    .cta-hint {
-      text-align: center;
-      font-size: 11px;
-      color: var(--muted);
-      margin-top: 11px;
-      letter-spacing: 0.4px;
-      font-style: italic;
+      border: 1px solid rgba(0,51,255,0.1);
+      box-shadow: 0 8px 48px rgba(0,0,61,0.08);
+      min-height: 650px;
     }
 
-    /* animations */
-    @keyframes up {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes blink {
-      0%,100% { opacity: 1; } 50% { opacity: 0.2; }
-    }
-    @keyframes shimmer {
-      0%   { left: -100%; }
-      100% { left: 160%;  }
-    }
-    @keyframes glow-pulse {
-      0%, 100% { box-shadow: 0 0 18px rgba(0,51,255,0.3), 0 8px 28px rgba(0,0,0,0.5); }
-      50%       { box-shadow: 0 0 44px rgba(0,51,255,0.65), 0 8px 28px rgba(0,0,0,0.5); }
+    #my-cal-inline-30min {
+      width: 100%;
+      height: 650px;
+      overflow: scroll;
+      border-radius: 20px;
     }
 
-    @media (max-width: 480px) {
-      body { padding: 32px 16px; }
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      body { padding-top: 60px; }
+      nav { padding: 16px 24px; }
+      .booking { padding: 56px 24px; }
+      .booking-top { grid-template-columns: 1fr; gap: 32px; }
+      .cal-embed-wrap { min-height: 600px; }
+      #my-cal-inline-30min { height: 600px; }
+    }
+
+    @media (max-width: 600px) {
+      body { padding-top: 56px; }
+      nav { padding: 12px 16px; }
+      .nav-name { font-size: 14px; }
+      .nav-btn { font-size: 12px; padding: 8px 16px; }
+      .booking { padding: 40px 16px; }
+      .booking-h2 { font-size: clamp(24px, 6vw, 36px); }
+      .booking-sub { font-size: 14px; }
+      .booking-feature { font-size: 12px; }
+      .cal-embed-wrap { min-height: 500px; }
+      #my-cal-inline-30min { height: 500px; }
     }
   </style>
 </head>
 <body>
 
-  <div class="blob b1"></div>
-  <div class="blob b2"></div>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='8' fill='%230033FF'/%3E%3Ctext x='50%' y='50%' font-family='Syne,sans-serif' font-size='20' font-weight='700' fill='white' text-anchor='middle' dominant-baseline='central'%3EF%3C/text%3E%3C/svg%3E" alt="Fabi Icon">
+      <span class="nav-name">Gopal Haldar</span>
+    </div>
+    <a href="#book" class="nav-btn">Book a Call →</a>
+  </nav>
 
-  <div class="page">
+  <!-- BOOKING SECTION -->
+  <section class="booking" id="book">
+    <div class="booking-top">
+      <div>
+        <h2 class="booking-h2">
+          Let's discuss your<br>
+          <span class="grad-text">paid media strategy</span>
+        </h2>
+        <p class="booking-sub">
+          Book a free 30-minute consultation. I'll analyze your current ad spend and show you exactly where the leaks are.
+        </p>
+        <div class="booking-features">
+          <div class="booking-feature">
+            <div class="feature-dot">✓</div>
+            <span>No pitch — just strategy</span>
+          </div>
+          <div class="booking-feature">
+            <div class="feature-dot">✓</div>
+            <span>Deep dive into your metrics</span>
+          </div>
+          <div class="booking-feature">
+            <div class="feature-dot">✓</div>
+            <span>Actionable recommendations</span>
+          </div>
+        </div>
+      </div>
+      <div class="cal-embed-wrap">
+        <div id="my-cal-inline-30min"></div>
+      </div>
+    </div>
+  </section>
 
-    <iframe src="/booking.html" style="width: 100%; height: 100vh; border: none; border-radius: 18px;"></iframe>
+  <!-- Cal.com Embed Script -->
+  <script type="text/javascript">
+    (function (C, A, L) { 
+      let p = function (a, ar) { a.q.push(ar); }; 
+      let d = C.document; 
+      C.Cal = C.Cal || function () { 
+        let cal = C.Cal; 
+        let ar = arguments; 
+        if (!cal.loaded) { 
+          cal.ns = {}; 
+          cal.q = cal.q || []; 
+          d.head.appendChild(d.createElement("script")).src = A; 
+          cal.loaded = true; 
+        } 
+        if (ar[0] === L) { 
+          const api = function () { p(api, arguments); }; 
+          const namespace = ar[1]; 
+          api.q = api.q || []; 
+          if(typeof namespace === "string"){
+            cal.ns[namespace] = cal.ns[namespace] || api;
+            p(cal.ns[namespace], ar);
+            p(cal, ["initNamespace", namespace]);
+          } else p(cal, ar); 
+          return;
+        } 
+        p(cal, ar); 
+      }; 
+    })(window, "https://app.cal.com/embed/embed.js", "init");
 
-  </div>
+    Cal("init", "30min", {origin:"https://app.cal.com"});
+
+    Cal.ns["30min"]("inline", {
+      elementOrSelector:"#my-cal-inline-30min",
+      config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
+      calLink: "gopal-halder/30min",
+    });
+
+    Cal.ns["30min"]("ui", {
+      "cssVarsPerTheme":{
+        "light":{"cal-brand":"#0033FF"},
+        "dark":{"cal-brand":"#977DFF"}
+      },
+      "hideEventTypeDetails":false,
+      "layout":"month_view"
+    });
+  </script>
 
 </body>
 </html>
