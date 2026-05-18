@@ -383,8 +383,8 @@ footer{
       </div>
 
     </div>
-    <div class="cal-shell">
-      <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-30min"></div>
+    <div style="padding:30px;text-align:center">
+      <a href="https://app.cal.com/gopal-halder/30min" style="display:inline-block;background:linear-gradient(135deg,#0033FF 0%,#977DFF 100%);color:#fff;text-decoration:none;padding:16px 40px;border-radius:100px;font-weight:500;font-size:16px;box-shadow:0 8px 28px rgba(0,51,255,0.3);transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 16px 40px rgba(0,51,255,0.35)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 8px 28px rgba(0,51,255,0.3)'">Book a Call →</a>
     </div>
   </div>
 </section>
@@ -398,21 +398,7 @@ footer{
   <span class="footer-r">Paid Media · Creative Growth · ROI First</span>
 </footer>
 
-<!-- CAL.COM EMBED (exact code from Cal.com) -->
-<script type="text/javascript">
-(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-Cal("init", "30min", {origin:"https://app.cal.com"});
-Cal.ns["30min"]("inline", {
-  elementOrSelector:"#my-cal-inline-30min",
-  config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
-  calLink: "gopal-halder/30min",
-});
-Cal.ns["30min"]("ui", {
-  "cssVarsPerTheme":{"light":{"cal-brand":"#0033FF"},"dark":{"cal-brand":"#977DFF"}},
-  "hideEventTypeDetails":false,
-  "layout":"month_view"
-});
-</script>
+
 
 </body>
 </html>
